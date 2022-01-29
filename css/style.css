@@ -753,6 +753,7 @@ input._error {
   font-size: 17px;
   text-decoration: underline;
   transition: color 0.3s ease 0s;
+  color: #8e4fd5;
 }
 
 .client {
