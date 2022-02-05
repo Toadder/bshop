@@ -2378,6 +2378,317 @@ input._error {
   }
 }
 
+.delivery-page {
+  padding-top: 53px;
+}
+@media (max-width: 991.98px) {
+  .delivery-page {
+    padding-top: 45px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page {
+    padding-top: 33px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .help {
+    background-color: transparent;
+  }
+}
+.delivery-page .order {
+  margin-bottom: 94px;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .order {
+    margin-bottom: 51px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .order {
+    margin-bottom: 60px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .order__container {
+    padding: 0;
+  }
+}
+.delivery-page .order__items {
+  display: flex;
+  column-gap: 30px;
+  row-gap: 32px;
+}
+@media (max-width: 767.98px) {
+  .delivery-page .order__items {
+    flex-direction: column;
+  }
+}
+.delivery-page .order__title {
+  margin-bottom: 42px;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .order__title {
+    margin-bottom: 23px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .order__title {
+    margin-bottom: 21px;
+    padding: 0 15px;
+  }
+}
+.delivery-page .items-order__btn {
+  height: 56px;
+  font-weight: 600;
+  font-size: 16px;
+  width: 363px;
+  background-color: white;
+  margin-top: auto;
+}
+@media (any-hover: hover) {
+  .delivery-page .items-order__btn:hover {
+    background-color: #8e4fd5;
+    color: white;
+  }
+}
+@media (max-width: 991.98px) {
+  .delivery-page .items-order__btn {
+    width: 100%;
+  }
+}
+.delivery-page .items-order__icon {
+  flex: 0 0 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #8e4fd5;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .items-order__icon {
+    flex: 0 0 40px;
+    height: 40px;
+  }
+}
+.delivery-page .items-order__item {
+  background: #fbf9ff;
+  border-radius: 5px;
+  padding: 44px 40px 47px;
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .items-order__item {
+    padding: 37px 18px 39px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .items-order__item {
+    padding: 30px 20px 45px;
+  }
+}
+.delivery-page .items-order__list {
+  margin-bottom: 41px;
+}
+.delivery-page .items-order__list li {
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.delivery-page .items-order__list li:not(:last-child) {
+  margin-bottom: 35px;
+}
+.delivery-page .items-order__list li span {
+  font-size: 18px;
+  line-height: 1.3333333333;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .items-order__list {
+    margin-bottom: 24px;
+  }
+  .delivery-page .items-order__list li {
+    column-gap: 18px;
+  }
+  .delivery-page .items-order__list li:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  .delivery-page .items-order__list li span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .items-order__list {
+    margin-bottom: 32px;
+  }
+}
+.delivery-page .items-order__text {
+  font-size: 16px;
+  line-height: 1.25;
+  color: #888da7;
+  margin-bottom: 41px;
+}
+.delivery-page .items-order__text span {
+  font-weight: 600;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .items-order__text {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .items-order__text {
+    margin-bottom: 32px;
+  }
+}
+.delivery-page .items-order__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  margin-bottom: 54px;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .items-order__title {
+    font-size: 20px;
+    margin-bottom: 32px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .items-order__title {
+    margin-bottom: 28px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .payment__container {
+    padding: 0;
+  }
+}
+.delivery-page .payment__body {
+  margin-bottom: 105px;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .payment__body {
+    margin-bottom: 117px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .payment__body {
+    margin-bottom: 61px;
+  }
+}
+.delivery-page .payment__title {
+  margin-bottom: 50px;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .payment__title {
+    margin-bottom: 37px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .payment__title {
+    margin-bottom: 32px;
+    padding: 0 15px;
+  }
+}
+.delivery-page .item-payment {
+  background: #fbf9ff;
+  border-radius: 5px;
+  padding: 42px 50px 53px;
+  background-position: right 58px center;
+  background-repeat: no-repeat;
+  background-size: auto calc(100% - 70px);
+}
+@media (max-width: 991.98px) {
+  .delivery-page .item-payment {
+    padding: 42px 15px 49px;
+    background-size: auto calc(100% - 100px);
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .item-payment {
+    padding: 38px 15px 40px;
+    background-image: none !important;
+  }
+}
+.delivery-page .item-payment:not(:last-child) {
+  margin-bottom: 41px;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .item-payment:not(:last-child) {
+    margin-bottom: 26px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .item-payment:not(:last-child) {
+    margin-bottom: 32px;
+  }
+}
+.delivery-page .item-payment__top {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+  margin-bottom: 23px;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .item-payment__top {
+    margin-bottom: 31px;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .item-payment__top {
+    margin-bottom: 20px;
+  }
+}
+.delivery-page .item-payment__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 125%;
+  color: #8e4fd5;
+}
+@media (max-width: 767.98px) {
+  .delivery-page .item-payment__title {
+    font-size: 20px;
+  }
+}
+.delivery-page .item-payment__icon {
+  flex: 0 0 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #8e4fd5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.delivery-page .item-payment__text {
+  font-size: 18px;
+  line-height: 133%;
+}
+@media (max-width: 991.98px) {
+  .delivery-page .item-payment__text {
+    font-size: 16px;
+  }
+}
+.delivery-page .item-payment__btn {
+  margin-top: 32px;
+  width: 300px;
+  height: 56px;
+  font-size: 16px;
+  background-color: white;
+}
+@media (any-hover: hover) {
+  .delivery-page .item-payment__btn:hover {
+    background-color: #8e4fd5;
+    color: white;
+  }
+}
+@media (max-width: 767.98px) {
+  .delivery-page .item-payment__btn {
+    width: 100%;
+    margin-top: 28px;
+  }
+}
+
 .examples {
   padding-top: 68px;
   padding-bottom: 94px;
