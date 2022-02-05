@@ -1393,7 +1393,7 @@ input._error {
   }
 }
 .catalog-page .ad__select ._select__title::before {
-  content: "\e905";
+  content: "\e90a";
   position: absolute;
   top: 50%;
   right: 17px;
@@ -1401,7 +1401,7 @@ input._error {
   transition: all 0.3s ease 0s;
 }
 .catalog-page .ad__select ._select__title::after {
-  content: "\e909";
+  content: "\e910";
   position: absolute;
   left: 17px;
   top: 50%;
