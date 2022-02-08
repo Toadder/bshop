@@ -566,7 +566,7 @@
 <!-- /.step -->
 
         <!-- .popular -->
-<section class="popular">
+<section class="popular ">
   <div class="popular__container">
     <div class="popular__body">
       <h2 class="popular__title _title">Популярные товары</h2>
@@ -671,7 +671,7 @@
               <div class="_card-product__actions slide-popular__actions">
                 <div class="_card-product__count slide-popular__count">
                   <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
                   <div class="_card-product__minus slide-popular__minus">-</div>
                 </div>
                 <button
@@ -803,7 +803,7 @@
               <div class="_card-product__actions slide-popular__actions">
                 <div class="_card-product__count slide-popular__count">
                   <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
                   <div class="_card-product__minus slide-popular__minus">-</div>
                 </div>
                 <button
@@ -935,7 +935,7 @@
               <div class="_card-product__actions slide-popular__actions">
                 <div class="_card-product__count slide-popular__count">
                   <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
                   <div class="_card-product__minus slide-popular__minus">-</div>
                 </div>
                 <button
@@ -1067,7 +1067,7 @@
               <div class="_card-product__actions slide-popular__actions">
                 <div class="_card-product__count slide-popular__count">
                   <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
                   <div class="_card-product__minus slide-popular__minus">-</div>
                 </div>
                 <button
@@ -1199,7 +1199,7 @@
               <div class="_card-product__actions slide-popular__actions">
                 <div class="_card-product__count slide-popular__count">
                   <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
                   <div class="_card-product__minus slide-popular__minus">-</div>
                 </div>
                 <button
@@ -1236,23 +1236,23 @@
           </div>
         </div>
         <div class="popular__bottom">
-          <div class="popular__prev _arrow-prev _icon-arrow"></div>
-          <div class="popular__pagination _pagination"></div>
-          <div class="popular__next _arrow-next _icon-arrow"></div>
+          <div class="popular__prev _card-product__prev _arrow-prev _icon-arrow"></div>
+          <div class="popular__pagination _card-product__pagination _pagination"></div>
+          <div class="popular__next _card-product__next _arrow-next _icon-arrow"></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 <!-- /.popular -->
-
-        <!-- sale -->
-<section class="popular sale">
+ 
+        <!-- .popular -->
+<section class="popular ">
   <div class="popular__container">
     <div class="popular__body">
       <h2 class="popular__title _title">Акции</h2>
       <div class="popular__outer">
-        <div class="sale__slider swiper">
+        <div class="recent__slider swiper">
           <div class="popular__wrapper swiper-wrapper">
             <div
               class="popular__slide slide-popular swiper-slide _card-product"
@@ -1352,403 +1352,7 @@
               <div class="_card-product__actions slide-popular__actions">
                 <div class="_card-product__count slide-popular__count">
                   <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
-                  <div class="_card-product__minus slide-popular__minus">-</div>
-                </div>
-                <button
-                  class="_card-product__btn _btn slide-popular__btn"
-                  type="button"
-                >
-                  <svg
-                    width="36"
-                    height="32"
-                    viewBox="0 0 36 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.88428 1.85107H7.80393L11.7701 20.2425C11.9054 20.8749 12.2761 21.4429 12.8172 21.8472C13.3583 22.2515 14.0354 22.4663 14.7299 22.4539H29.1147C29.8092 22.4663 30.4863 22.2515 31.0274 21.8472C31.5685 21.4429 31.9392 20.8749 32.0745 20.2425L34.4424 8.71869H9.28385M15.2036 29.3215C15.2036 30.0801 14.541 30.695 13.7236 30.695C12.9063 30.695 12.2437 30.0801 12.2437 29.3215C12.2437 28.5629 12.9063 27.948 13.7236 27.948C14.541 27.948 15.2036 28.5629 15.2036 29.3215ZM31.4826 29.3215C31.4826 30.0801 30.82 30.695 30.0027 30.695C29.1854 30.695 28.5228 30.0801 28.5228 29.3215C28.5228 28.5629 29.1854 27.948 30.0027 27.948C30.82 27.948 31.4826 28.5629 31.4826 29.3215Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span>В корзину</span>
-                </button>
-              </div>
-              <div class="_card-product__bottom slide-popular__bottom">
-                <a href="#!" class="_card-product__click slide-popular__click">
-                  <div
-                    class="_icon-cursor _card-product__cursor slide-popular__cursor"
-                  ></div>
-                  <span>Купить в 1 клик</span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="popular__slide slide-popular swiper-slide _card-product"
-            >
-              <div class="_card-product__top slide-popular__top">
-                <a href="#!" class="_card-product__img slide-popular__img">
-                  <img src="img/assortment/2.png" alt="alt" />
-                </a>
-                <div
-                  class="_card-product__categories slide-popular__categories"
-                >
-                  <div
-                    class="_card-product__category _card-product__category_new slide-popular__category"
-                  >
-                    NEW
-                  </div>
-                  <div
-                    class="_card-product__category slide-popular__category _card-product__category_hot"
-                  >
-                    ХИТ
-                  </div>
-                  <div
-                    class="_card-product__category slide-popular__category _card-product__category_sale"
-                  >
-                    -50%
-                  </div>
-                </div>
-                <div
-                  class="_card-product__icons slide-popular__icons slide-popular__icons"
-                >
-                  <div class="_card-product__icon slide-popular__icon">
-                    <svg
-                      width="26"
-                      height="22"
-                      viewBox="0 0 26 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18.5784 0.215582C16.448 0.204197 14.4228 1.13983 13.0505 2.7694C11.6868 1.12869 9.65587 0.190399 7.5225 0.215582C3.52325 0.215582 0.28125 3.45759 0.28125 7.45683C0.28125 14.3102 12.2423 21.0019 12.7272 21.2606C12.9229 21.3913 13.1781 21.3913 13.3738 21.2606C13.8587 21.0019 25.8197 14.4072 25.8197 7.45683C25.8197 3.45759 22.5777 0.215582 18.5784 0.215582ZM13.0505 19.9675C11.1755 18.8684 1.57434 13.0172 1.57434 7.45683C1.57434 4.17176 4.23743 1.50861 7.52256 1.50861C9.53428 1.48219 11.4169 2.4969 12.5009 4.19175C12.721 4.49525 13.1456 4.56288 13.4491 4.34273C13.507 4.30065 13.558 4.24973 13.6 4.19175C15.3979 1.44228 19.0842 0.670805 21.8337 2.46862C23.5168 3.56921 24.5299 5.44573 24.5266 7.45677C24.5266 13.0818 14.9254 18.9007 13.0505 19.9675Z"
-                        fill="#888DA7"
-                      />
-                    </svg>
-                  </div>
-                  <div class="_card-product__icon slide-popular__icon">
-                    <svg
-                      width="29"
-                      height="25"
-                      viewBox="0 0 29 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.0505 6.05631C12.8334 6.05631 11.8467 5.06967 11.8467 3.85259C11.8467 2.63551 12.8334 1.64887 14.0505 1.64887C15.2675 1.64887 16.2542 2.6355 16.2542 3.85256L14.0505 6.05631ZM14.0505 6.05631C15.2675 6.05631 16.2542 5.06971 16.2542 3.85259L14.0505 6.05631ZM27.1694 12.3412L27.2765 12.557L27.5121 12.6077C27.5588 12.6178 27.5915 12.6594 27.5905 12.7068L27.5903 12.7068V12.7184C27.5903 15.0491 25.4934 17.0456 22.7583 17.0456C20.0215 17.0456 17.8984 15.049 17.8947 12.7245C17.897 12.6669 17.9368 12.6175 17.9929 12.603L18.2138 12.546L18.3155 12.3417L22.1331 4.67495L22.4931 3.95208H21.6855H16.953H16.5467L16.4636 4.34976C16.2656 5.29659 15.5258 6.03635 14.579 6.23429L14.1813 6.31743V6.72371V17.7979V18.2402L14.6203 18.2942C16.4833 18.5235 17.8877 19.9267 18.0999 21.2529L18.1673 21.6739H18.5936H19.9565C20.0705 21.6896 20.1603 21.7794 20.176 21.8933V24.3597C20.1623 24.4244 20.1016 24.4698 20.0342 24.4627L20.0081 24.4599H19.9819H8.11889H8.09751L8.0762 24.4618L8.0699 24.4624L8.06531 24.4628C7.99828 24.4692 7.93829 24.4238 7.92477 24.3595V21.8933C7.94051 21.7794 8.03032 21.6896 8.14423 21.6739H9.50714H9.93349L10.0009 21.2529C10.2131 19.9267 11.6175 18.5235 13.4805 18.2942L13.9194 18.2402V17.7979V6.72365V6.31737L13.5218 6.23423C12.5749 6.03629 11.8352 5.29653 11.6372 4.3497L11.5541 3.95202H11.1478H6.41524H5.60772L5.96765 4.67489L9.7852 12.3417L9.88691 12.546L10.1079 12.603C10.1639 12.6175 10.2037 12.6669 10.2061 12.7245C10.2023 15.0472 8.04967 17.0456 5.34247 17.0456C2.63687 17.0456 0.510404 15.0473 0.510404 12.7184H0.510528L0.51028 12.7072C0.509215 12.6594 0.542208 12.6177 0.588796 12.6077L0.824403 12.557L0.931546 12.3412L5.21718 3.70681C5.23873 3.67019 5.27354 3.64386 5.31365 3.63268L5.51795 3.67808L5.57153 3.68999H5.62642H11.1793H11.5664L11.6634 3.3153C11.8879 2.448 12.5652 1.77073 13.4325 1.5462C14.7508 1.20493 16.0962 1.99698 16.4375 3.31531L16.5345 3.68999H16.9216H22.4745H22.5294L22.583 3.67808L22.7872 3.63268C22.8274 3.64386 22.8622 3.67019 22.8837 3.70681L27.1694 12.3412ZM1.33554 12.7862H0.713584L0.847217 13.3936C1.25014 15.2251 3.14626 16.7204 5.34247 16.7204C7.5679 16.7204 9.46591 15.2273 9.8693 13.3936L10.0029 12.7862H9.38098H1.33554ZM8.81308 12.5242H9.62375L9.25988 11.7998L5.78927 4.89019L5.34043 3.99659L4.89485 4.89183L1.45583 11.8014L1.09608 12.5242H1.90345H8.81308ZM19.9141 22.4359V21.9359H19.4141H8.68686H8.18686V22.4359V23.6979V24.1979H8.68686H19.4141H19.9141V23.6979V22.4359ZM17.3002 21.6739H17.9101L17.7905 21.0758C17.4775 19.5111 15.8513 18.4653 14.0505 18.4653C12.2496 18.4653 10.6234 19.5111 10.3105 21.0758L10.1908 21.6739H10.8007H17.3002ZM23.2061 4.89183L22.7605 3.99658L22.3116 4.8902L18.8411 11.7998L18.4772 12.5242H19.2879H26.1975H27.0048L26.6451 11.8014L23.2061 4.89183ZM18.72 12.7862H18.098L18.2317 13.3936C18.635 15.2273 20.533 16.7204 22.7584 16.7204C24.9547 16.7204 26.8508 15.2251 27.2537 13.3936L27.3873 12.7862H26.7654H18.72Z"
-                        fill="#CBCEDB"
-                        stroke="#888DA7"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <a
-                href="#!"
-                class="_card-product__title slide-popular__title slide-popular__title"
-              >
-                Доска настенная меловая для маркера размер 57x77 Black, Broun,
-                Green
-              </a>
-              <div class="_card-product__rating slide-popular__rating">
-                <div class="_card-product__stars slide-popular__stars">
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_empty.svg" alt="alt" />
-                  </div>
-                </div>
-                <div class="_card-product__reviews">5 отзывов</div>
-              </div>
-              <div class="_card-product__price slide-popular__price">
-                <div class="_card-product__current slide-popular__current">
-                  22890 руб
-                </div>
-                <div class="_card-product__old slide-popular__old">
-                  15050 руб
-                </div>
-              </div>
-              <div class="_card-product__actions slide-popular__actions">
-                <div class="_card-product__count slide-popular__count">
-                  <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
-                  <div class="_card-product__minus slide-popular__minus">-</div>
-                </div>
-                <button
-                  class="_card-product__btn _btn slide-popular__btn"
-                  type="button"
-                >
-                  <svg
-                    width="36"
-                    height="32"
-                    viewBox="0 0 36 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.88428 1.85107H7.80393L11.7701 20.2425C11.9054 20.8749 12.2761 21.4429 12.8172 21.8472C13.3583 22.2515 14.0354 22.4663 14.7299 22.4539H29.1147C29.8092 22.4663 30.4863 22.2515 31.0274 21.8472C31.5685 21.4429 31.9392 20.8749 32.0745 20.2425L34.4424 8.71869H9.28385M15.2036 29.3215C15.2036 30.0801 14.541 30.695 13.7236 30.695C12.9063 30.695 12.2437 30.0801 12.2437 29.3215C12.2437 28.5629 12.9063 27.948 13.7236 27.948C14.541 27.948 15.2036 28.5629 15.2036 29.3215ZM31.4826 29.3215C31.4826 30.0801 30.82 30.695 30.0027 30.695C29.1854 30.695 28.5228 30.0801 28.5228 29.3215C28.5228 28.5629 29.1854 27.948 30.0027 27.948C30.82 27.948 31.4826 28.5629 31.4826 29.3215Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span>В корзину</span>
-                </button>
-              </div>
-              <div class="_card-product__bottom slide-popular__bottom">
-                <a href="#!" class="_card-product__click slide-popular__click">
-                  <div
-                    class="_icon-cursor _card-product__cursor slide-popular__cursor"
-                  ></div>
-                  <span>Купить в 1 клик</span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="popular__slide slide-popular swiper-slide _card-product"
-            >
-              <div class="_card-product__top slide-popular__top">
-                <a href="#!" class="_card-product__img slide-popular__img">
-                  <img src="img/assortment/3.png" alt="alt" />
-                </a>
-                <div
-                  class="_card-product__categories slide-popular__categories"
-                >
-                  <div
-                    class="_card-product__category _card-product__category_new slide-popular__category"
-                  >
-                    NEW
-                  </div>
-                  <div
-                    class="_card-product__category slide-popular__category _card-product__category_hot"
-                  >
-                    ХИТ
-                  </div>
-                  <div
-                    class="_card-product__category slide-popular__category _card-product__category_sale"
-                  >
-                    -50%
-                  </div>
-                </div>
-                <div
-                  class="_card-product__icons slide-popular__icons slide-popular__icons"
-                >
-                  <div class="_card-product__icon slide-popular__icon">
-                    <svg
-                      width="26"
-                      height="22"
-                      viewBox="0 0 26 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18.5784 0.215582C16.448 0.204197 14.4228 1.13983 13.0505 2.7694C11.6868 1.12869 9.65587 0.190399 7.5225 0.215582C3.52325 0.215582 0.28125 3.45759 0.28125 7.45683C0.28125 14.3102 12.2423 21.0019 12.7272 21.2606C12.9229 21.3913 13.1781 21.3913 13.3738 21.2606C13.8587 21.0019 25.8197 14.4072 25.8197 7.45683C25.8197 3.45759 22.5777 0.215582 18.5784 0.215582ZM13.0505 19.9675C11.1755 18.8684 1.57434 13.0172 1.57434 7.45683C1.57434 4.17176 4.23743 1.50861 7.52256 1.50861C9.53428 1.48219 11.4169 2.4969 12.5009 4.19175C12.721 4.49525 13.1456 4.56288 13.4491 4.34273C13.507 4.30065 13.558 4.24973 13.6 4.19175C15.3979 1.44228 19.0842 0.670805 21.8337 2.46862C23.5168 3.56921 24.5299 5.44573 24.5266 7.45677C24.5266 13.0818 14.9254 18.9007 13.0505 19.9675Z"
-                        fill="#888DA7"
-                      />
-                    </svg>
-                  </div>
-                  <div class="_card-product__icon slide-popular__icon">
-                    <svg
-                      width="29"
-                      height="25"
-                      viewBox="0 0 29 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.0505 6.05631C12.8334 6.05631 11.8467 5.06967 11.8467 3.85259C11.8467 2.63551 12.8334 1.64887 14.0505 1.64887C15.2675 1.64887 16.2542 2.6355 16.2542 3.85256L14.0505 6.05631ZM14.0505 6.05631C15.2675 6.05631 16.2542 5.06971 16.2542 3.85259L14.0505 6.05631ZM27.1694 12.3412L27.2765 12.557L27.5121 12.6077C27.5588 12.6178 27.5915 12.6594 27.5905 12.7068L27.5903 12.7068V12.7184C27.5903 15.0491 25.4934 17.0456 22.7583 17.0456C20.0215 17.0456 17.8984 15.049 17.8947 12.7245C17.897 12.6669 17.9368 12.6175 17.9929 12.603L18.2138 12.546L18.3155 12.3417L22.1331 4.67495L22.4931 3.95208H21.6855H16.953H16.5467L16.4636 4.34976C16.2656 5.29659 15.5258 6.03635 14.579 6.23429L14.1813 6.31743V6.72371V17.7979V18.2402L14.6203 18.2942C16.4833 18.5235 17.8877 19.9267 18.0999 21.2529L18.1673 21.6739H18.5936H19.9565C20.0705 21.6896 20.1603 21.7794 20.176 21.8933V24.3597C20.1623 24.4244 20.1016 24.4698 20.0342 24.4627L20.0081 24.4599H19.9819H8.11889H8.09751L8.0762 24.4618L8.0699 24.4624L8.06531 24.4628C7.99828 24.4692 7.93829 24.4238 7.92477 24.3595V21.8933C7.94051 21.7794 8.03032 21.6896 8.14423 21.6739H9.50714H9.93349L10.0009 21.2529C10.2131 19.9267 11.6175 18.5235 13.4805 18.2942L13.9194 18.2402V17.7979V6.72365V6.31737L13.5218 6.23423C12.5749 6.03629 11.8352 5.29653 11.6372 4.3497L11.5541 3.95202H11.1478H6.41524H5.60772L5.96765 4.67489L9.7852 12.3417L9.88691 12.546L10.1079 12.603C10.1639 12.6175 10.2037 12.6669 10.2061 12.7245C10.2023 15.0472 8.04967 17.0456 5.34247 17.0456C2.63687 17.0456 0.510404 15.0473 0.510404 12.7184H0.510528L0.51028 12.7072C0.509215 12.6594 0.542208 12.6177 0.588796 12.6077L0.824403 12.557L0.931546 12.3412L5.21718 3.70681C5.23873 3.67019 5.27354 3.64386 5.31365 3.63268L5.51795 3.67808L5.57153 3.68999H5.62642H11.1793H11.5664L11.6634 3.3153C11.8879 2.448 12.5652 1.77073 13.4325 1.5462C14.7508 1.20493 16.0962 1.99698 16.4375 3.31531L16.5345 3.68999H16.9216H22.4745H22.5294L22.583 3.67808L22.7872 3.63268C22.8274 3.64386 22.8622 3.67019 22.8837 3.70681L27.1694 12.3412ZM1.33554 12.7862H0.713584L0.847217 13.3936C1.25014 15.2251 3.14626 16.7204 5.34247 16.7204C7.5679 16.7204 9.46591 15.2273 9.8693 13.3936L10.0029 12.7862H9.38098H1.33554ZM8.81308 12.5242H9.62375L9.25988 11.7998L5.78927 4.89019L5.34043 3.99659L4.89485 4.89183L1.45583 11.8014L1.09608 12.5242H1.90345H8.81308ZM19.9141 22.4359V21.9359H19.4141H8.68686H8.18686V22.4359V23.6979V24.1979H8.68686H19.4141H19.9141V23.6979V22.4359ZM17.3002 21.6739H17.9101L17.7905 21.0758C17.4775 19.5111 15.8513 18.4653 14.0505 18.4653C12.2496 18.4653 10.6234 19.5111 10.3105 21.0758L10.1908 21.6739H10.8007H17.3002ZM23.2061 4.89183L22.7605 3.99658L22.3116 4.8902L18.8411 11.7998L18.4772 12.5242H19.2879H26.1975H27.0048L26.6451 11.8014L23.2061 4.89183ZM18.72 12.7862H18.098L18.2317 13.3936C18.635 15.2273 20.533 16.7204 22.7584 16.7204C24.9547 16.7204 26.8508 15.2251 27.2537 13.3936L27.3873 12.7862H26.7654H18.72Z"
-                        fill="#CBCEDB"
-                        stroke="#888DA7"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <a
-                href="#!"
-                class="_card-product__title slide-popular__title slide-popular__title"
-              >
-                Доска настенная меловая для маркера размер 57x77 Black, Broun,
-                Green
-              </a>
-              <div class="_card-product__rating slide-popular__rating">
-                <div class="_card-product__stars slide-popular__stars">
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_empty.svg" alt="alt" />
-                  </div>
-                </div>
-                <div class="_card-product__reviews">5 отзывов</div>
-              </div>
-              <div class="_card-product__price slide-popular__price">
-                <div class="_card-product__current slide-popular__current">
-                  22890 руб
-                </div>
-                <div class="_card-product__old slide-popular__old">
-                  15050 руб
-                </div>
-              </div>
-              <div class="_card-product__actions slide-popular__actions">
-                <div class="_card-product__count slide-popular__count">
-                  <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
-                  <div class="_card-product__minus slide-popular__minus">-</div>
-                </div>
-                <button
-                  class="_card-product__btn _btn slide-popular__btn"
-                  type="button"
-                >
-                  <svg
-                    width="36"
-                    height="32"
-                    viewBox="0 0 36 32"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M1.88428 1.85107H7.80393L11.7701 20.2425C11.9054 20.8749 12.2761 21.4429 12.8172 21.8472C13.3583 22.2515 14.0354 22.4663 14.7299 22.4539H29.1147C29.8092 22.4663 30.4863 22.2515 31.0274 21.8472C31.5685 21.4429 31.9392 20.8749 32.0745 20.2425L34.4424 8.71869H9.28385M15.2036 29.3215C15.2036 30.0801 14.541 30.695 13.7236 30.695C12.9063 30.695 12.2437 30.0801 12.2437 29.3215C12.2437 28.5629 12.9063 27.948 13.7236 27.948C14.541 27.948 15.2036 28.5629 15.2036 29.3215ZM31.4826 29.3215C31.4826 30.0801 30.82 30.695 30.0027 30.695C29.1854 30.695 28.5228 30.0801 28.5228 29.3215C28.5228 28.5629 29.1854 27.948 30.0027 27.948C30.82 27.948 31.4826 28.5629 31.4826 29.3215Z"
-                      stroke="white"
-                      stroke-width="2"
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                    />
-                  </svg>
-                  <span>В корзину</span>
-                </button>
-              </div>
-              <div class="_card-product__bottom slide-popular__bottom">
-                <a href="#!" class="_card-product__click slide-popular__click">
-                  <div
-                    class="_icon-cursor _card-product__cursor slide-popular__cursor"
-                  ></div>
-                  <span>Купить в 1 клик</span>
-                </a>
-              </div>
-            </div>
-            <div
-              class="popular__slide slide-popular swiper-slide _card-product"
-            >
-              <div class="_card-product__top slide-popular__top">
-                <a href="#!" class="_card-product__img slide-popular__img">
-                  <img src="img/assortment/4.png" alt="alt" />
-                </a>
-                <div
-                  class="_card-product__categories slide-popular__categories"
-                >
-                  <div
-                    class="_card-product__category _card-product__category_new slide-popular__category"
-                  >
-                    NEW
-                  </div>
-                  <div
-                    class="_card-product__category slide-popular__category _card-product__category_hot"
-                  >
-                    ХИТ
-                  </div>
-                  <div
-                    class="_card-product__category slide-popular__category _card-product__category_sale"
-                  >
-                    -50%
-                  </div>
-                </div>
-                <div
-                  class="_card-product__icons slide-popular__icons slide-popular__icons"
-                >
-                  <div class="_card-product__icon slide-popular__icon">
-                    <svg
-                      width="26"
-                      height="22"
-                      viewBox="0 0 26 22"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M18.5784 0.215582C16.448 0.204197 14.4228 1.13983 13.0505 2.7694C11.6868 1.12869 9.65587 0.190399 7.5225 0.215582C3.52325 0.215582 0.28125 3.45759 0.28125 7.45683C0.28125 14.3102 12.2423 21.0019 12.7272 21.2606C12.9229 21.3913 13.1781 21.3913 13.3738 21.2606C13.8587 21.0019 25.8197 14.4072 25.8197 7.45683C25.8197 3.45759 22.5777 0.215582 18.5784 0.215582ZM13.0505 19.9675C11.1755 18.8684 1.57434 13.0172 1.57434 7.45683C1.57434 4.17176 4.23743 1.50861 7.52256 1.50861C9.53428 1.48219 11.4169 2.4969 12.5009 4.19175C12.721 4.49525 13.1456 4.56288 13.4491 4.34273C13.507 4.30065 13.558 4.24973 13.6 4.19175C15.3979 1.44228 19.0842 0.670805 21.8337 2.46862C23.5168 3.56921 24.5299 5.44573 24.5266 7.45677C24.5266 13.0818 14.9254 18.9007 13.0505 19.9675Z"
-                        fill="#888DA7"
-                      />
-                    </svg>
-                  </div>
-                  <div class="_card-product__icon slide-popular__icon">
-                    <svg
-                      width="29"
-                      height="25"
-                      viewBox="0 0 29 25"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M14.0505 6.05631C12.8334 6.05631 11.8467 5.06967 11.8467 3.85259C11.8467 2.63551 12.8334 1.64887 14.0505 1.64887C15.2675 1.64887 16.2542 2.6355 16.2542 3.85256L14.0505 6.05631ZM14.0505 6.05631C15.2675 6.05631 16.2542 5.06971 16.2542 3.85259L14.0505 6.05631ZM27.1694 12.3412L27.2765 12.557L27.5121 12.6077C27.5588 12.6178 27.5915 12.6594 27.5905 12.7068L27.5903 12.7068V12.7184C27.5903 15.0491 25.4934 17.0456 22.7583 17.0456C20.0215 17.0456 17.8984 15.049 17.8947 12.7245C17.897 12.6669 17.9368 12.6175 17.9929 12.603L18.2138 12.546L18.3155 12.3417L22.1331 4.67495L22.4931 3.95208H21.6855H16.953H16.5467L16.4636 4.34976C16.2656 5.29659 15.5258 6.03635 14.579 6.23429L14.1813 6.31743V6.72371V17.7979V18.2402L14.6203 18.2942C16.4833 18.5235 17.8877 19.9267 18.0999 21.2529L18.1673 21.6739H18.5936H19.9565C20.0705 21.6896 20.1603 21.7794 20.176 21.8933V24.3597C20.1623 24.4244 20.1016 24.4698 20.0342 24.4627L20.0081 24.4599H19.9819H8.11889H8.09751L8.0762 24.4618L8.0699 24.4624L8.06531 24.4628C7.99828 24.4692 7.93829 24.4238 7.92477 24.3595V21.8933C7.94051 21.7794 8.03032 21.6896 8.14423 21.6739H9.50714H9.93349L10.0009 21.2529C10.2131 19.9267 11.6175 18.5235 13.4805 18.2942L13.9194 18.2402V17.7979V6.72365V6.31737L13.5218 6.23423C12.5749 6.03629 11.8352 5.29653 11.6372 4.3497L11.5541 3.95202H11.1478H6.41524H5.60772L5.96765 4.67489L9.7852 12.3417L9.88691 12.546L10.1079 12.603C10.1639 12.6175 10.2037 12.6669 10.2061 12.7245C10.2023 15.0472 8.04967 17.0456 5.34247 17.0456C2.63687 17.0456 0.510404 15.0473 0.510404 12.7184H0.510528L0.51028 12.7072C0.509215 12.6594 0.542208 12.6177 0.588796 12.6077L0.824403 12.557L0.931546 12.3412L5.21718 3.70681C5.23873 3.67019 5.27354 3.64386 5.31365 3.63268L5.51795 3.67808L5.57153 3.68999H5.62642H11.1793H11.5664L11.6634 3.3153C11.8879 2.448 12.5652 1.77073 13.4325 1.5462C14.7508 1.20493 16.0962 1.99698 16.4375 3.31531L16.5345 3.68999H16.9216H22.4745H22.5294L22.583 3.67808L22.7872 3.63268C22.8274 3.64386 22.8622 3.67019 22.8837 3.70681L27.1694 12.3412ZM1.33554 12.7862H0.713584L0.847217 13.3936C1.25014 15.2251 3.14626 16.7204 5.34247 16.7204C7.5679 16.7204 9.46591 15.2273 9.8693 13.3936L10.0029 12.7862H9.38098H1.33554ZM8.81308 12.5242H9.62375L9.25988 11.7998L5.78927 4.89019L5.34043 3.99659L4.89485 4.89183L1.45583 11.8014L1.09608 12.5242H1.90345H8.81308ZM19.9141 22.4359V21.9359H19.4141H8.68686H8.18686V22.4359V23.6979V24.1979H8.68686H19.4141H19.9141V23.6979V22.4359ZM17.3002 21.6739H17.9101L17.7905 21.0758C17.4775 19.5111 15.8513 18.4653 14.0505 18.4653C12.2496 18.4653 10.6234 19.5111 10.3105 21.0758L10.1908 21.6739H10.8007H17.3002ZM23.2061 4.89183L22.7605 3.99658L22.3116 4.8902L18.8411 11.7998L18.4772 12.5242H19.2879H26.1975H27.0048L26.6451 11.8014L23.2061 4.89183ZM18.72 12.7862H18.098L18.2317 13.3936C18.635 15.2273 20.533 16.7204 22.7584 16.7204C24.9547 16.7204 26.8508 15.2251 27.2537 13.3936L27.3873 12.7862H26.7654H18.72Z"
-                        fill="#CBCEDB"
-                        stroke="#888DA7"
-                      />
-                    </svg>
-                  </div>
-                </div>
-              </div>
-              <a
-                href="#!"
-                class="_card-product__title slide-popular__title slide-popular__title"
-              >
-                Доска настенная меловая для маркера размер 57x77 Black, Broun,
-                Green
-              </a>
-              <div class="_card-product__rating slide-popular__rating">
-                <div class="_card-product__stars slide-popular__stars">
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_filled.svg" alt="alt" />
-                  </div>
-                  <div class="_card-product__star slide-popular__star">
-                    <img src="img/assortment/star_empty.svg" alt="alt" />
-                  </div>
-                </div>
-                <div class="_card-product__reviews">5 отзывов</div>
-              </div>
-              <div class="_card-product__price slide-popular__price">
-                <div class="_card-product__current slide-popular__current">
-                  22890 руб
-                </div>
-                <div class="_card-product__old slide-popular__old">
-                  15050 руб
-                </div>
-              </div>
-              <div class="_card-product__actions slide-popular__actions">
-                <div class="_card-product__count slide-popular__count">
-                  <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
                   <div class="_card-product__minus slide-popular__minus">-</div>
                 </div>
                 <button
@@ -1880,7 +1484,403 @@
               <div class="_card-product__actions slide-popular__actions">
                 <div class="_card-product__count slide-popular__count">
                   <div class="_card-product__plus slide-popular__plus">+</div>
-                  <div class="_card-product__value slide-popular__value">1</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
+                  <div class="_card-product__minus slide-popular__minus">-</div>
+                </div>
+                <button
+                  class="_card-product__btn _btn slide-popular__btn"
+                  type="button"
+                >
+                  <svg
+                    width="36"
+                    height="32"
+                    viewBox="0 0 36 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.88428 1.85107H7.80393L11.7701 20.2425C11.9054 20.8749 12.2761 21.4429 12.8172 21.8472C13.3583 22.2515 14.0354 22.4663 14.7299 22.4539H29.1147C29.8092 22.4663 30.4863 22.2515 31.0274 21.8472C31.5685 21.4429 31.9392 20.8749 32.0745 20.2425L34.4424 8.71869H9.28385M15.2036 29.3215C15.2036 30.0801 14.541 30.695 13.7236 30.695C12.9063 30.695 12.2437 30.0801 12.2437 29.3215C12.2437 28.5629 12.9063 27.948 13.7236 27.948C14.541 27.948 15.2036 28.5629 15.2036 29.3215ZM31.4826 29.3215C31.4826 30.0801 30.82 30.695 30.0027 30.695C29.1854 30.695 28.5228 30.0801 28.5228 29.3215C28.5228 28.5629 29.1854 27.948 30.0027 27.948C30.82 27.948 31.4826 28.5629 31.4826 29.3215Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+              <div class="_card-product__bottom slide-popular__bottom">
+                <a href="#!" class="_card-product__click slide-popular__click">
+                  <div
+                    class="_icon-cursor _card-product__cursor slide-popular__cursor"
+                  ></div>
+                  <span>Купить в 1 клик</span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="popular__slide slide-popular swiper-slide _card-product"
+            >
+              <div class="_card-product__top slide-popular__top">
+                <a href="#!" class="_card-product__img slide-popular__img">
+                  <img src="img/assortment/2.png" alt="alt" />
+                </a>
+                <div
+                  class="_card-product__categories slide-popular__categories"
+                >
+                  <div
+                    class="_card-product__category _card-product__category_new slide-popular__category"
+                  >
+                    NEW
+                  </div>
+                  <div
+                    class="_card-product__category slide-popular__category _card-product__category_hot"
+                  >
+                    ХИТ
+                  </div>
+                  <div
+                    class="_card-product__category slide-popular__category _card-product__category_sale"
+                  >
+                    -50%
+                  </div>
+                </div>
+                <div
+                  class="_card-product__icons slide-popular__icons slide-popular__icons"
+                >
+                  <div class="_card-product__icon slide-popular__icon">
+                    <svg
+                      width="26"
+                      height="22"
+                      viewBox="0 0 26 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.5784 0.215582C16.448 0.204197 14.4228 1.13983 13.0505 2.7694C11.6868 1.12869 9.65587 0.190399 7.5225 0.215582C3.52325 0.215582 0.28125 3.45759 0.28125 7.45683C0.28125 14.3102 12.2423 21.0019 12.7272 21.2606C12.9229 21.3913 13.1781 21.3913 13.3738 21.2606C13.8587 21.0019 25.8197 14.4072 25.8197 7.45683C25.8197 3.45759 22.5777 0.215582 18.5784 0.215582ZM13.0505 19.9675C11.1755 18.8684 1.57434 13.0172 1.57434 7.45683C1.57434 4.17176 4.23743 1.50861 7.52256 1.50861C9.53428 1.48219 11.4169 2.4969 12.5009 4.19175C12.721 4.49525 13.1456 4.56288 13.4491 4.34273C13.507 4.30065 13.558 4.24973 13.6 4.19175C15.3979 1.44228 19.0842 0.670805 21.8337 2.46862C23.5168 3.56921 24.5299 5.44573 24.5266 7.45677C24.5266 13.0818 14.9254 18.9007 13.0505 19.9675Z"
+                        fill="#888DA7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="_card-product__icon slide-popular__icon">
+                    <svg
+                      width="29"
+                      height="25"
+                      viewBox="0 0 29 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0505 6.05631C12.8334 6.05631 11.8467 5.06967 11.8467 3.85259C11.8467 2.63551 12.8334 1.64887 14.0505 1.64887C15.2675 1.64887 16.2542 2.6355 16.2542 3.85256L14.0505 6.05631ZM14.0505 6.05631C15.2675 6.05631 16.2542 5.06971 16.2542 3.85259L14.0505 6.05631ZM27.1694 12.3412L27.2765 12.557L27.5121 12.6077C27.5588 12.6178 27.5915 12.6594 27.5905 12.7068L27.5903 12.7068V12.7184C27.5903 15.0491 25.4934 17.0456 22.7583 17.0456C20.0215 17.0456 17.8984 15.049 17.8947 12.7245C17.897 12.6669 17.9368 12.6175 17.9929 12.603L18.2138 12.546L18.3155 12.3417L22.1331 4.67495L22.4931 3.95208H21.6855H16.953H16.5467L16.4636 4.34976C16.2656 5.29659 15.5258 6.03635 14.579 6.23429L14.1813 6.31743V6.72371V17.7979V18.2402L14.6203 18.2942C16.4833 18.5235 17.8877 19.9267 18.0999 21.2529L18.1673 21.6739H18.5936H19.9565C20.0705 21.6896 20.1603 21.7794 20.176 21.8933V24.3597C20.1623 24.4244 20.1016 24.4698 20.0342 24.4627L20.0081 24.4599H19.9819H8.11889H8.09751L8.0762 24.4618L8.0699 24.4624L8.06531 24.4628C7.99828 24.4692 7.93829 24.4238 7.92477 24.3595V21.8933C7.94051 21.7794 8.03032 21.6896 8.14423 21.6739H9.50714H9.93349L10.0009 21.2529C10.2131 19.9267 11.6175 18.5235 13.4805 18.2942L13.9194 18.2402V17.7979V6.72365V6.31737L13.5218 6.23423C12.5749 6.03629 11.8352 5.29653 11.6372 4.3497L11.5541 3.95202H11.1478H6.41524H5.60772L5.96765 4.67489L9.7852 12.3417L9.88691 12.546L10.1079 12.603C10.1639 12.6175 10.2037 12.6669 10.2061 12.7245C10.2023 15.0472 8.04967 17.0456 5.34247 17.0456C2.63687 17.0456 0.510404 15.0473 0.510404 12.7184H0.510528L0.51028 12.7072C0.509215 12.6594 0.542208 12.6177 0.588796 12.6077L0.824403 12.557L0.931546 12.3412L5.21718 3.70681C5.23873 3.67019 5.27354 3.64386 5.31365 3.63268L5.51795 3.67808L5.57153 3.68999H5.62642H11.1793H11.5664L11.6634 3.3153C11.8879 2.448 12.5652 1.77073 13.4325 1.5462C14.7508 1.20493 16.0962 1.99698 16.4375 3.31531L16.5345 3.68999H16.9216H22.4745H22.5294L22.583 3.67808L22.7872 3.63268C22.8274 3.64386 22.8622 3.67019 22.8837 3.70681L27.1694 12.3412ZM1.33554 12.7862H0.713584L0.847217 13.3936C1.25014 15.2251 3.14626 16.7204 5.34247 16.7204C7.5679 16.7204 9.46591 15.2273 9.8693 13.3936L10.0029 12.7862H9.38098H1.33554ZM8.81308 12.5242H9.62375L9.25988 11.7998L5.78927 4.89019L5.34043 3.99659L4.89485 4.89183L1.45583 11.8014L1.09608 12.5242H1.90345H8.81308ZM19.9141 22.4359V21.9359H19.4141H8.68686H8.18686V22.4359V23.6979V24.1979H8.68686H19.4141H19.9141V23.6979V22.4359ZM17.3002 21.6739H17.9101L17.7905 21.0758C17.4775 19.5111 15.8513 18.4653 14.0505 18.4653C12.2496 18.4653 10.6234 19.5111 10.3105 21.0758L10.1908 21.6739H10.8007H17.3002ZM23.2061 4.89183L22.7605 3.99658L22.3116 4.8902L18.8411 11.7998L18.4772 12.5242H19.2879H26.1975H27.0048L26.6451 11.8014L23.2061 4.89183ZM18.72 12.7862H18.098L18.2317 13.3936C18.635 15.2273 20.533 16.7204 22.7584 16.7204C24.9547 16.7204 26.8508 15.2251 27.2537 13.3936L27.3873 12.7862H26.7654H18.72Z"
+                        fill="#CBCEDB"
+                        stroke="#888DA7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="#!"
+                class="_card-product__title slide-popular__title slide-popular__title"
+              >
+                Доска настенная меловая для маркера размер 57x77 Black, Broun,
+                Green
+              </a>
+              <div class="_card-product__rating slide-popular__rating">
+                <div class="_card-product__stars slide-popular__stars">
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_empty.svg" alt="alt" />
+                  </div>
+                </div>
+                <div class="_card-product__reviews">5 отзывов</div>
+              </div>
+              <div class="_card-product__price slide-popular__price">
+                <div class="_card-product__current slide-popular__current">
+                  22890 руб
+                </div>
+                <div class="_card-product__old slide-popular__old">
+                  15050 руб
+                </div>
+              </div>
+              <div class="_card-product__actions slide-popular__actions">
+                <div class="_card-product__count slide-popular__count">
+                  <div class="_card-product__plus slide-popular__plus">+</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
+                  <div class="_card-product__minus slide-popular__minus">-</div>
+                </div>
+                <button
+                  class="_card-product__btn _btn slide-popular__btn"
+                  type="button"
+                >
+                  <svg
+                    width="36"
+                    height="32"
+                    viewBox="0 0 36 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.88428 1.85107H7.80393L11.7701 20.2425C11.9054 20.8749 12.2761 21.4429 12.8172 21.8472C13.3583 22.2515 14.0354 22.4663 14.7299 22.4539H29.1147C29.8092 22.4663 30.4863 22.2515 31.0274 21.8472C31.5685 21.4429 31.9392 20.8749 32.0745 20.2425L34.4424 8.71869H9.28385M15.2036 29.3215C15.2036 30.0801 14.541 30.695 13.7236 30.695C12.9063 30.695 12.2437 30.0801 12.2437 29.3215C12.2437 28.5629 12.9063 27.948 13.7236 27.948C14.541 27.948 15.2036 28.5629 15.2036 29.3215ZM31.4826 29.3215C31.4826 30.0801 30.82 30.695 30.0027 30.695C29.1854 30.695 28.5228 30.0801 28.5228 29.3215C28.5228 28.5629 29.1854 27.948 30.0027 27.948C30.82 27.948 31.4826 28.5629 31.4826 29.3215Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+              <div class="_card-product__bottom slide-popular__bottom">
+                <a href="#!" class="_card-product__click slide-popular__click">
+                  <div
+                    class="_icon-cursor _card-product__cursor slide-popular__cursor"
+                  ></div>
+                  <span>Купить в 1 клик</span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="popular__slide slide-popular swiper-slide _card-product"
+            >
+              <div class="_card-product__top slide-popular__top">
+                <a href="#!" class="_card-product__img slide-popular__img">
+                  <img src="img/assortment/3.png" alt="alt" />
+                </a>
+                <div
+                  class="_card-product__categories slide-popular__categories"
+                >
+                  <div
+                    class="_card-product__category _card-product__category_new slide-popular__category"
+                  >
+                    NEW
+                  </div>
+                  <div
+                    class="_card-product__category slide-popular__category _card-product__category_hot"
+                  >
+                    ХИТ
+                  </div>
+                  <div
+                    class="_card-product__category slide-popular__category _card-product__category_sale"
+                  >
+                    -50%
+                  </div>
+                </div>
+                <div
+                  class="_card-product__icons slide-popular__icons slide-popular__icons"
+                >
+                  <div class="_card-product__icon slide-popular__icon">
+                    <svg
+                      width="26"
+                      height="22"
+                      viewBox="0 0 26 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.5784 0.215582C16.448 0.204197 14.4228 1.13983 13.0505 2.7694C11.6868 1.12869 9.65587 0.190399 7.5225 0.215582C3.52325 0.215582 0.28125 3.45759 0.28125 7.45683C0.28125 14.3102 12.2423 21.0019 12.7272 21.2606C12.9229 21.3913 13.1781 21.3913 13.3738 21.2606C13.8587 21.0019 25.8197 14.4072 25.8197 7.45683C25.8197 3.45759 22.5777 0.215582 18.5784 0.215582ZM13.0505 19.9675C11.1755 18.8684 1.57434 13.0172 1.57434 7.45683C1.57434 4.17176 4.23743 1.50861 7.52256 1.50861C9.53428 1.48219 11.4169 2.4969 12.5009 4.19175C12.721 4.49525 13.1456 4.56288 13.4491 4.34273C13.507 4.30065 13.558 4.24973 13.6 4.19175C15.3979 1.44228 19.0842 0.670805 21.8337 2.46862C23.5168 3.56921 24.5299 5.44573 24.5266 7.45677C24.5266 13.0818 14.9254 18.9007 13.0505 19.9675Z"
+                        fill="#888DA7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="_card-product__icon slide-popular__icon">
+                    <svg
+                      width="29"
+                      height="25"
+                      viewBox="0 0 29 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0505 6.05631C12.8334 6.05631 11.8467 5.06967 11.8467 3.85259C11.8467 2.63551 12.8334 1.64887 14.0505 1.64887C15.2675 1.64887 16.2542 2.6355 16.2542 3.85256L14.0505 6.05631ZM14.0505 6.05631C15.2675 6.05631 16.2542 5.06971 16.2542 3.85259L14.0505 6.05631ZM27.1694 12.3412L27.2765 12.557L27.5121 12.6077C27.5588 12.6178 27.5915 12.6594 27.5905 12.7068L27.5903 12.7068V12.7184C27.5903 15.0491 25.4934 17.0456 22.7583 17.0456C20.0215 17.0456 17.8984 15.049 17.8947 12.7245C17.897 12.6669 17.9368 12.6175 17.9929 12.603L18.2138 12.546L18.3155 12.3417L22.1331 4.67495L22.4931 3.95208H21.6855H16.953H16.5467L16.4636 4.34976C16.2656 5.29659 15.5258 6.03635 14.579 6.23429L14.1813 6.31743V6.72371V17.7979V18.2402L14.6203 18.2942C16.4833 18.5235 17.8877 19.9267 18.0999 21.2529L18.1673 21.6739H18.5936H19.9565C20.0705 21.6896 20.1603 21.7794 20.176 21.8933V24.3597C20.1623 24.4244 20.1016 24.4698 20.0342 24.4627L20.0081 24.4599H19.9819H8.11889H8.09751L8.0762 24.4618L8.0699 24.4624L8.06531 24.4628C7.99828 24.4692 7.93829 24.4238 7.92477 24.3595V21.8933C7.94051 21.7794 8.03032 21.6896 8.14423 21.6739H9.50714H9.93349L10.0009 21.2529C10.2131 19.9267 11.6175 18.5235 13.4805 18.2942L13.9194 18.2402V17.7979V6.72365V6.31737L13.5218 6.23423C12.5749 6.03629 11.8352 5.29653 11.6372 4.3497L11.5541 3.95202H11.1478H6.41524H5.60772L5.96765 4.67489L9.7852 12.3417L9.88691 12.546L10.1079 12.603C10.1639 12.6175 10.2037 12.6669 10.2061 12.7245C10.2023 15.0472 8.04967 17.0456 5.34247 17.0456C2.63687 17.0456 0.510404 15.0473 0.510404 12.7184H0.510528L0.51028 12.7072C0.509215 12.6594 0.542208 12.6177 0.588796 12.6077L0.824403 12.557L0.931546 12.3412L5.21718 3.70681C5.23873 3.67019 5.27354 3.64386 5.31365 3.63268L5.51795 3.67808L5.57153 3.68999H5.62642H11.1793H11.5664L11.6634 3.3153C11.8879 2.448 12.5652 1.77073 13.4325 1.5462C14.7508 1.20493 16.0962 1.99698 16.4375 3.31531L16.5345 3.68999H16.9216H22.4745H22.5294L22.583 3.67808L22.7872 3.63268C22.8274 3.64386 22.8622 3.67019 22.8837 3.70681L27.1694 12.3412ZM1.33554 12.7862H0.713584L0.847217 13.3936C1.25014 15.2251 3.14626 16.7204 5.34247 16.7204C7.5679 16.7204 9.46591 15.2273 9.8693 13.3936L10.0029 12.7862H9.38098H1.33554ZM8.81308 12.5242H9.62375L9.25988 11.7998L5.78927 4.89019L5.34043 3.99659L4.89485 4.89183L1.45583 11.8014L1.09608 12.5242H1.90345H8.81308ZM19.9141 22.4359V21.9359H19.4141H8.68686H8.18686V22.4359V23.6979V24.1979H8.68686H19.4141H19.9141V23.6979V22.4359ZM17.3002 21.6739H17.9101L17.7905 21.0758C17.4775 19.5111 15.8513 18.4653 14.0505 18.4653C12.2496 18.4653 10.6234 19.5111 10.3105 21.0758L10.1908 21.6739H10.8007H17.3002ZM23.2061 4.89183L22.7605 3.99658L22.3116 4.8902L18.8411 11.7998L18.4772 12.5242H19.2879H26.1975H27.0048L26.6451 11.8014L23.2061 4.89183ZM18.72 12.7862H18.098L18.2317 13.3936C18.635 15.2273 20.533 16.7204 22.7584 16.7204C24.9547 16.7204 26.8508 15.2251 27.2537 13.3936L27.3873 12.7862H26.7654H18.72Z"
+                        fill="#CBCEDB"
+                        stroke="#888DA7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="#!"
+                class="_card-product__title slide-popular__title slide-popular__title"
+              >
+                Доска настенная меловая для маркера размер 57x77 Black, Broun,
+                Green
+              </a>
+              <div class="_card-product__rating slide-popular__rating">
+                <div class="_card-product__stars slide-popular__stars">
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_empty.svg" alt="alt" />
+                  </div>
+                </div>
+                <div class="_card-product__reviews">5 отзывов</div>
+              </div>
+              <div class="_card-product__price slide-popular__price">
+                <div class="_card-product__current slide-popular__current">
+                  22890 руб
+                </div>
+                <div class="_card-product__old slide-popular__old">
+                  15050 руб
+                </div>
+              </div>
+              <div class="_card-product__actions slide-popular__actions">
+                <div class="_card-product__count slide-popular__count">
+                  <div class="_card-product__plus slide-popular__plus">+</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
+                  <div class="_card-product__minus slide-popular__minus">-</div>
+                </div>
+                <button
+                  class="_card-product__btn _btn slide-popular__btn"
+                  type="button"
+                >
+                  <svg
+                    width="36"
+                    height="32"
+                    viewBox="0 0 36 32"
+                    fill="none"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M1.88428 1.85107H7.80393L11.7701 20.2425C11.9054 20.8749 12.2761 21.4429 12.8172 21.8472C13.3583 22.2515 14.0354 22.4663 14.7299 22.4539H29.1147C29.8092 22.4663 30.4863 22.2515 31.0274 21.8472C31.5685 21.4429 31.9392 20.8749 32.0745 20.2425L34.4424 8.71869H9.28385M15.2036 29.3215C15.2036 30.0801 14.541 30.695 13.7236 30.695C12.9063 30.695 12.2437 30.0801 12.2437 29.3215C12.2437 28.5629 12.9063 27.948 13.7236 27.948C14.541 27.948 15.2036 28.5629 15.2036 29.3215ZM31.4826 29.3215C31.4826 30.0801 30.82 30.695 30.0027 30.695C29.1854 30.695 28.5228 30.0801 28.5228 29.3215C28.5228 28.5629 29.1854 27.948 30.0027 27.948C30.82 27.948 31.4826 28.5629 31.4826 29.3215Z"
+                      stroke="white"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    />
+                  </svg>
+                  <span>В корзину</span>
+                </button>
+              </div>
+              <div class="_card-product__bottom slide-popular__bottom">
+                <a href="#!" class="_card-product__click slide-popular__click">
+                  <div
+                    class="_icon-cursor _card-product__cursor slide-popular__cursor"
+                  ></div>
+                  <span>Купить в 1 клик</span>
+                </a>
+              </div>
+            </div>
+            <div
+              class="popular__slide slide-popular swiper-slide _card-product"
+            >
+              <div class="_card-product__top slide-popular__top">
+                <a href="#!" class="_card-product__img slide-popular__img">
+                  <img src="img/assortment/4.png" alt="alt" />
+                </a>
+                <div
+                  class="_card-product__categories slide-popular__categories"
+                >
+                  <div
+                    class="_card-product__category _card-product__category_new slide-popular__category"
+                  >
+                    NEW
+                  </div>
+                  <div
+                    class="_card-product__category slide-popular__category _card-product__category_hot"
+                  >
+                    ХИТ
+                  </div>
+                  <div
+                    class="_card-product__category slide-popular__category _card-product__category_sale"
+                  >
+                    -50%
+                  </div>
+                </div>
+                <div
+                  class="_card-product__icons slide-popular__icons slide-popular__icons"
+                >
+                  <div class="_card-product__icon slide-popular__icon">
+                    <svg
+                      width="26"
+                      height="22"
+                      viewBox="0 0 26 22"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M18.5784 0.215582C16.448 0.204197 14.4228 1.13983 13.0505 2.7694C11.6868 1.12869 9.65587 0.190399 7.5225 0.215582C3.52325 0.215582 0.28125 3.45759 0.28125 7.45683C0.28125 14.3102 12.2423 21.0019 12.7272 21.2606C12.9229 21.3913 13.1781 21.3913 13.3738 21.2606C13.8587 21.0019 25.8197 14.4072 25.8197 7.45683C25.8197 3.45759 22.5777 0.215582 18.5784 0.215582ZM13.0505 19.9675C11.1755 18.8684 1.57434 13.0172 1.57434 7.45683C1.57434 4.17176 4.23743 1.50861 7.52256 1.50861C9.53428 1.48219 11.4169 2.4969 12.5009 4.19175C12.721 4.49525 13.1456 4.56288 13.4491 4.34273C13.507 4.30065 13.558 4.24973 13.6 4.19175C15.3979 1.44228 19.0842 0.670805 21.8337 2.46862C23.5168 3.56921 24.5299 5.44573 24.5266 7.45677C24.5266 13.0818 14.9254 18.9007 13.0505 19.9675Z"
+                        fill="#888DA7"
+                      />
+                    </svg>
+                  </div>
+                  <div class="_card-product__icon slide-popular__icon">
+                    <svg
+                      width="29"
+                      height="25"
+                      viewBox="0 0 29 25"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M14.0505 6.05631C12.8334 6.05631 11.8467 5.06967 11.8467 3.85259C11.8467 2.63551 12.8334 1.64887 14.0505 1.64887C15.2675 1.64887 16.2542 2.6355 16.2542 3.85256L14.0505 6.05631ZM14.0505 6.05631C15.2675 6.05631 16.2542 5.06971 16.2542 3.85259L14.0505 6.05631ZM27.1694 12.3412L27.2765 12.557L27.5121 12.6077C27.5588 12.6178 27.5915 12.6594 27.5905 12.7068L27.5903 12.7068V12.7184C27.5903 15.0491 25.4934 17.0456 22.7583 17.0456C20.0215 17.0456 17.8984 15.049 17.8947 12.7245C17.897 12.6669 17.9368 12.6175 17.9929 12.603L18.2138 12.546L18.3155 12.3417L22.1331 4.67495L22.4931 3.95208H21.6855H16.953H16.5467L16.4636 4.34976C16.2656 5.29659 15.5258 6.03635 14.579 6.23429L14.1813 6.31743V6.72371V17.7979V18.2402L14.6203 18.2942C16.4833 18.5235 17.8877 19.9267 18.0999 21.2529L18.1673 21.6739H18.5936H19.9565C20.0705 21.6896 20.1603 21.7794 20.176 21.8933V24.3597C20.1623 24.4244 20.1016 24.4698 20.0342 24.4627L20.0081 24.4599H19.9819H8.11889H8.09751L8.0762 24.4618L8.0699 24.4624L8.06531 24.4628C7.99828 24.4692 7.93829 24.4238 7.92477 24.3595V21.8933C7.94051 21.7794 8.03032 21.6896 8.14423 21.6739H9.50714H9.93349L10.0009 21.2529C10.2131 19.9267 11.6175 18.5235 13.4805 18.2942L13.9194 18.2402V17.7979V6.72365V6.31737L13.5218 6.23423C12.5749 6.03629 11.8352 5.29653 11.6372 4.3497L11.5541 3.95202H11.1478H6.41524H5.60772L5.96765 4.67489L9.7852 12.3417L9.88691 12.546L10.1079 12.603C10.1639 12.6175 10.2037 12.6669 10.2061 12.7245C10.2023 15.0472 8.04967 17.0456 5.34247 17.0456C2.63687 17.0456 0.510404 15.0473 0.510404 12.7184H0.510528L0.51028 12.7072C0.509215 12.6594 0.542208 12.6177 0.588796 12.6077L0.824403 12.557L0.931546 12.3412L5.21718 3.70681C5.23873 3.67019 5.27354 3.64386 5.31365 3.63268L5.51795 3.67808L5.57153 3.68999H5.62642H11.1793H11.5664L11.6634 3.3153C11.8879 2.448 12.5652 1.77073 13.4325 1.5462C14.7508 1.20493 16.0962 1.99698 16.4375 3.31531L16.5345 3.68999H16.9216H22.4745H22.5294L22.583 3.67808L22.7872 3.63268C22.8274 3.64386 22.8622 3.67019 22.8837 3.70681L27.1694 12.3412ZM1.33554 12.7862H0.713584L0.847217 13.3936C1.25014 15.2251 3.14626 16.7204 5.34247 16.7204C7.5679 16.7204 9.46591 15.2273 9.8693 13.3936L10.0029 12.7862H9.38098H1.33554ZM8.81308 12.5242H9.62375L9.25988 11.7998L5.78927 4.89019L5.34043 3.99659L4.89485 4.89183L1.45583 11.8014L1.09608 12.5242H1.90345H8.81308ZM19.9141 22.4359V21.9359H19.4141H8.68686H8.18686V22.4359V23.6979V24.1979H8.68686H19.4141H19.9141V23.6979V22.4359ZM17.3002 21.6739H17.9101L17.7905 21.0758C17.4775 19.5111 15.8513 18.4653 14.0505 18.4653C12.2496 18.4653 10.6234 19.5111 10.3105 21.0758L10.1908 21.6739H10.8007H17.3002ZM23.2061 4.89183L22.7605 3.99658L22.3116 4.8902L18.8411 11.7998L18.4772 12.5242H19.2879H26.1975H27.0048L26.6451 11.8014L23.2061 4.89183ZM18.72 12.7862H18.098L18.2317 13.3936C18.635 15.2273 20.533 16.7204 22.7584 16.7204C24.9547 16.7204 26.8508 15.2251 27.2537 13.3936L27.3873 12.7862H26.7654H18.72Z"
+                        fill="#CBCEDB"
+                        stroke="#888DA7"
+                      />
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <a
+                href="#!"
+                class="_card-product__title slide-popular__title slide-popular__title"
+              >
+                Доска настенная меловая для маркера размер 57x77 Black, Broun,
+                Green
+              </a>
+              <div class="_card-product__rating slide-popular__rating">
+                <div class="_card-product__stars slide-popular__stars">
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_filled.svg" alt="alt" />
+                  </div>
+                  <div class="_card-product__star slide-popular__star">
+                    <img src="img/assortment/star_empty.svg" alt="alt" />
+                  </div>
+                </div>
+                <div class="_card-product__reviews">5 отзывов</div>
+              </div>
+              <div class="_card-product__price slide-popular__price">
+                <div class="_card-product__current slide-popular__current">
+                  22890 руб
+                </div>
+                <div class="_card-product__old slide-popular__old">
+                  15050 руб
+                </div>
+              </div>
+              <div class="_card-product__actions slide-popular__actions">
+                <div class="_card-product__count slide-popular__count">
+                  <div class="_card-product__plus slide-popular__plus">+</div>
+                  <input type="number" value="1" min="1" max="100" class="_card-product__value slide-popular__value">
                   <div class="_card-product__minus slide-popular__minus">-</div>
                 </div>
                 <button
@@ -1917,15 +1917,15 @@
           </div>
         </div>
         <div class="popular__bottom">
-          <div class="sale__prev _arrow-prev _icon-arrow"></div>
-          <div class="sale__pagination _pagination"></div>
-          <div class="sale__next _arrow-next _icon-arrow"></div>
+          <div class="recent__prev _card-product__prev _arrow-prev _icon-arrow"></div>
+          <div class="recent__pagination _card-product__pagination _pagination"></div>
+          <div class="recent__next _card-product__next _arrow-next _icon-arrow"></div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- /.sale -->
+<!-- /.popular -->
 
         <!-- .production -->
 <section class="production">
