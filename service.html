@@ -235,7 +235,7 @@
 
 
       <!-- .main -->
-      <main class="main product-page not-index">
+      <main class="main service-page not-index">
         <!-- .sidebar -->
 <div class="sidebar">
   <div class="sidebar__body">
@@ -305,82 +305,121 @@
     <div class="crumbs__body">
       <ul class="crumbs__list">
         <li class="crumbs__home"><a class="_icon-home" href="#!"></a></li>
-        <li><a href="#!">Карточка товара</a></li>
+        <li><a href="#!">Карточка услуги</a></li>
       </ul>
     </div>
   </div>
 </div>
 <!-- /.crumbs -->
 
-        <!-- .product -->
-<section class="product">
-  <div class="product__container">
-    <div class="product__body">
-      <div class="product__item item-product">
-        <div
-          class="item-product__outer _good__outer"
-          data-da=".item-product__form,767.98,3"
-        >
-          <div class="item-product__watermark _good__watermark">
-            <img src="img/product-page/product/watermark.png" alt="" />
-          </div>
-          <div class="_card-product__categories item-product__categories">
-            <div
-              class="_card-product__category _card-product__category_new item-product__category"
-            >
-              NEW
-            </div>
-            <div
-              class="_card-product__category item-product__category _card-product__category_hot"
-            >
-              ХИТ
-            </div>
-            <div
-              class="_card-product__category item-product__category _card-product__category_sale"
-            >
-              -50%
-            </div>
-          </div>
+        <!-- .service -->
+<section class="service">
+  <div class="service__container">
+    <div class="service__body">
+      <form class="service-item item-service">
+        <div class="item-service__left">
           <div
-            class="item-product__slider swiper product__slider _good__slider"
+            class="item-service__outer _good__outer"
+            data-da=".item-service__right,767.98,3"
           >
-            <div class="item-product__wrapper swiper-wrapper">
-              <div class="item-product__slide swiper-slide">
-                <div class="item-product__img">
-                  <img src="img/product-page/product/1.png" alt="" />
+            <div class="item-service__watermark _good__watermark">
+              <img src="img/product-page/product/watermark.png" alt="" />
+            </div>
+            <div
+              class="item-service__slider swiper product__slider _good__slider"
+            >
+              <div class="item-service__wrapper swiper-wrapper">
+                <div class="item-service__slide swiper-slide">
+                  <div class="item-service__img">
+                    <img src="img/service-page/service/1.png" alt="" />
+                  </div>
                 </div>
-              </div>
-              <div class="item-product__slide swiper-slide">
-                <div class="item-product__img">
-                  <img src="img/product-page/product/1.png" alt="" />
+                <div class="item-service__slide swiper-slide">
+                  <div class="item-service__img">
+                    <img src="img/service-page/service/1.png" alt="" />
+                  </div>
                 </div>
-              </div>
-              <div class="item-product__slide swiper-slide">
-                <div class="item-product__img">
-                  <img src="img/product-page/product/1.png" alt="" />
+                <div class="item-service__slide swiper-slide">
+                  <div class="item-service__img">
+                    <img src="img/service-page/service/1.png" alt="" />
+                  </div>
                 </div>
               </div>
             </div>
+            <div
+              class="item-service__next product__next _icon-arrow _arrow-next _good__next"
+            ></div>
+            <div
+              class="item-service__pagination product__pagination _good__pagination"
+            ></div>
+            <div
+              class="item-service__prev product__prev _icon-arrow _arrow-prev _good__prev"
+            ></div>
           </div>
           <div
-            class="item-product__next product__next _icon-arrow _arrow-next _good__next"
-          ></div>
-          <div
-            class="item-product__pagination product__pagination _good__pagination"
-          ></div>
-          <div
-            class="item-product__prev product__prev _icon-arrow _arrow-prev _good__prev"
-          ></div>
+            class="item-service__card card-item-service"
+            data-da=".item-service__right,767.98,last"
+          >
+            <div class="card-item-service__icon">
+              <svg
+                width="53"
+                height="48"
+                viewBox="0 0 53 48"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.26465 2.32715H11.1792L17.1519 30.0232C17.3557 30.9755 17.9139 31.8309 18.7288 32.4398C19.5436 33.0486 20.5633 33.372 21.6092 33.3534H43.2715C44.3174 33.372 45.337 33.0486 46.1519 32.4398C46.9668 31.8309 47.5249 30.9755 47.7287 30.0232L51.2946 12.6692H13.4078M22.3224 43.6954C22.3224 44.8378 21.3246 45.7638 20.0938 45.7638C18.863 45.7638 17.8652 44.8378 17.8652 43.6954C17.8652 42.553 18.863 41.627 20.0938 41.627C21.3246 41.627 22.3224 42.553 22.3224 43.6954ZM46.8374 43.6954C46.8374 44.8378 45.8396 45.7638 44.6087 45.7638C43.3779 45.7638 42.3801 44.8378 42.3801 43.6954C42.3801 42.553 43.3779 41.627 44.6087 41.627C45.8396 41.627 46.8374 42.553 46.8374 43.6954Z"
+                  stroke="white"
+                  stroke-width="3"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="card-item-service__total">
+              Итого: <big>12 000</big> руб
+            </div>
+            <button class="card-item-service__submit _btn" type="button">
+              <svg
+                width="29"
+                height="26"
+                viewBox="0 0 29 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1.14062 1.29541H5.901L9.09045 16.0852C9.19928 16.5937 9.49735 17.0505 9.93249 17.3756C10.3676 17.7007 10.9121 17.8734 11.4706 17.8635H23.0383C23.5969 17.8734 24.1413 17.7007 24.5765 17.3756C25.0116 17.0505 25.3097 16.5937 25.4185 16.0852L27.3227 6.8181H7.09109M11.8515 23.3861C11.8515 23.9961 11.3187 24.4907 10.6614 24.4907C10.0041 24.4907 9.47133 23.9961 9.47133 23.3861C9.47133 22.7761 10.0041 22.2816 10.6614 22.2816C11.3187 22.2816 11.8515 22.7761 11.8515 23.3861ZM24.9425 23.3861C24.9425 23.9961 24.4097 24.4907 23.7524 24.4907C23.0952 24.4907 22.5624 23.9961 22.5624 23.3861C22.5624 22.7761 23.0952 22.2816 23.7524 22.2816C24.4097 22.2816 24.9425 22.7761 24.9425 23.3861Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+
+              <span>Заказать</span>
+            </button>
+            <p class="card-item-service__text">
+              Нажмите на кнопку <b>“заказать”</b> для оформаления заказа, если у
+              вас остались вопросы, нажмите на кнопку <b>“оставить заявку”</b> и
+              мы перезвоним вам в ближайшее время
+            </p>
+            <a href="#!" class="card-item-service__link _bordered-btn"
+              >Оставить заявку</a
+            >
+          </div>
         </div>
-        <form class="item-product__form">
-          <div class="item-product__top _good__top">
-            <div class="item-product__art _good__art">Арт 8456283</div>
-            <div class="item-product__available _good__available">
-              <div class="_icon-check item-product__available-icon _good__available-icon"></div>
+        <div class="item-service__right">
+          <div class="item-service__top _good__top">
+            <div class="item-service__art _good__art">Арт 8456283</div>
+            <div class="item-service__available _good__available">
+              <div
+                class="_icon-check item-service__available-icon _good__available-icon"
+              ></div>
               <span>В наличии</span>
             </div>
-            <div class="item-product__icons _good__icons">
-              <button class="item-product__icon _good__icon" type="button">
+            <div class="item-service__icons _good__icons">
+              <button class="item-service__icon _good__icon" type="button">
                 <svg
                   width="36"
                   height="30"
@@ -396,7 +435,7 @@
                   />
                 </svg>
               </button>
-              <button class="item-product__icon _good__icon" type="button">
+              <button class="item-service__icon _good__icon" type="button">
                 <svg
                   width="34"
                   height="28"
@@ -412,214 +451,590 @@
               </button>
             </div>
           </div>
-          <h1 class="item-product__title _good__title">
-            Штендер раскладной односторонний с алюминиевой клик рамкой формата
-            A1
+          <h1 class="item-service__title _good__title">
+            Объемные буквы (с фронтальным свечением)
           </h1>
-          <div class="_card-product__rating item-product__rating _good__rating">
-            <div class="_card-product__stars item-product__stars _good__stars">
-              <div class="_card-product__star item-product__star _good__star">
+          <div class="_card-product__rating item-service__rating _good__rating">
+            <div class="_card-product__stars item-service__stars _good__stars">
+              <div class="_card-product__star item-service__star _good__star">
                 <img src="img/assortment/star_filled.svg" alt="alt" />
               </div>
-              <div class="_card-product__star item-product__star _good__star">
+              <div class="_card-product__star item-service__star _good__star">
                 <img src="img/assortment/star_filled.svg" alt="alt" />
               </div>
-              <div class="_card-product__star item-product__star _good__star">
+              <div class="_card-product__star item-service__star _good__star">
                 <img src="img/assortment/star_filled.svg" alt="alt" />
               </div>
-              <div class="_card-product__star item-product__star _good__star">
+              <div class="_card-product__star item-service__star _good__star">
                 <img src="img/assortment/star_filled.svg" alt="alt" />
               </div>
-              <div class="_card-product__star item-product__star _good__star">
+              <div class="_card-product__star item-service__star _good__star">
                 <img src="img/assortment/star_empty.svg" alt="alt" />
               </div>
             </div>
-            <div class="_card-product__reviews item-product__reviews _good__reviews">
+            <div
+              class="_card-product__reviews item-service__reviews _good__reviews"
+            >
               5 отзывов
             </div>
           </div>
-          <div class="item-product__actions">
-            <div class="_card-product__count item-product__count">
-              <div class="_card-product__plus item-product__plus">+</div>
-              <input
-                type="number"
-                value="1"
-                min="1"
-                max="100"
-                class="_card-product__value item-product__value"
-              />
-              <div class="_card-product__minus item-product__minus">-</div>
+          <div class="item-service__price">от 2000 <small>руб</small></div>
+          <div class="item-service__equipment">
+            <div class="item-service__options">
+              <div class="item-service__option">
+                <div class="item-service__subtitle _good__subtitle">
+                  Цвет подсветки
+                </div>
+                <div class="_select item-service__select" data-state="">
+                  <div class="_select__backdrop"></div>
+                  <div class="_select__title"></div>
+                  <div class="_select__content">
+                    <div class="_select__item">
+                      <input
+                        id="1"
+                        type="radio"
+                        name="optionService"
+                        class="_select__input"
+                        checked
+                      />
+                      <label class="_select__label" for="popularity"
+                        >Лицевая подсветка</label
+                      >
+                    </div>
+                    <div class="_select__item">
+                      <input
+                        id="2"
+                        type="radio"
+                        name="optionService"
+                        class="_select__input"
+                      />
+                      <label class="_select__label" for="popularity"
+                        >Лицевая подсветка</label
+                      >
+                    </div>
+                    <div class="_select__item">
+                      <input
+                        id="3"
+                        type="radio"
+                        name="optionService"
+                        class="_select__input"
+                      />
+                      <label class="_select__label" for="popularity"
+                        >Лицевая подсветка</label
+                      >
+                    </div>
+                    <div class="_select__item">
+                      <input
+                        id="4"
+                        type="radio"
+                        name="optionService"
+                        class="_select__input"
+                      />
+                      <label class="_select__label" for="popularity"
+                        >Лицевая подсветка</label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="item-service__option">
+                <div class="item-service__subtitle _good__subtitle">
+                  Высота букв (см)
+                </div>
+                <div class="item-service__option-input">
+                  <input type="number" />
+                </div>
+              </div>
+              <div class="item-service__option">
+                <div class="item-service__subtitle _good__subtitle">
+                  Кол-во букв
+                </div>
+                <div class="item-service__option-input">
+                  <input type="number" />
+                </div>
+              </div>
             </div>
-            <div class="item-product__prices">
-              <div class="item-product__old">15050 руб</div>
-              <div class="item-product__current">22890 <small>руб</small></div>
+            <div class="item-service__bloom">
+              <div class="item-service__subtitle _good__subtitle">
+                Выберите цвет
+              </div>
+              <div class="item-service__colors _good__colors">
+                <div
+                  class="item-service__color _good__color _good__color_white"
+                >
+                  <input type="radio" name="productColors" id="color1" />
+                  <label style="background-color: #ffffff" for="color1"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color2" />
+                  <label style="background-color: #fed023" for="color2"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color3" />
+                  <label style="background-color: #f88e20" for="color3"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color4" />
+                  <label style="background-color: #c12026" for="color4"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color5" />
+                  <label style="background-color: #553274" for="color5"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color6" />
+                  <label style="background-color: #d73f27" for="color6"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color7" />
+                  <label style="background-color: #cd1a6c" for="color7"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color8" />
+                  <label style="background-color: #29449d" for="color8"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color9" />
+                  <label style="background-color: #0291c9" for="color9"></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color10" />
+                  <label
+                    style="background-color: #088744"
+                    for="color10"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color11" />
+                  <label
+                    style="background-color: #a7a7a7"
+                    for="color11"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color12" />
+                  <label
+                    style="background-color: #ececec"
+                    for="color12"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="color13" />
+                  <label
+                    style="background-color: #a28e51"
+                    for="color13"
+                  ></label>
+                </div>
+              </div>
+            </div>
+            <div class="item-service__bloom">
+              <div class="item-service__subtitle _good__subtitle">
+                Выберите цвет
+              </div>
+              <div class="item-service__colors _good__colors">
+                <div
+                  class="item-service__color _good__color _good__color_white"
+                >
+                  <input type="radio" name="serviceColor" id="scolor1" />
+                  <label
+                    style="background-color: #ffffff"
+                    for="scolor1"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor2" />
+                  <label
+                    style="background-color: #fed023"
+                    for="scolor2"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor3" />
+                  <label
+                    style="background-color: #f88e20"
+                    for="scolor3"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor4" />
+                  <label
+                    style="background-color: #c12026"
+                    for="scolor4"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor5" />
+                  <label
+                    style="background-color: #553274"
+                    for="scolor5"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor6" />
+                  <label
+                    style="background-color: #d73f27"
+                    for="scolor6"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor7" />
+                  <label
+                    style="background-color: #cd1a6c"
+                    for="scolor7"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor8" />
+                  <label
+                    style="background-color: #29449d"
+                    for="scolor8"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor9" />
+                  <label
+                    style="background-color: #0291c9"
+                    for="scolor9"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="serviceColor" id="scolor10" />
+                  <label
+                    style="background-color: #088744"
+                    for="scolor10"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="scolor11" />
+                  <label
+                    style="background-color: #a7a7a7"
+                    for="scolor11"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="scolor12" />
+                  <label
+                    style="background-color: #ececec"
+                    for="scolor12"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="productColors" id="scolor13" />
+                  <label
+                    style="background-color: #a28e51"
+                    for="scolor13"
+                  ></label>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="item-product__info">
-            <div class="item-product__subtitle _good__subtitle">Выберите цвет</div>
-            <div class="item-product__colors _good__colors">
-              <div class="item-product__color _good__color _good__color_white">
-                <input type="radio" name="productColors" id="color1" />
-                <label style="background-color: #ffffff" for="color1"></label>
+          <div class="item-service__addition">
+            <div class="item-service__set">
+              <div class="item-service__subtitle _good__subtitle">
+                Дополнительная комплектация:
               </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color2" />
-                <label style="background-color: #fed023" for="color2"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color3" />
-                <label style="background-color: #f88e20" for="color3"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color4" />
-                <label style="background-color: #c12026" for="color4"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color5" />
-                <label style="background-color: #553274" for="color5"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color6" />
-                <label style="background-color: #d73f27" for="color6"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color7" />
-                <label style="background-color: #cd1a6c" for="color7"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color8" />
-                <label style="background-color: #29449d" for="color8"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color9" />
-                <label style="background-color: #0291c9" for="color9"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color10" />
-                <label style="background-color: #088744" for="color10"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color11" />
-                <label style="background-color: #a7a7a7" for="color11"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color12" />
-                <label style="background-color: #ececec" for="color12"></label>
-              </div>
-              <div class="item-product__color _good__color">
-                <input type="radio" name="productColors" id="color13" />
-                <label style="background-color: #a28e51" for="color13"></label>
+              <div class="item-service__radios">
+                <div class="item-service__radio">
+                  <input type="radio" name="radio1" id="radio1" />
+                  <label for="radio1"><span>На раме</span></label>
+                </div>
+                <div class="item-service__radio">
+                  <input type="radio" name="radio1" id="radio2" />
+                  <label for="radio2"><span>Логотип</span></label>
+                </div>
               </div>
             </div>
-            <div class="item-product__features">
-              <div class="item-product__feature">
-                Ширина: <span>1000 мм</span>
+            <div class="item-service__substrate">
+              <div class="item-service__subtitle _good__subtitle">
+                Композитная подложка / короб
               </div>
-              <div class="item-product__feature">
-                Высота: <span>1000 мм</span>
+              <div class="item-service__colors _good__colors">
+                <div
+                  class="item-service__color _good__color _good__color_white"
+                >
+                  <input type="radio" name="aproductColors" id="acolor1" />
+                  <label
+                    style="background-color: #ffffff"
+                    for="acolor1"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor2" />
+                  <label
+                    style="background-color: #fed023"
+                    for="acolor2"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor3" />
+                  <label
+                    style="background-color: #f88e20"
+                    for="acolor3"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor4" />
+                  <label
+                    style="background-color: #c12026"
+                    for="acolor4"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor5" />
+                  <label
+                    style="background-color: #553274"
+                    for="acolor5"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor6" />
+                  <label
+                    style="background-color: #d73f27"
+                    for="acolor6"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor7" />
+                  <label
+                    style="background-color: #cd1a6c"
+                    for="acolor7"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor8" />
+                  <label
+                    style="background-color: #29449d"
+                    for="acolor8"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor9" />
+                  <label
+                    style="background-color: #0291c9"
+                    for="acolor9"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor10" />
+                  <label
+                    style="background-color: #088744"
+                    for="acolor10"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor11" />
+                  <label
+                    style="background-color: #a7a7a7"
+                    for="acolor11"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor12" />
+                  <label
+                    style="background-color: #ececec"
+                    for="acolor12"
+                  ></label>
+                </div>
+                <div class="item-service__color _good__color">
+                  <input type="radio" name="aproductColors" id="acolor13" />
+                  <label
+                    style="background-color: #a28e51"
+                    for="acolor13"
+                  ></label>
+                </div>
               </div>
-              <div class="item-product__feature">Вес: <span>1 кг</span></div>
+              <span>* Стоимсоть монтажа рассчитывается индивидуально</span>
+            </div>
+            <div class="item-service__set">
+              <div class="item-service__subtitle _good__subtitle">
+                Дополнительная комплектация:
+              </div>
+              <div class="item-service__radios">
+                <div class="item-service__radio">
+                  <input type="radio" name="radio2" id="radio3" />
+                  <label for="radio3"><span>Монтаж</span></label>
+                </div>
+                <div class="item-service__radio">
+                  <input type="radio" name="radio2" id="radio4" />
+                  <label for="radio4"><span>Блок питания</span></label>
+                </div>
+              </div>
+            </div>
+            <div class="item-service__upload upload-item-service">
+              <div class="upload-item-service__title _good__subtitle">
+                Загрузите макет
+              </div>
+              <div class="upload-item-service__main">
+                <div class="upload-item-service__placeholder"></div>
+                <div class="upload-item-service__button _bordered-btn">
+                  <input type="file" />
+                  <div class="upload-item-service__icon">
+                    <svg
+                      width="26"
+                      height="27"
+                      viewBox="0 0 26 27"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M1 17.3388L1 22.561C1 23.2535 1.2751 23.9177 1.76478 24.4073C2.25445 24.897 2.9186 25.1721 3.61111 25.1721H21.8889C22.5814 25.1721 23.2455 24.897 23.7352 24.4073C24.2249 23.9177 24.5 23.2535 24.5 22.561V17.3388M19.2778 10.811L12.75 17.3388M12.75 17.3388L6.22222 10.811M12.75 17.3388L12.75 1.67212"
+                        stroke="#8E4FD5"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="upload-item-service__text">Загрузить файл</div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="item-product__btns">
-            <a href="#!" class="_bordered-btn item-product__click">
-              <div class="_icon-cursor"></div>
-              Купить в 1 клик
-            </a>
-            <button class="item-product__btn _btn" type="button">
-              <svg
-                width="30"
-                height="26"
-                viewBox="0 0 30 26"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M1.98047 1.66455H6.74084L9.93029 16.4543C10.0391 16.9628 10.3372 17.4196 10.7723 17.7447C11.2075 18.0698 11.752 18.2425 12.3105 18.2326H23.8782C24.4367 18.2425 24.9812 18.0698 25.4163 17.7447C25.8515 17.4196 26.1495 16.9628 26.2584 16.4543L28.1625 7.18724H7.93094M12.6914 23.7553C12.6914 24.3653 12.1585 24.8598 11.5013 24.8598C10.844 24.8598 10.3112 24.3653 10.3112 23.7553C10.3112 23.1453 10.844 22.6507 11.5013 22.6507C12.1585 22.6507 12.6914 23.1453 12.6914 23.7553ZM25.7824 23.7553C25.7824 24.3653 25.2496 24.8598 24.5923 24.8598C23.935 24.8598 23.4022 24.3653 23.4022 23.7553C23.4022 23.1453 23.935 22.6507 24.5923 22.6507C25.2496 22.6507 25.7824 23.1453 25.7824 23.7553Z"
-                  stroke="white"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                />
-              </svg>
-              <span>В корзину</span>
-            </button>
-          </div>
-        </form>
-      </div>
-      <div class="product__info info-product" data-tabs>
-        <div class="info-product__tabs _tabs _good__tabs">
-          <div class="info-product__tab _good__tab _tabs__tab _active">Характеристики</div>
-          <div class="info-product__tab _good__tab _tabs__tab">Описание</div>
-          <div class="info-product__tab _good__tab _tabs__tab">Отзывы</div>
         </div>
-        <div class="info-product__contents _contents">
-          <div class="info-product__content _contents__content _active">
+      </form>
+      <div class="service__info info-service" data-tabs>
+        <div class="info-service__tabs _good__tabs _tabs">
+          <div class="info-service__tab _tabs__tab _good__tab _active">
             Характеристики
-            <b
-              >Штендер раскладной односторонний с алюминиевой клик рамкой
-              формата A1 (594х841 мм)</b
-            >
-            - удобный, современный и функциональный носитель Вашей рекламы.
-            Рекламный штендер, сделанный из алюминиевого клик профиля будет
-            отличной заменой некрасивым и устаревшим железным штендерам.
-            Отщелкивающий профиль рамки позволит Вам заменить плакат в рекламном
-            носителе за несколько секунд. <br /><br />
-            <b>Материалы изготовления:</b> <br />
-            Каркас штендера - алюминиевая квадратная труба, петли для
-            раскладывания штендера. Высота штендера может быть любой.
-            <br /><br />
-            Рекламное место - рамка из отщелкивающегося клик профиля шириной 25
-            мм. В комплектацию рамки входит ПВХ подложка, антибликовая пленка
-            для защиты плаката от внешних воздействий. Стандартный цвет рамки -
-            матовое серебро, анодированный алюминиевый профиль.
           </div>
-          <div class="info-product__content _contents__content">
-            Описание
-            <b
-              >Штендер раскладной односторонний с алюминиевой клик рамкой
-              формата A1 (594х841 мм)</b
-            >
-            - удобный, современный и функциональный носитель Вашей рекламы.
-            Рекламный штендер, сделанный из алюминиевого клик профиля будет
-            отличной заменой некрасивым и устаревшим железным штендерам.
-            Отщелкивающий профиль рамки позволит Вам заменить плакат в рекламном
-            носителе за несколько секунд. <br /><br />
-            <b>Материалы изготовления:</b> <br />
-            Каркас штендера - алюминиевая квадратная труба, петли для
-            раскладывания штендера. Высота штендера может быть любой.
+          <div class="info-service__tab _good__tab _tabs__tab">Описание</div>
+          <div class="info-service__tab _good__tab _tabs__tab">Отзывы</div>
+          <div class="info-service__tab _good__tab _tabs__tab">Видео</div>
+        </div>
+        <div class="info-service__contents _contents">
+          <div class="info-service__content _contents__content _active">
+            <b>Объемные буквы (с фронтальным свечением) ОТ 60 РУБ</b>
             <br /><br />
-            Рекламное место - рамка из отщелкивающегося клик профиля шириной 25
-            мм. В комплектацию рамки входит ПВХ подложка, антибликовая пленка
-            для защиты плаката от внешних воздействий. Стандартный цвет рамки -
-            матовое серебро, анодированный алюминиевый профиль.
-          </div>
-          <div class="info-product__content _contents__content">
-            Отзывы
-            <b
-              >Штендер раскладной односторонний с алюминиевой клик рамкой
-              формата A1 (594х841 мм)</b
-            >
-            - удобный, современный и функциональный носитель Вашей рекламы.
-            Рекламный штендер, сделанный из алюминиевого клик профиля будет
-            отличной заменой некрасивым и устаревшим железным штендерам.
-            Отщелкивающий профиль рамки позволит Вам заменить плакат в рекламном
-            носителе за несколько секунд. <br /><br />
-            <b>Материалы изготовления:</b> <br />
-            Каркас штендера - алюминиевая квадратная труба, петли для
-            раскладывания штендера. Высота штендера может быть любой.
+            Эстетичный внешний вид, различные варианты исполнения, несветовые и
+            световые, яркая светодиодная подсветка – все это оказывает
+            безупречное воздействие на восприятие вывески у потенциальных
+            клиентов. Они отличаются не только своей яркостью, но и экономичным
+            энергопотреблением.
             <br /><br />
-            Рекламное место - рамка из отщелкивающегося клик профиля шириной 25
-            мм. В комплектацию рамки входит ПВХ подложка, антибликовая пленка
-            для защиты плаката от внешних воздействий. Стандартный цвет рамки -
-            матовое серебро, анодированный алюминиевый профиль.
+            Высокая яркость светодиодного потока становится отличным “якорем” в
+            темное время суток, но при этом, экономичное энергопотребление будет
+            полностью окупать данный вид наружной рекламы. Среди существующих
+            рекламных конструкций, светодиодные объёмные буквы доказали свою
+            эффективность и результативность, что позволило занять им лидирующие
+            позиции. Практичность, надежность, простота монтажа, низкое
+            потребление энергии, эффективность и результативность, создают спрос
+            на данную продукцию.
           </div>
+          <div class="info-service__content _contents__content">
+            Описание <b>Объемные буквы (с фронтальным свечением) ОТ 60 РУБ</b>
+            <br /><br />
+            Эстетичный внешний вид, различные варианты исполнения, несветовые и
+            световые, яркая светодиодная подсветка – все это оказывает
+            безупречное воздействие на восприятие вывески у потенциальных
+            клиентов. Они отличаются не только своей яркостью, но и экономичным
+            энергопотреблением.
+            <br /><br />
+            Высокая яркость светодиодного потока становится отличным “якорем” в
+            темное время суток, но при этом, экономичное энергопотребление будет
+            полностью окупать данный вид наружной рекламы. Среди существующих
+            рекламных конструкций, светодиодные объёмные буквы доказали свою
+            эффективность и результативность, что позволило занять им лидирующие
+            позиции. Практичность, надежность, простота монтажа, низкое
+            потребление энергии, эффективность и результативность, создают спрос
+            на данную продукцию.
+          </div>
+          <div class="info-service__content _contents__content">
+            Отзывы <b>Объемные буквы (с фронтальным свечением) ОТ 60 РУБ</b>
+            <br /><br />
+            Эстетичный внешний вид, различные варианты исполнения, несветовые и
+            световые, яркая светодиодная подсветка – все это оказывает
+            безупречное воздействие на восприятие вывески у потенциальных
+            клиентов. Они отличаются не только своей яркостью, но и экономичным
+            энергопотреблением.
+            <br /><br />
+            Высокая яркость светодиодного потока становится отличным “якорем” в
+            темное время суток, но при этом, экономичное энергопотребление будет
+            полностью окупать данный вид наружной рекламы. Среди существующих
+            рекламных конструкций, светодиодные объёмные буквы доказали свою
+            эффективность и результативность, что позволило занять им лидирующие
+            позиции. Практичность, надежность, простота монтажа, низкое
+            потребление энергии, эффективность и результативность, создают спрос
+            на данную продукцию.
+          </div>
+          <div class="info-service__content _contents__content">
+            Видео <b>Объемные буквы (с фронтальным свечением) ОТ 60 РУБ</b>
+            <br /><br />
+            Эстетичный внешний вид, различные варианты исполнения, несветовые и
+            световые, яркая светодиодная подсветка – все это оказывает
+            безупречное воздействие на восприятие вывески у потенциальных
+            клиентов. Они отличаются не только своей яркостью, но и экономичным
+            энергопотреблением.
+            <br /><br />
+            Высокая яркость светодиодного потока становится отличным “якорем” в
+            темное время суток, но при этом, экономичное энергопотребление будет
+            полностью окупать данный вид наружной рекламы. Среди существующих
+            рекламных конструкций, светодиодные объёмные буквы доказали свою
+            эффективность и результативность, что позволило занять им лидирующие
+            позиции. Практичность, надежность, простота монтажа, низкое
+            потребление энергии, эффективность и результативность, создают спрос
+            на данную продукцию.
+          </div>
+        </div>
+      </div>
+      <div class="service__table table-service">
+        <div class="table-service__title">
+          Цены на объёмные буквы со световым лицом
+        </div>
+        <div class="table-service__table">
+          <div class="table-service__subtitle table-service__subtitle_long">Вид шрифта</div>
+          <div class="table-service__subtitle table-service__subtitle_wide">Стоимость буквы</div>
+          <div class="table-service__subtitle">10 см</div>
+          <div class="table-service__subtitle">20 см</div>
+          <div class="table-service__subtitle">30 см</div>
+          <div class="table-service__subtitle">40 см</div>
+          <div class="table-service__subtitle">50 см</div>
+          <div class="table-service__subtitle">60 см</div>
+          <div class="table-service__subtitle">70 см</div>
+          <div class="table-service__subtitle">80 см</div>
+          <div class="table-service__subtitle">90 см</div>
+          <div class="table-service__subtitle">100 см</div>
+         
+          <div class="table-service__item">Прямой шрифт</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+
+          <div class="table-service__item">Прописной шрифт</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+
+          <div class="table-service__item">Шрифт с засечками</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
+          <div class="table-service__item">850 руб</div>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- /.product -->
+<!-- /.service -->
 
         <!-- .popular -->
 <section class="popular ">
