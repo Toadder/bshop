@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Оформление заказа</title>
+  <meta name="robots" content="noindex" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Raleway:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+  <!-- STYLES -->
+  <link rel="stylesheet" href="css/style.min.css" />
+  <!-- Fancybox -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+  />
+  <!-- Swiper -->
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+  />
+</head>
+
+  <body>
+    <div class="wrapper">
+      <!-- .header -->
+<header class="header">
+  <div class="header__top top-header">
+    <div class="top-header__container">
+      <div class="top-header__body">
+        <div class="top-header__city city-topheader">
+          <div class="city-topheader__inner">
+            <b>Город: </b>
+            <span>Красноярск</span>
+          </div>
+        </div>
+        <div class="top-header__contact contact-topheader">
+          <div class="contact-topheader__item">
+            <div class="contact-topheader__icon">
+              <svg
+                width="15"
+                height="18"
+                viewBox="0 0 15 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.25 7.61035C14.25 12.6659 7.75 16.9992 7.75 16.9992C7.75 16.9992 1.25 12.6659 1.25 7.61035C1.25 5.88644 1.93482 4.23314 3.15381 3.01416C4.37279 1.79517 6.02609 1.11035 7.75 1.11035C9.47391 1.11035 11.1272 1.79517 12.3462 3.01416C13.5652 4.23314 14.25 5.88644 14.25 7.61035Z"
+                  stroke="#ED1F24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7.75 9.77702C8.94662 9.77702 9.91667 8.80697 9.91667 7.61035C9.91667 6.41373 8.94662 5.44369 7.75 5.44369C6.55338 5.44369 5.58333 6.41373 5.58333 7.61035C5.58333 8.80697 6.55338 9.77702 7.75 9.77702Z"
+                  stroke="#ED1F24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="contact-topheader__text">
+              ул. 60 лет октября, 109 офис 301
+            </div>
+          </div>
+          <div class="contact-topheader__item">
+            <div class="contact-topheader__icon">
+              <svg
+                width="20"
+                height="22"
+                viewBox="0 0 20 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M7.19727 20.9438V10.9438H13.1973V20.9438M1.19727 7.94385L10.1973 0.943848L19.1973 7.94385V18.9438C19.1973 19.4743 18.9866 19.983 18.6115 20.3581C18.2364 20.7331 17.7277 20.9438 17.1973 20.9438H3.19727C2.66683 20.9438 2.15812 20.7331 1.78305 20.3581C1.40798 19.983 1.19727 19.4743 1.19727 18.9438V7.94385Z"
+                  stroke="#ED1F24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="contact-topheader__text">
+              Офис ПН - ПТ с 10:00 до 18:00
+            </div>
+          </div>
+          <div class="contact-topheader__item">
+            <div class="contact-topheader__icon">
+              <svg
+                width="15"
+                height="16"
+                viewBox="0 0 15 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M14.4991 11.5025V13.6142C14.4999 13.8103 14.4597 14.0043 14.3812 14.184C14.3026 14.3636 14.1875 14.5248 14.043 14.6574C13.8985 14.7899 13.728 14.8908 13.5423 14.9536C13.3566 15.0164 13.1598 15.0397 12.9645 15.0221C10.7985 14.7867 8.71781 14.0466 6.88974 12.8611C5.18896 11.7803 3.747 10.3383 2.66625 8.63756C1.47661 6.80119 0.736281 4.71041 0.505225 2.53461C0.487635 2.33995 0.510768 2.14376 0.573153 1.95854C0.635538 1.77331 0.735808 1.60311 0.867577 1.45875C0.999347 1.3144 1.15973 1.19907 1.33851 1.1201C1.5173 1.04113 1.71057 1.00025 1.90602 1.00007H4.01777C4.35938 0.996706 4.69056 1.11768 4.94958 1.34043C5.2086 1.56319 5.37779 1.87253 5.4256 2.2108C5.51473 2.88661 5.68003 3.55016 5.91834 4.18881C6.01305 4.44076 6.03354 4.71457 5.9774 4.97781C5.92126 5.24105 5.79084 5.48268 5.60158 5.67407L4.7076 6.56804C5.70967 8.33033 7.16882 9.78948 8.9311 10.7915L9.82507 9.89757C10.0165 9.70831 10.2581 9.57788 10.5213 9.52174C10.7846 9.4656 11.0584 9.4861 11.3103 9.58081C11.949 9.81912 12.6125 9.98442 13.2883 10.0735C13.6303 10.1218 13.9426 10.294 14.1658 10.5575C14.389 10.821 14.5076 11.1573 14.4991 11.5025Z"
+                  stroke="#ED1F24"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="contact-topheader__phones">
+              <a href="tel:+74950000000" class="contact-topheader__phone"
+                >+7 (495) 000-00-00</a
+              >
+              <a href="tel:89650000000" class="contact-topheader__phone"
+                >8 (965) 000-00-00</a
+              >
+              <a href="tel:88000000000" class="contact-topheader__phone"
+                >8 (800) 000 00 00</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__bottom bottom-header">
+    <div class="bottom-header__container">
+      <div class="bottom-header__body">
+        <div class="bottom-header__burger">
+          <span></span>
+        </div>
+        <div class="bottom-header__logo logo">
+          <img src="img/logo.png" alt="alt" />
+        </div>
+        <nav class="bottom-header__nav" data-da=".header__mobile,767,first">
+          <ul class="bottom-header__list">
+            <li><a class="_active" href="#!">Наружная реклама</a></li>
+            <li><a href="#!">Товары</a></li>
+            <li><a href="#!">Доставка оплата</a></li>
+            <li><a href="#!">Галерея работ</a></li>
+            <li><a href="#!">Прайс -лист</a></li>
+            <li><a href="#!">Контакты</a></li>
+          </ul>
+        </nav>
+        <div class="bottom-header__actions">
+          <a href="#!" class="bottom-header__cart cart">
+            <div class="cart__icon">
+              <svg
+                width="36"
+                height="35"
+                viewBox="0 0 36 35"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 1.09277H7.16883L11.3019 21.7429C11.443 22.453 11.8292 23.0908 12.3931 23.5447C12.957 23.9986 13.6626 24.2398 14.3864 24.2259H29.3766C30.1004 24.2398 30.806 23.9986 31.3699 23.5447C31.9338 23.0908 32.32 22.453 32.461 21.7429L34.9286 8.80381H8.71104M14.8799 31.9369C14.8799 32.7886 14.1895 33.4791 13.3377 33.4791C12.486 33.4791 11.7955 32.7886 11.7955 31.9369C11.7955 31.0852 12.486 30.3947 13.3377 30.3947C14.1895 30.3947 14.8799 31.0852 14.8799 31.9369ZM31.8442 31.9369C31.8442 32.7886 31.1538 33.4791 30.302 33.4791C29.4503 33.4791 28.7598 32.7886 28.7598 31.9369C28.7598 31.0852 29.4503 30.3947 30.302 30.3947C31.1538 30.3947 31.8442 31.0852 31.8442 31.9369Z"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="cart__info">
+              <div class="cart__count">2 шт</div>
+              <div class="cart__cost">10 999 ₽</div>
+            </div>
+            <div class="cart__number">7</div>
+          </a>
+          <a href="#!" class="bottom-header__enter enter">
+            <div class="enter__icon _icon-user">
+              <svg
+                width="19"
+                height="21"
+                viewBox="0 0 19 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M17.7593 19.5684V17.5684C17.7593 16.5075 17.3378 15.4901 16.5877 14.7399C15.8376 13.9898 14.8201 13.5684 13.7593 13.5684H5.75928C4.69841 13.5684 3.681 13.9898 2.93085 14.7399C2.1807 15.4901 1.75928 16.5075 1.75928 17.5684V19.5684M13.7593 5.56836C13.7593 7.7775 11.9684 9.56836 9.75928 9.56836C7.55014 9.56836 5.75928 7.7775 5.75928 5.56836C5.75928 3.35922 7.55014 1.56836 9.75928 1.56836C11.9684 1.56836 13.7593 3.35922 13.7593 5.56836Z"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </div>
+            <div class="enter__text">
+              Вход/ <br />
+              Регистация
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="header__mobile mobile-header">
+    <div class="mobile-header__info">
+      <div class="mobile-header__item">
+        <div class="mobile-header__icon">
+          <img src="img/icons/mail.svg" alt="alt" />
+        </div>
+        <div class="mobile-header__text">
+          <a href="mailto:sale@bigformat-reklama.ru"
+            >sale@bigformat-reklama.ru</a
+          >
+        </div>
+      </div>
+      <div class="mobile-header__item">
+        <div class="mobile-header__icon">
+          <img src="img/icons/phone.svg" alt="alt" />
+        </div>
+        <div class="mobile-header__text">
+          <div><a href="tel:89650000000">8 (965) 000-00-00</a></div>
+          <div><a href="tel:73910000000">7(391) 000 00 00</a></div>
+        </div>
+      </div>
+      <div class="mobile-header__item">
+        <div class="mobile-header__icon">
+          <img src="img/icons/location.svg" alt="alt" />
+        </div>
+        <div class="mobile-header__text">
+          г. Красноярск ул. 60 лет октября, 109 офис 301
+        </div>
+      </div>
+      <div class="mobile-header__item">
+        <div class="mobile-header__icon">
+          <img src="img/icons/phone.svg" alt="alt" />
+        </div>
+        <div class="mobile-header__text">
+          <span>Офис с 10:00 до 18:00</span>
+          <span>Прием заявок 24/7</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<!-- /.header -->
+
+
+      <!-- .main -->
+      <main class="main order-page not-index">
+        <!-- .sidebar -->
+<div class="sidebar">
+  <div class="sidebar__body">
+    <a href="#!" class="sidebar__item">
+      <div class="sidebar__icon">
+        <svg
+          width="38"
+          height="31"
+          viewBox="0 0 38 31"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M26.727 0.317108C23.7042 0.300953 20.8306 1.6285 18.8835 3.94065C16.9486 1.61269 14.067 0.281375 11.04 0.317108C5.36562 0.317108 0.765625 4.91711 0.765625 10.5915C0.765625 20.3157 17.7368 29.8103 18.4249 30.1773C18.7025 30.3628 19.0646 30.3628 19.3423 30.1773C20.0303 29.8103 37.0015 20.4532 37.0015 10.5915C37.0015 4.91711 32.4014 0.317108 26.727 0.317108ZM18.8835 28.3425C16.2232 26.7831 2.60036 18.4809 2.60036 10.5915C2.60036 5.93043 6.37895 2.15175 11.0401 2.15175C13.8945 2.11426 16.5658 3.55401 18.1038 5.95879C18.4161 6.38942 19.0185 6.48538 19.4491 6.17301C19.5314 6.11331 19.6037 6.04105 19.6633 5.95879C22.2142 2.05764 27.4446 0.963012 31.3458 3.51388C33.734 5.07549 35.1714 7.73803 35.1667 10.5914C35.1668 18.5726 21.5439 26.8289 18.8835 28.3425Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <div class="sidebar__count">15</div>
+    </a>
+    <a href="#!" class="sidebar__item">
+      <div class="sidebar__icon">
+        <svg
+          width="41"
+          height="35"
+          viewBox="0 0 41 35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M40.0999 16.3916L33.9432 3.9875C33.7807 3.68726 33.4696 3.49715 33.1283 3.48952L32.7209 3.58007H24.7533C24.1643 1.3049 21.8424 -0.0619988 19.5673 0.526961C18.0705 0.914459 16.9016 2.08328 16.5141 3.58007H8.54659L8.13916 3.48952C7.79785 3.49715 7.48678 3.68726 7.32431 3.9875L1.16757 16.3916C0.764217 16.4783 0.479312 16.8392 0.488497 17.2518C0.488497 21.0545 3.92902 24.1781 8.13916 24.1781C12.3493 24.1781 15.8351 21.0545 15.8351 17.2518C15.8276 16.845 15.5499 16.4932 15.156 16.3916L9.67841 5.39088H16.4689C16.8113 7.02848 18.0907 8.30795 19.7283 8.6503V24.5402C16.7858 24.9024 14.477 27.1206 14.1148 29.3841H12.1229C11.5916 29.4268 11.1697 29.8487 11.1269 30.38V34.0016C11.1742 34.4995 11.6161 34.8647 12.1139 34.8174C12.1169 34.8171 12.1199 34.8168 12.1229 34.8165H29.1445C29.6418 34.8688 30.0873 34.5079 30.1395 34.0107C30.1398 34.0076 30.1401 34.0047 30.1404 34.0016V30.38C30.0976 29.8487 29.6757 29.4268 29.1444 29.3841H27.1525C26.7903 27.1206 24.4815 24.9024 21.539 24.5402V8.65039C23.1766 8.30804 24.456 7.02856 24.7984 5.39097H31.5889L26.1112 16.3916C25.7174 16.4932 25.4396 16.845 25.4321 17.2518C25.4321 21.0545 28.8727 24.1781 33.1281 24.1781C37.3834 24.1781 40.7787 21.0545 40.7787 17.2518C40.7882 16.8392 40.5033 16.4783 40.0999 16.3916ZM8.13916 22.2767C5.28717 22.2767 2.88783 20.3301 2.38986 18.0666H13.9338C13.4358 20.3301 11.0365 22.2767 8.13916 22.2767ZM13.1189 16.2557H3.20471L8.13916 6.3416L13.1189 16.2557ZM28.3297 31.1949V33.0057H12.9378V31.1949H28.3297ZM25.2966 29.3841H15.9709C16.3331 27.5733 18.2797 26.2152 20.6337 26.2152C22.9878 26.2152 24.9344 27.5733 25.2966 29.3841ZM20.6337 6.97536C19.2836 6.97536 18.1892 5.88089 18.1892 4.53079C18.1892 3.1807 19.2836 2.08623 20.6337 2.08623C21.9838 2.08623 23.0783 3.1807 23.0783 4.53079C23.0784 5.88089 21.9838 6.97536 20.6337 6.97536ZM33.1283 6.3416L38.0628 16.2557H28.1486L33.1283 6.3416ZM33.1283 22.2767C30.231 22.2767 27.8317 20.3301 27.3338 18.0666H38.8776C38.3796 20.3301 35.9804 22.2767 33.1283 22.2767Z"
+            fill="black"
+          />
+        </svg>
+      </div>
+      <div class="sidebar__count">5</div>
+    </a>
+    <a href="#!" class="sidebar__item">
+      <div class="sidebar__icon">
+        <svg
+          width="40"
+          height="35"
+          viewBox="0 0 40 35"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M1.72168 1.2832H8.36834L12.8216 21.9334C12.9736 22.6434 13.3897 23.2812 13.9973 23.7351C14.6049 24.1891 15.3651 24.4302 16.1449 24.4163H32.2963C33.0761 24.4302 33.8364 24.1891 34.444 23.7351C35.0515 23.2812 35.4677 22.6434 35.6197 21.9334L38.2783 8.99424H10.03M16.6767 32.1273C16.6767 32.9791 15.9328 33.6695 15.0151 33.6695C14.0974 33.6695 13.3534 32.9791 13.3534 32.1273C13.3534 31.2756 14.0974 30.5851 15.0151 30.5851C15.9328 30.5851 16.6767 31.2756 16.6767 32.1273ZM34.9551 32.1273C34.9551 32.9791 34.2111 33.6695 33.2934 33.6695C32.3757 33.6695 31.6317 32.9791 31.6317 32.1273C31.6317 31.2756 32.3757 30.5851 33.2934 30.5851C34.2111 30.5851 34.9551 31.2756 34.9551 32.1273Z"
+            stroke="black"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </div>
+      <div class="sidebar__count">
+        7
+      </div>
+    </a>
+  </div>
+</div>
+<!-- /.sidebar -->
+
+        <!-- .crumbs -->
+<div class="crumbs">
+  <div class="crumbs__container">
+    <div class="crumbs__body">
+      <ul class="crumbs__list">
+        <li class="crumbs__home"><a class="_icon-home" href="#!"></a></li>
+        <li><a href="#!">Оформление заказа</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- /.crumbs -->
+
+
+        <section class="order">
+          <div class="order__container">
+            <form class="order__body">
+              <h1 class="order__title _title">Оформление заказа</h1>
+              <div class="order__flex">
+                <div class="order__main">
+                  <div
+                    class="order__block block-order order__data data-order"
+                    data-tabs
+                  >
+                    <div class="block-order__top data-order__top">
+                      <div class="block-order__icon data-order__icon">
+                        <svg
+                          width="19"
+                          height="21"
+                          viewBox="0 0 19 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M17.416 19.085V17.085C17.416 16.0241 16.9946 15.0067 16.2444 14.2565C15.4943 13.5064 14.4769 13.085 13.416 13.085H5.41602C4.35515 13.085 3.33773 13.5064 2.58759 14.2565C1.83744 15.0067 1.41602 16.0241 1.41602 17.085V19.085M13.416 5.08496C13.416 7.2941 11.6252 9.08496 9.41602 9.08496C7.20688 9.08496 5.41602 7.2941 5.41602 5.08496C5.41602 2.87582 7.20688 1.08496 9.41602 1.08496C11.6252 1.08496 13.416 2.87582 13.416 5.08496Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="data-order__title block-order__title">
+                        Ваши контактные данные
+                      </div>
+                    </div>
+                    <div class="data-order__wrapper">
+                      <div class="data-order__tabs _tabs">
+                        <div class="data-order__tab _tabs__tab _active">
+                          Я новый покупатель
+                        </div>
+                        <div class="data-order__tab _tabs__tab">
+                          Я постоянный клиент
+                        </div>
+                      </div>
+                      <div class="data-order__forms _contents">
+                        <div class="data-order__new _contents__content _active">
+                          <div class="data-order__item _form__item">
+                            <div class="_form__input _form__input_name">
+                              <input
+                                type="text"
+                                class="_req"
+                                placeholder="Имя"
+                                data-type="name"
+                              />
+                            </div>
+                          </div>
+                          <div class="data-order__item _form__item">
+                            <div class="_form__input _form__input_name">
+                              <input
+                                type="text"
+                                class="_req"
+                                placeholder="Фамилия"
+                                data-type="surname"
+                              />
+                            </div>
+                          </div>
+                          <div class="data-order__item _form__item">
+                            <div class="_form__input _form__input_phone">
+                              <input
+                                type="tel"
+                                data-tel-input
+                                class="_req"
+                                placeholder="+7(___)___-__-__"
+                                data-type="phone"
+                              />
+                            </div>
+                          </div>
+                          <div class="data-order__item _form__item">
+                            <div class="_form__input _form__input_mail">
+                              <input
+                                class="_req _email"
+                                type="email"
+                                placeholder="Email"
+                                data-type="mail"
+                              />
+                            </div>
+                          </div>
+                          <div class="data-order__item _form__item">
+                            <div class="_form__input _form__input_location">
+                              <input
+                                class="_req"
+                                type="text"
+                                placeholder="Город"
+                                data-type="city"
+                              />
+                            </div>
+                          </div>
+                          <div class="data-order__checkbox">
+                            <input
+                              class="_req"
+                              type="checkbox"
+                              id="data-check"
+                            />
+                            <label for="data-check">
+                              <span
+                                >Я соглашаюсь с условимя
+                                <a href="#!"
+                                  >политики конфиденциальности</a
+                                ></span
+                              >
+                            </label>
+                          </div>
+                        </div>
+                        <div class="data-order__user _contents__content">
+                          <div class="data-order__enter">
+                            <div class="data-order__field _form__item">
+                              <div class="_form__input _form__input_mail">
+                                <input
+                                  type="text"
+                                  placeholder="Эл. почта или телефон"
+                                />
+                              </div>
+                            </div>
+                            <div class="data-order__field _form__item">
+                              <div class="_form__input _form__input_password">
+                                <input type="password" placeholder="Пароль" />
+                              </div>
+                              <div class="data-order__eye"></div>
+                            </div>
+                            <div class="data-order__bottom">
+                              <div class="data-order__checkbox">
+                                <input type="checkbox" id="data-remember" />
+                                <label for="data-remember">
+                                  <span>Запомнить меня</span>
+                                </label>
+                              </div>
+                              <a href="#!" class="data-order__recall">
+                                Напомнить пароль
+                              </a>
+                            </div>
+                            <button
+                              type="button"
+                              class="data-order__submit _btn"
+                            >
+                              Войти
+                            </button>
+                          </div>
+                          <div class="data-order__spacer">или</div>
+                          <div class="data-order__services">
+                            <a
+                              href="#!"
+                              class="data-order__facebook data-order__service"
+                            >
+                              <svg
+                                width="15"
+                                height="29"
+                                viewBox="0 0 15 29"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M4.3638 16.3109C4.25672 16.3109 2.01036 16.3115 0.97431 16.3105C0.44094 16.3102 0.250646 16.1185 0.250646 15.5817C0.249964 14.203 0.249623 12.8242 0.250646 11.4454C0.250987 10.9154 0.452194 10.7132 0.978744 10.7129C2.01479 10.7122 4.24888 10.7125 4.3638 10.7125C4.3638 10.6181 4.36346 8.62747 4.3638 7.71078C4.36448 6.35553 4.60627 5.05825 5.29481 3.87045C5.99972 2.65468 7.02554 1.82188 8.34021 1.34035C9.18221 1.03172 10.0563 0.908607 10.9498 0.907925C12.0677 0.907243 13.1856 0.908266 14.3038 0.910312C14.7843 0.910995 14.9974 1.12346 14.9985 1.60738C15.0005 2.90431 15.0005 4.20125 14.9985 5.49784C14.9978 5.98688 14.7935 6.18331 14.3021 6.18877C13.3857 6.19866 12.4687 6.19252 11.5534 6.22935C10.6289 6.22935 10.1425 6.68087 10.1425 7.6378C10.1204 8.64998 10.1333 9.66318 10.1333 10.7122C10.22 10.7122 12.851 10.7118 14.0808 10.7122C14.6394 10.7122 14.8303 10.9042 14.8303 11.4659C14.8303 12.8371 14.83 14.2088 14.829 15.58C14.8286 16.1335 14.6493 16.3102 14.0872 16.3105C12.8575 16.3112 10.2367 16.3109 10.1221 16.3109V27.4097C10.1221 28.0014 9.93588 28.1899 9.35204 28.1899C7.92858 28.1899 6.50479 28.1903 5.08133 28.1899C4.56535 28.1899 4.36414 27.9894 4.36414 27.4734C4.3638 23.8589 4.3638 16.4377 4.3638 16.3109Z"
+                                  fill="#3D6AD6"
+                                />
+                              </svg>
+                              <span>Facebook</span>
+                            </a>
+
+                            <a
+                              href="#!"
+                              class="data-order__google data-order__service"
+                            >
+                              <svg
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                xmlns="http://www.w3.org/2000/svg"
+                              >
+                                <path
+                                  d="M22.6456 9.97314H13.4107C13.0035 9.97314 12.6738 10.3028 12.6738 10.71V13.6623C12.6738 14.0695 13.0035 14.3991 13.4107 14.3991H18.6123C18.0451 15.8777 16.9786 17.1138 15.6261 17.8992L17.8415 21.7386C21.3949 19.6831 23.4988 16.0716 23.4988 12.0334C23.4988 11.4565 23.4552 11.0445 23.3728 10.584C23.3049 10.2301 22.9995 9.97314 22.6456 9.97314Z"
+                                  fill="#167EE6"
+                                />
+                                <path
+                                  d="M12.1801 18.8295C9.63501 18.8295 7.41475 17.4382 6.22221 15.3828L2.38281 17.5934C4.33645 20.9819 7.99648 23.2604 12.1801 23.2604C14.2355 23.2604 16.1697 22.7077 17.8422 21.743V21.7382L15.6268 17.8988C14.6088 18.4902 13.4356 18.8295 12.1801 18.8295Z"
+                                  fill="#12B347"
+                                />
+                                <path
+                                  d="M17.837 21.7432V21.7383L15.6216 17.8989C14.6084 18.4855 13.4352 18.8297 12.1797 18.8297V23.2605C14.2351 23.2605 16.1694 22.7079 17.837 21.7432Z"
+                                  fill="#0F993E"
+                                />
+                                <path
+                                  d="M5.29215 11.941C5.29215 10.6855 5.63634 9.51231 6.22291 8.49914L2.38351 6.28857C1.41397 7.95134 0.861328 9.88074 0.861328 11.941C0.861328 14.0013 1.41397 15.9307 2.38351 17.5935L6.22291 15.3829C5.63149 14.3697 5.29215 13.1966 5.29215 11.941Z"
+                                  fill="#FFD500"
+                                />
+                                <path
+                                  d="M12.1801 5.0524C13.838 5.0524 15.365 5.64383 16.5527 6.62307C16.8484 6.86545 17.275 6.84606 17.5417 6.57944L19.631 4.49007C19.9364 4.18466 19.9122 3.68534 19.5874 3.40418C17.595 1.66869 15.0014 0.621582 12.1801 0.621582C7.99648 0.621582 4.33645 2.90001 2.38281 6.28857L6.22221 8.49914C7.41475 6.4437 9.63501 5.0524 12.1801 5.0524Z"
+                                  fill="#FF4B26"
+                                />
+                                <path
+                                  d="M16.5523 6.62307C16.848 6.86545 17.2746 6.84606 17.5413 6.57944L19.6306 4.49007C19.936 4.18466 19.9118 3.68534 19.587 3.40418C17.5946 1.66869 15.0011 0.621582 12.1797 0.621582V5.0524C13.8376 5.0524 15.3646 5.63898 16.5523 6.62307Z"
+                                  fill="#D93F21"
+                                />
+                              </svg>
+                              <span>Google</span>
+                            </a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="order__block block-order order__book book-order">
+                    <div class="book-order__top">
+                      <div class="block-order__icon book-order__icon">
+                        <svg
+                          width="26"
+                          height="25"
+                          viewBox="0 0 26 25"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M1.74023 1.72314H5.95613L8.78077 15.8358C8.87715 16.3211 9.14113 16.757 9.52651 17.0672C9.91188 17.3774 10.3941 17.5422 10.8887 17.5327H21.1333C21.628 17.5422 22.1102 17.3774 22.4955 17.0672C22.8809 16.757 23.1449 16.3211 23.2413 15.8358L24.9276 6.99301H7.0101M11.226 22.8026C11.226 23.3847 10.7541 23.8565 10.1721 23.8565C9.58996 23.8565 9.11808 23.3847 9.11808 22.8026C9.11808 22.2205 9.58996 21.7486 10.1721 21.7486C10.7541 21.7486 11.226 22.2205 11.226 22.8026ZM22.8197 22.8026C22.8197 23.3847 22.3478 23.8565 21.7658 23.8565C21.1837 23.8565 20.7118 23.3847 20.7118 22.8026C20.7118 22.2205 21.1837 21.7486 21.7658 21.7486C22.3478 21.7486 22.8197 22.2205 22.8197 22.8026Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="block-order__title book-order__title">
+                        Ваш заказ
+                      </div>
+                      <button type="button" class="book-order__edit">
+                        <svg
+                          width="22"
+                          height="22"
+                          viewBox="0 0 22 22"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M19.3047 1.38721C18.8747 1.38721 18.4623 1.55802 18.1582 1.86208L8.75617 11.2642L7.99187 14.3213L11.0491 13.557L20.4511 4.15497C20.7552 3.85092 20.926 3.43853 20.926 3.00853C20.926 2.57853 20.7552 2.16614 20.4511 1.86208C20.1471 1.55802 19.7347 1.38721 19.3047 1.38721ZM17.4511 1.15497C17.9427 0.663381 18.6095 0.387207 19.3047 0.387207C19.9999 0.387207 20.6666 0.663381 21.1582 1.15497C21.6498 1.64657 21.926 2.31331 21.926 3.00853C21.926 3.70374 21.6498 4.37049 21.1582 4.86208L11.6582 14.3621C11.5942 14.4262 11.5139 14.4716 11.426 14.4936L7.42596 15.4936C7.25557 15.5362 7.07532 15.4863 6.95113 15.3621C6.82694 15.2379 6.77702 15.0576 6.81962 14.8873L7.81962 10.8873C7.8416 10.7993 7.88705 10.7191 7.95113 10.655L17.4511 1.15497ZM1.53692 3.24076C2.00576 2.77192 2.64165 2.50853 3.30469 2.50853H10.3047C10.5808 2.50853 10.8047 2.73238 10.8047 3.00853C10.8047 3.28467 10.5808 3.50853 10.3047 3.50853H3.30469C2.90686 3.50853 2.52533 3.66656 2.24403 3.94787C1.96272 4.22917 1.80469 4.6107 1.80469 5.00853V19.0085C1.80469 19.4064 1.96272 19.7879 2.24403 20.0692C2.52533 20.3505 2.90686 20.5085 3.30469 20.5085H17.3047C17.7025 20.5085 18.084 20.3505 18.3653 20.0692C18.6467 19.7879 18.8047 19.4064 18.8047 19.0085V12.0085C18.8047 11.7324 19.0285 11.5085 19.3047 11.5085C19.5808 11.5085 19.8047 11.7324 19.8047 12.0085V19.0085C19.8047 19.6716 19.5413 20.3075 19.0725 20.7763C18.6036 21.2451 17.9677 21.5085 17.3047 21.5085H3.30469C2.64165 21.5085 2.00576 21.2451 1.53692 20.7763C1.06808 20.3075 0.804688 19.6716 0.804688 19.0085V5.00853C0.804688 4.34549 1.06808 3.7096 1.53692 3.24076Z"
+                            fill="#888DA7"
+                          />
+                        </svg>
+                        <span>Редактировать</span>
+                      </button>
+                    </div>
+                    <div class="book-order__items">
+                      <div class="book-order__item">
+                        <div class="book-order__info">
+                          <div class="book-order__img">
+                            <img src="img/order-page/order/1.jpg" alt="" />
+                          </div>
+                          <div class="book-order__product">
+                            Штендер раскладной односторонний с алюминиевой клик
+                            рамкой формата A1
+                          </div>
+                        </div>
+                        <div class="book-order__features">
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Цена</div>
+                            <div class="book-order__feature-value">
+                              5000 руб
+                            </div>
+                          </div>
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Кол-во</div>
+                            <div class="book-order__feature-value">5</div>
+                          </div>
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Сумма</div>
+                            <div class="book-order__feature-value">
+                              25000 руб
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="book-order__item">
+                        <div class="book-order__info">
+                          <div class="book-order__img">
+                            <img src="img/order-page/order/1.jpg" alt="" />
+                          </div>
+                          <div class="book-order__product">
+                            Штендер раскладной односторонний с алюминиевой клик
+                            рамкой формата A1
+                          </div>
+                        </div>
+                        <div class="book-order__features">
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Цена</div>
+                            <div class="book-order__feature-value">
+                              5000 руб
+                            </div>
+                          </div>
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Кол-во</div>
+                            <div class="book-order__feature-value">5</div>
+                          </div>
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Сумма</div>
+                            <div class="book-order__feature-value">
+                              25000 руб
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="book-order__item">
+                        <div class="book-order__info">
+                          <div class="book-order__img">
+                            <img src="img/order-page/order/1.jpg" alt="" />
+                          </div>
+                          <div class="book-order__product">
+                            Штендер раскладной односторонний с алюминиевой клик
+                            рамкой формата A1
+                          </div>
+                        </div>
+                        <div class="book-order__features">
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Цена</div>
+                            <div class="book-order__feature-value">
+                              5000 руб
+                            </div>
+                          </div>
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Кол-во</div>
+                            <div class="book-order__feature-value">5</div>
+                          </div>
+                          <div class="book-order__feature">
+                            <div class="book-order__feature-name">Сумма</div>
+                            <div class="book-order__feature-value">
+                              25000 руб
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="order__block block-order order__delivery delivery-order"
+                  >
+                    <div class="delivery-order__top block-order__top">
+                      <div class="block-order__icon delivery-order__icon">
+                        <svg
+                          width="24"
+                          height="20"
+                          viewBox="0 0 24 20"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M16 14V1H1V14H16ZM16 14H23V9L20 6H16V14ZM8 16.5C8 17.8807 6.88071 19 5.5 19C4.11929 19 3 17.8807 3 16.5C3 15.1193 4.11929 14 5.5 14C6.88071 14 8 15.1193 8 16.5ZM21 16.5C21 17.8807 19.8807 19 18.5 19C17.1193 19 16 17.8807 16 16.5C16 15.1193 17.1193 14 18.5 14C19.8807 14 21 15.1193 21 16.5Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="block-order__title delivery-order__title">
+                        Доставка
+                      </div>
+                    </div>
+                    <div class="delivery-order__items">
+                      <a
+                        href="#cityPopup"
+                        class="delivery-order__city popup-link"
+                      >
+                        <svg
+                          width="24"
+                          height="30"
+                          viewBox="0 0 24 30"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M23.0391 12.7002C23.0391 21.4502 11.7891 28.9502 11.7891 28.9502C11.7891 28.9502 0.539062 21.4502 0.539062 12.7002C0.539063 9.71651 1.72433 6.85503 3.83411 4.74524C5.9439 2.63546 8.80538 1.4502 11.7891 1.4502C14.7727 1.4502 17.6342 2.63546 19.744 4.74524C21.8538 6.85503 23.0391 9.71651 23.0391 12.7002Z"
+                            stroke="#888DA7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                          <path
+                            d="M11.7891 16.4502C13.8601 16.4502 15.5391 14.7713 15.5391 12.7002C15.5391 10.6291 13.8601 8.9502 11.7891 8.9502C9.71799 8.9502 8.03906 10.6291 8.03906 12.7002C8.03906 14.7713 9.71799 16.4502 11.7891 16.4502Z"
+                            stroke="#888DA7"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                        <div class="delivery-order__content">
+                          <span class="delivery-order__upper">Ваш город</span>
+                          <div
+                            class="delivery-order__city-placeholder"
+                            data-checked="0"
+                          ></div>
+                        </div>
+                      </a>
+                      <div class="delivery-order__item">
+                        <input id="order1" type="radio" name="order" checked />
+                        <label for="order1">
+                          <div class="delivery-order__flex">
+                            <div class="delivery-order__content">
+                              <span class="delivery-order__upper">
+                                по тарифам перевозчика
+                              </span>
+                              <span
+                                >Самовывоз из отделений почтовых
+                                операторов</span
+                              >
+                            </div>
+                          </div>
+
+                          <a href="#!" class="delivery-order__item-link"
+                            >Выбрать точку выдачи</a
+                          >
+                        </label>
+                      </div>
+
+                      <div class="delivery-order__item">
+                        <input
+                          type="radio"
+                          name="order"
+                          id="order2"
+                          data-address
+                        />
+                        <label for="order2">
+                          <div class="delivery-order__flex">
+                            <div class="delivery-order__content">
+                              <span class="delivery-order__upper">
+                                по тарифам перевозчика
+                              </span>
+                              <span>Доставка курьером</span>
+                            </div>
+                          </div>
+
+                          <div class="delivery-order__address">
+                            <div class="delivery-order__address-grid">
+                              <input type="text" placeholder="Улица" />
+                              <input type="number" placeholder="Дом" />
+                              <input type="number" placeholder="Квартира" />
+                            </div>
+                            <div class="delivery-order__address-by">
+                              <div class="delivery-order__address-deliverer">
+                                <input id="mail" type="checkbox" />
+                                <label for="mail" data-color="#02468f">
+                                  <img
+                                    src="img/order-page/payment/7.png"
+                                    alt=""
+                                  />
+                                  <span data-color="#02468f">Почта России</span>
+                                </label>
+                              </div>
+                              <div class="delivery-order__address-deliverer">
+                                <input id="cdek" type="checkbox" />
+                                <label for="cdek" data-color="#00B33D">
+                                  <img
+                                    src="img/order-page/payment/8.png"
+                                    alt=""
+                                  />
+                                </label>
+                              </div>
+                            </div>
+                          </div>
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="order__block block-order order__payment payment-order"
+                  >
+                    <div class="block-order__top payment-order__top">
+                      <div class="block-order__icon payment-order__icon">
+                        <svg
+                          width="28"
+                          height="28"
+                          viewBox="0 0 28 28"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M5.00306 24.6845C4.90618 24.5875 4.77174 24.5318 4.63469 24.5318C4.49764 24.5318 4.3632 24.5875 4.26627 24.6845C4.16935 24.7815 4.11359 24.9159 4.11359 25.0529C4.11359 25.19 4.1693 25.3244 4.26627 25.4213C4.3632 25.5182 4.49764 25.574 4.63469 25.574C4.77174 25.574 4.90618 25.5183 5.00306 25.4213C5.09998 25.3244 5.15579 25.19 5.15579 25.0529C5.15579 24.9159 5.10003 24.7814 5.00306 24.6845Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M25.0369 10.5109C24.94 10.414 24.806 10.3583 24.6685 10.3583C24.5314 10.3583 24.397 10.414 24.3 10.5109C24.2032 10.6079 24.1474 10.7423 24.1474 10.8794C24.1474 11.0164 24.2031 11.1509 24.3 11.2477C24.397 11.3447 24.5314 11.4005 24.6685 11.4005C24.806 11.4005 24.94 11.3447 25.0369 11.2477C25.1343 11.1509 25.19 11.0164 25.19 10.8794C25.19 10.7423 25.1343 10.6079 25.0369 10.5109Z"
+                            fill="white"
+                          />
+                          <path
+                            d="M27.0974 1.13066C26.9996 1.03295 26.867 0.978027 26.7288 0.978027L13.91 0.978705C13.6223 0.978705 13.389 1.21205 13.389 1.49981V2.99L8.44951 4.31354C8.17151 4.38806 8.00653 4.67378 8.08104 4.95173L10.6411 14.5057L8.42643 16.7203C8.14457 16.3088 7.6713 16.0381 7.13597 16.0381H2.13356C1.27156 16.0381 0.570312 16.7394 0.570312 17.6014V26.0951C0.570312 26.9571 1.27156 27.6584 2.13356 27.6584H7.13603C7.86833 27.6584 8.48438 27.1521 8.65321 26.4713L9.2728 27.0117C9.75112 27.4287 10.3639 27.6584 10.9986 27.6584H26.7289C27.0167 27.6584 27.25 27.4251 27.25 27.1373V1.49913C27.2499 1.36093 27.1951 1.22836 27.0974 1.13066ZM7.65702 26.0951C7.65702 26.3824 7.42326 26.6162 7.13592 26.6162H2.13351C1.84618 26.6162 1.61241 26.3825 1.61241 26.0951V17.6014C1.61241 17.3141 1.84618 17.0803 2.13351 17.0803H4.11364V23.0831C4.11364 23.3709 4.34699 23.6042 4.63474 23.6042C4.92249 23.6042 5.15584 23.3709 5.15584 23.0831V17.0803H7.13597C7.42331 17.0803 7.65708 17.3141 7.65708 17.6014V26.0951H7.65702ZM9.22257 5.18534L13.389 4.06894V5.99988L13.0397 6.09347C12.9062 6.12927 12.7924 6.21655 12.7233 6.33625C12.6542 6.45594 12.6355 6.59815 12.6713 6.73166C12.8715 7.47897 12.4265 8.24983 11.6791 8.45009C11.5455 8.48594 11.4315 8.57339 11.3625 8.69334C11.2934 8.81325 11.2748 8.95572 11.3109 9.08933L13.3421 16.6108H12.2963L11.7573 14.5022C11.7402 14.4351 11.7101 14.3732 11.67 14.3195L9.22257 5.18534ZM13.389 8.38959V12.7867L12.4385 9.26744C12.8356 9.06244 13.1605 8.75572 13.389 8.38959ZM20.8753 26.6162H10.9985C10.6157 26.6162 10.2461 26.4777 9.95763 26.2261L8.69923 25.1287V17.9215L10.9742 15.6464L11.3869 17.2608C11.4458 17.4915 11.6536 17.6528 11.8917 17.6528L22.1367 17.6535C22.539 17.6535 22.8663 17.9807 22.8663 18.383C22.8663 18.7853 22.539 19.1125 22.1367 19.1125H16.8872C16.5994 19.1125 16.3661 19.3459 16.3661 19.6336C16.3661 19.9214 16.5994 20.1547 16.8872 20.1547H23.7678C24.1701 20.1547 24.4973 20.482 24.4973 20.8843C24.4973 21.2866 24.1701 21.6138 23.7678 21.6138H16.8872C16.5994 21.6138 16.3661 21.8472 16.3661 22.1349C16.3661 22.4227 16.5994 22.656 16.8872 22.656H22.6528C23.0551 22.656 23.3823 22.9833 23.3823 23.3856C23.3823 23.7879 23.0551 24.1151 22.6528 24.1151H16.8872C16.5994 24.1151 16.3661 24.3485 16.3661 24.6362C16.3661 24.924 16.5994 25.1573 16.8872 25.1573H20.8753C21.2776 25.1573 21.6049 25.4846 21.6049 25.8869C21.6048 26.2889 21.2776 26.6162 20.8753 26.6162ZM26.2078 26.6162H22.4892C22.5903 26.3935 22.647 26.1467 22.647 25.8866C22.647 25.6266 22.5903 25.3798 22.4892 25.1571H22.6528C23.6297 25.1571 24.4245 24.3623 24.4245 23.3854C24.4245 23.1005 24.3565 22.8312 24.2364 22.5925C24.9866 22.3864 25.5394 21.6988 25.5394 20.8842C25.5394 20.489 25.4093 20.1236 25.1897 19.8287V13.2243C25.1897 12.9365 24.9564 12.7032 24.6686 12.7032C24.3809 12.7032 24.1475 12.9365 24.1475 13.2243V19.154C24.0251 19.1271 23.8981 19.1125 23.7677 19.1125H23.7506C23.8516 18.8899 23.9084 18.643 23.9084 18.383C23.9084 17.406 23.1136 16.6113 22.1367 16.6113H21.299C22.1885 16.2299 22.8132 15.3458 22.8132 14.3182C22.8132 12.9431 21.6945 11.8243 20.3194 11.8243C18.9443 11.8243 17.8255 12.9431 17.8255 14.3182C17.8255 15.3458 18.4503 16.2299 19.3397 16.6113H16.4912V6.703C17.4221 6.50013 18.1566 5.76564 18.3594 4.8347H22.2792C22.482 5.76564 23.2166 6.50013 24.1475 6.703V8.3231C24.1475 8.61085 24.3808 8.8442 24.6686 8.8442C24.9563 8.8442 25.1897 8.61085 25.1897 8.3231V6.23776C25.1897 5.95001 24.9563 5.71666 24.6686 5.71666C23.8949 5.71666 23.2656 5.08722 23.2656 4.31359C23.2656 4.02584 23.0322 3.79249 22.7445 3.79249H17.8943C17.6065 3.79249 17.3732 4.02584 17.3732 4.31359C17.3732 5.08727 16.7438 5.71666 15.9701 5.71666C15.6824 5.71666 15.449 5.95001 15.449 6.23776V16.6113H14.4312V2.0208L26.2078 2.02023V26.6162ZM20.3195 15.7699C19.519 15.7699 18.8678 15.1187 18.8678 14.3183C18.8678 13.5179 19.5191 12.8666 20.3195 12.8666C21.1199 12.8666 21.7711 13.5178 21.7711 14.3182C21.7711 15.1186 21.1199 15.7699 20.3195 15.7699Z"
+                            fill="white"
+                          />
+                        </svg>
+                      </div>
+                      <div class="payment-order__title block-order__title">
+                        Оплата
+                      </div>
+                    </div>
+
+                    <div class="payment-order__items">
+                      <div class="payment-order__item">
+                        <input
+                          id="payment1"
+                          type="radio"
+                          name="payment"
+                          checked
+                        />
+                        <label for="payment1">
+                          <div>
+                            <span class="payment-order__upper"
+                              >Стоимость наложенного платежа оплачивается
+                              отдельно, по тарифам перевозчика</span
+                            >
+                            <span>Оплата при получении товара</span>
+                          </div>
+                        </label>
+                      </div>
+                      <div class="payment-order__item">
+                        <input
+                          type="radio"
+                          id="payment2"
+                          name="payment"
+                          data-drop=""
+                        />
+                        <label for="payment2">
+                          <span>Оплатить сейчас</span>
+                        </label>
+                      </div>
+                      <div class="payment-order__drop">
+                        <div class="payment-order__subitem">
+                          <input type="radio" name="pay_now" id="pay_now1" />
+                          <label for="pay_now1">
+                            <span>
+                              Банковская карта (Visa, Mastercard, Мир)
+                            </span>
+                          </label>
+                        </div>
+                        <div class="payment-order__subitem">
+                          <input type="radio" name="pay_now" id="pay_now2" />
+                          <label for="pay_now2">
+                            <img src="img/order-page/payment/1.png" alt="" />
+                          </label>
+                        </div>
+                        <div class="payment-order__subitem">
+                          <input type="radio" name="pay_now" id="pay_now3" />
+                          <label for="pay_now3">
+                            <span class="payment-order__flex">
+                              <img src="img/order-page/payment/2.png" alt="" />
+                              <span>Система быстрых платежей, QR - код</span>
+                            </span>
+                          </label>
+                        </div>
+                        <div class="payment-order__subitem">
+                          <input type="radio" name="pay_now" id="pay_now4" />
+                          <label for="pay_now4">
+                            <img src="img/order-page/payment/3.png" alt="" />
+                          </label>
+                        </div>
+                        <div class="payment-order__subitem">
+                          <input type="radio" name="pay_now" id="pay_now5" />
+                          <label for="pay_now5">
+                            <img src="img/order-page/payment/4.png" alt="" />
+                          </label>
+                        </div>
+                        <div class="payment-order__subitem">
+                          <input type="radio" name="pay_now" id="pay_now6" />
+                          <label for="pay_now6">
+                            <img src="img/order-page/payment/5.png" alt="" />
+                          </label>
+                        </div>
+                        <div class="payment-order__subitem">
+                          <input type="radio" name="pay_now" id="pay_now7" />
+                          <label for="pay_now7">
+                            <img src="img/order-page/payment/6.png" alt="" />
+                          </label>
+                        </div>
+                      </div>
+                      <div class="payment-order__item">
+                        <input type="radio" id="payment3" name="payment" />
+                        <label for="payment3">
+                          <span
+                            >Безналичный для юридических и физических лиц</span
+                          >
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="order__block block-order order__recipient recipient-order"
+                  >
+                    <div class="block-order__top recipient-order__top">
+                      <div class="block-order__icon recipient-order__icon">
+                        <svg
+                          width="19"
+                          height="21"
+                          viewBox="0 0 19 21"
+                          fill="none"
+                          xmlns="http://www.w3.org/2000/svg"
+                        >
+                          <path
+                            d="M17.416 19.085V17.085C17.416 16.0241 16.9946 15.0067 16.2444 14.2565C15.4943 13.5064 14.4769 13.085 13.416 13.085H5.41602C4.35515 13.085 3.33773 13.5064 2.58759 14.2565C1.83744 15.0067 1.41602 16.0241 1.41602 17.085V19.085M13.416 5.08496C13.416 7.2941 11.6252 9.08496 9.41602 9.08496C7.20688 9.08496 5.41602 7.2941 5.41602 5.08496C5.41602 2.87582 7.20688 1.08496 9.41602 1.08496C11.6252 1.08496 13.416 2.87582 13.416 5.08496Z"
+                            stroke="white"
+                            stroke-width="2"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                          />
+                        </svg>
+                      </div>
+                      <div class="recipient-order__title block-order__title">
+                        Контактные данные получателя заказа
+                      </div>
+                    </div>
+                    <p class="recipient-order__info">
+                      Внимание! Получение заказа по паспорту. Введите фамилию,
+                      имя, отчество и мобильный номер телефона получателя заказа
+                    </p>
+                    <div class="recipient-order__form">
+                      <div class="recipient-order__item _form__item">
+                        <div class="_form__input _form__input_name">
+                          <input
+                            type="text"
+                            class="_req"
+                            placeholder="Имя"
+                            data-type="name"
+                          />
+                        </div>
+                      </div>
+                      <div class="recipient-order__item _form__item">
+                        <div class="_form__input _form__input_name">
+                          <input
+                            type="text"
+                            class="_req"
+                            placeholder="Фамилия"
+                            data-type="surname"
+                          />
+                        </div>
+                      </div>
+                      <div class="recipient-order__item _form__item">
+                        <div class="_form__input _form__input_name">
+                          <input
+                            type="text"
+                            class="_req"
+                            placeholder="Отчество"
+                            data-type="patronymic"
+                          />
+                        </div>
+                      </div>
+                      <div class="recipient-order__item _form__item">
+                        <div class="_form__input _form__input_phone">
+                          <input
+                            type="tel"
+                            class="_req"
+                            placeholder="+7(___)___-__-__"
+                            data-tel-input=""
+                            data-type="phone"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="order__right">
+                  <div
+                    class="order__total total-order"
+                    data-da=".order__main,991.98,last"
+                  >
+                    <div class="total-order__promo">
+                      <span>Промокод</span>
+                      <button type="button">Добавить</button>
+                    </div>
+                    <div class="total-order__main">
+                      <div class="total-order__title">Итого:</div>
+                      <div class="total-order__row">
+                        <div class="total-order__item">1 товар на сумму</div>
+                        <div class="total-order__item">8500 руб</div>
+                      </div>
+                      <div class="total-order__row">
+                        <div class="total-order__item">Стоимость доставки</div>
+                        <div class="total-order__item">
+                          по тарифам перевозчика
+                        </div>
+                      </div>
+                      <div class="total-order__payment">
+                        <div class="total-order__item">К оплате</div>
+                        <div class="total-order__sum">8500 руб</div>
+                      </div>
+                      <a
+                        href="#popupSubmit"
+                        class="total-order__link popup-link _btn"
+                        >Заказ подтверждаю</a
+                      >
+                      <p class="total-order__text">
+                        Подтверждая заказ, я принимаю
+                        <a href="#!">условия пользовательского соглашения</a>
+                      </p>
+                    </div>
+                    <div class="total-order__bottom">
+                      <input type="checkbox" id="recall" />
+                      <label for="recall"
+                        ><span
+                          >Перезвоните мне для уточнения всех деталей</span
+                        ></label
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popup popup-order" id="cityPopup">
+                <div class="popup__body popup-order__body">
+                  <div class="popup__content popup-order__content">
+                    <div class="popup-order__inner">
+                      <div class="popup-order__top">
+                        <div class="popup-order__icon">
+                          <svg
+                            width="25"
+                            height="20"
+                            viewBox="0 0 25 20"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M16.4297 14V1H1.42969V14H16.4297ZM16.4297 14H23.4297V9L20.4297 6H16.4297V14ZM8.42969 16.5C8.42969 17.8807 7.3104 19 5.92969 19C4.54898 19 3.42969 17.8807 3.42969 16.5C3.42969 15.1193 4.54898 14 5.92969 14C7.3104 14 8.42969 15.1193 8.42969 16.5ZM21.4297 16.5C21.4297 17.8807 20.3104 19 18.9297 19C17.549 19 16.4297 17.8807 16.4297 16.5C16.4297 15.1193 17.549 14 18.9297 14C20.3104 14 21.4297 15.1193 21.4297 16.5Z"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="popup-order__title">
+                          Выберите свой город
+                        </div>
+                        <div class="popup-order__close close-popup">
+                          <svg
+                            width="41"
+                            height="41"
+                            viewBox="0 0 41 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M26.5555 15.2727L15.1555 26.6727M15.1555 15.2727L26.5555 26.6727M39.8555 20.9727C39.8555 31.4661 31.3489 39.9727 20.8555 39.9727C10.3621 39.9727 1.85547 31.4661 1.85547 20.9727C1.85547 10.4792 10.3621 1.97266 20.8555 1.97266C31.3489 1.97266 39.8555 10.4792 39.8555 20.9727Z"
+                              stroke="black"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="popup-order__grid">
+                        <div class="popup-order__item">
+                          <input type="radio" name="city" id="city1" />
+                          <label for="city1">Москва</label>
+                        </div>
+                        <div class="popup-order__item">
+                          <input type="radio" name="city" id="city2" /><label
+                            for="city2"
+                            >Екатеринбург</label
+                          >
+                        </div>
+                        <div class="popup-order__item">
+                          <input type="radio" name="city" id="city3" /><label
+                            for="city3"
+                            >Красноярск</label
+                          >
+                        </div>
+                        <div class="popup-order__item">
+                          <input type="radio" name="city" id="city4" /><label
+                            for="city4"
+                            >Новосибирск</label
+                          >
+                        </div>
+                        <div class="popup-order__item">
+                          <input type="radio" name="city" id="city5" /><label
+                            for="city5"
+                            >Москва</label
+                          >
+                        </div>
+                        <div class="popup-order__item">
+                          <input type="radio" name="city" id="city6" /><label
+                            for="city6"
+                            >Красноярск</label
+                          >
+                        </div>
+                        <div class="popup-order__item">
+                          <input type="radio" name="city" id="city7" /><label
+                            for="city7"
+                            >Екатеринбург</label
+                          >
+                        </div>
+                        <div class="popup-order__item">
+                          <input type="radio" name="city" id="city8" /><label
+                            for="city8"
+                            >Новосибирск</label
+                          >
+                        </div>
+                      </div>
+                      <div class="popup-order__bottom">
+                        Выбор города поможет предоставить актуальную информацию
+                        о наличии товара, его цены и способов доставки в вашем
+                        городе! Это поможет сохранить больше свободного времени
+                        для вас!
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="popup popup-order popup-submit" id="popupSubmit">
+                <div class="popup__body popup-order__body popup-submit__body">
+                  <div
+                    class="popup__content popup-order__content popup-submit__content"
+                  >
+                    <div class="popup-order__inner popup-submit__inner">
+                      <div class="popup-order__top popup-submit__top">
+                        <div class="popup-order__icon popup-submit__icon">
+                          <svg
+                            width="26"
+                            height="25"
+                            viewBox="0 0 26 25"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M1.09375 1.31299H5.30964L8.13429 15.4257C8.23067 15.9109 8.49465 16.3468 8.88002 16.657C9.26539 16.9673 9.7476 17.1321 10.2422 17.1226H20.4868C20.9815 17.1321 21.4637 16.9673 21.8491 16.657C22.2344 16.3468 22.4984 15.9109 22.5948 15.4257L24.2811 6.58285H6.36361M10.5795 22.3924C10.5795 22.9745 10.1077 23.4464 9.52557 23.4464C8.94348 23.4464 8.4716 22.9745 8.4716 22.3924C8.4716 21.8103 8.94348 21.3384 9.52557 21.3384C10.1077 21.3384 10.5795 21.8103 10.5795 22.3924ZM22.1732 22.3924C22.1732 22.9745 21.7014 23.4464 21.1193 23.4464C20.5372 23.4464 20.0653 22.9745 20.0653 22.3924C20.0653 21.8103 20.5372 21.3384 21.1193 21.3384C21.7014 21.3384 22.1732 21.8103 22.1732 22.3924Z"
+                              stroke="white"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                        <div class="popup-order__title popup-submit__title">
+                          Ваш заказ
+                        </div>
+                        <div class="popup-order__close close-popup">
+                          <svg
+                            width="41"
+                            height="41"
+                            viewBox="0 0 41 41"
+                            fill="none"
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <path
+                              d="M26.5555 15.2727L15.1555 26.6727M15.1555 15.2727L26.5555 26.6727M39.8555 20.9727C39.8555 31.4661 31.3489 39.9727 20.8555 39.9727C10.3621 39.9727 1.85547 31.4661 1.85547 20.9727C1.85547 10.4792 10.3621 1.97266 20.8555 1.97266C31.3489 1.97266 39.8555 10.4792 39.8555 20.9727Z"
+                              stroke="black"
+                              stroke-width="2"
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                            />
+                          </svg>
+                        </div>
+                      </div>
+                      <div class="popup-submit__items">
+                        <div class="book-order__item">
+                          <div class="book-order__info">
+                            <div class="book-order__img">
+                              <img src="img/order-page/order/1.jpg" alt="" />
+                            </div>
+                            <div class="book-order__product">
+                              Штендер раскладной односторонний с алюминиевой
+                              клик рамкой формата A1
+                            </div>
+                          </div>
+                          <div class="book-order__features">
+                            <div class="book-order__feature">
+                              <div class="book-order__feature-name">Цена</div>
+                              <div class="book-order__feature-value">
+                                5000 руб
+                              </div>
+                            </div>
+                            <div class="book-order__feature">
+                              <div class="book-order__feature-name">Кол-во</div>
+                              <div class="_card-product__count">
+                                <div class="_card-product__plus">+</div>
+                                <input
+                                  type="number"
+                                  value="1"
+                                  min="1"
+                                  max="100"
+                                  class="_card-product__value slide-popular__value"
+                                />
+                                <div class="_card-product__minus">-</div>
+                              </div>
+                            </div>
+                            <div class="book-order__feature">
+                              <div class="book-order__feature-name">Сумма</div>
+                              <div class="book-order__feature-value">
+                                25000 руб
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="book-order__item">
+                          <div class="book-order__info">
+                            <div class="book-order__img">
+                              <img src="img/order-page/order/1.jpg" alt="" />
+                            </div>
+                            <div class="book-order__product">
+                              Штендер раскладной односторонний с алюминиевой
+                              клик рамкой формата A1
+                            </div>
+                          </div>
+                          <div class="book-order__features">
+                            <div class="book-order__feature">
+                              <div class="book-order__feature-name">Цена</div>
+                              <div class="book-order__feature-value">
+                                5000 руб
+                              </div>
+                            </div>
+                            <div class="book-order__feature">
+                              <div class="book-order__feature-name">Кол-во</div>
+                              <div class="_card-product__count">
+                                <div class="_card-product__plus">+</div>
+                                <input
+                                  type="number"
+                                  value="1"
+                                  min="1"
+                                  max="100"
+                                  class="_card-product__value slide-popular__value"
+                                />
+                                <div class="_card-product__minus">-</div>
+                              </div>
+                            </div>
+                            <div class="book-order__feature">
+                              <div class="book-order__feature-name">Сумма</div>
+                              <div class="book-order__feature-value">
+                                25000 руб
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button class="popup-submit__btn _btn" type="submit">
+                        Оформить заказ
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+      </main>
+      <!-- /.main -->
+
+      <!-- .footer -->
+<footer class="footer">
+  <div class="footer__top top-footer">
+    <div class="top-footer__container">
+      <div class="top-footer__body">
+        <div class="top-footer__left">
+          <div class="top-footer__logo">
+            <img src="img/logo.png" alt="alt" />
+          </div>
+          <nav class="top-footer__nav">
+            <ul class="top-footer__list">
+              <li><a href="#!"> Наружная реклама </a></li>
+              <li><a href="#!">Товары</a></li>
+              <li><a href="#!">Доставка и оплата</a></li>
+              <li><a href="#!">Галерея работ</a></li>
+              <li><a href="#!">Прайс-лист</a></li>
+              <li><a href="#!">Контакты</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="top-footer__right">
+          <div class="top-footer__info info-topfooter">
+            <div class="info-topfooter__item">
+              <div class="info-topfooter__icon">
+                <svg
+                  width="20"
+                  height="22"
+                  viewBox="0 0 20 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7.43848 21.207V11.207H13.4385V21.207M1.43848 8.20703L10.4385 1.20703L19.4385 8.20703V19.207C19.4385 19.7375 19.2278 20.2462 18.8527 20.6212C18.4776 20.9963 17.9689 21.207 17.4385 21.207H3.43848C2.90804 21.207 2.39934 20.9963 2.02426 20.6212C1.64919 20.2462 1.43848 19.7375 1.43848 19.207V8.20703Z"
+                    stroke="#ED1F24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="info-topfooter__text">
+                Офис <br />
+                10:00 - 18:00 (Пн-Пт)
+              </div>
+            </div>
+            <div class="info-topfooter__item">
+              <div class="info-topfooter__icon">
+                <svg
+                  width="21"
+                  height="21"
+                  viewBox="0 0 21 21"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M19.9547 15.0082V17.8826C19.9558 18.1494 19.9012 18.4136 19.7943 18.6581C19.6874 18.9026 19.5306 19.122 19.334 19.3024C19.1373 19.4828 18.9052 19.6202 18.6524 19.7056C18.3996 19.7911 18.1318 19.8229 17.866 19.7989C14.9177 19.4785 12.0857 18.471 9.5974 16.8574C7.2824 15.3864 5.31969 13.4237 3.84864 11.1087C2.22938 8.6091 1.22169 5.76326 0.907191 2.8017C0.883248 2.53675 0.914736 2.26971 0.99965 2.01759C1.08456 1.76547 1.22105 1.5338 1.4004 1.33732C1.57976 1.14084 1.79806 0.983855 2.04141 0.876365C2.28476 0.768875 2.54783 0.713234 2.81386 0.712984H5.68824C6.15323 0.708407 6.60401 0.873066 6.95657 1.17627C7.30913 1.47947 7.53942 1.90053 7.60449 2.36096C7.72582 3.28083 7.95081 4.18401 8.27518 5.0533C8.40409 5.39623 8.43199 5.76893 8.35558 6.12724C8.27916 6.48555 8.10163 6.81444 7.84403 7.07494L6.62721 8.29176C7.99115 10.6905 9.97725 12.6766 12.376 14.0405L13.5928 12.8237C13.8533 12.5661 14.1822 12.3886 14.5405 12.3122C14.8988 12.2357 15.2715 12.2636 15.6144 12.3925C16.4837 12.7169 17.3869 12.9419 18.3068 13.0632C18.7722 13.1289 19.1973 13.3633 19.5011 13.7219C19.805 14.0806 19.9664 14.5383 19.9547 15.0082Z"
+                    stroke="#ED1F24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="info-topfooter__text">
+                <a href="tel:+74950000000">+7 (495) 000-00-00</a
+                ><a href="tel:+89650000000">+8 (965) 000-00-00</a>
+              </div>
+            </div>
+            <div class="info-topfooter__item">
+              <div class="info-topfooter__icon">
+                <svg
+                  width="19"
+                  height="22"
+                  viewBox="0 0 19 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M17.8023 8.86159C17.8023 15.2253 9.62038 20.6799 9.62038 20.6799C9.62038 20.6799 1.43848 15.2253 1.43848 8.86159C1.43848 6.69162 2.3005 4.61052 3.8349 3.07611C5.36931 1.54171 7.45041 0.679687 9.62038 0.679688C11.7904 0.679688 13.8715 1.54171 15.4059 3.07611C16.9403 4.61052 17.8023 6.69162 17.8023 8.86159Z"
+                    stroke="#ED1F24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M9.62038 11.5889C11.1266 11.5889 12.3477 10.3678 12.3477 8.86159C12.3477 7.35535 11.1266 6.13429 9.62038 6.13429C8.11414 6.13429 6.89308 7.35535 6.89308 8.86159C6.89308 10.3678 8.11414 11.5889 9.62038 11.5889Z"
+                    stroke="#ED1F24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="info-topfooter__text">
+                Красноярск. ул. 60 лет октября, 109 офис 301
+              </div>
+            </div>
+            <div class="info-topfooter__item">
+              <div class="info-topfooter__icon">
+                <svg
+                  width="24"
+                  height="26"
+                  viewBox="0 0 24 26"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.0037 2.75158C20.8519 2.59667 20.6031 2.59408 20.4483 2.7461C20.2934 2.89792 20.2908 3.1466 20.4428 3.30151C21.9149 4.80329 22.7257 6.78875 22.7257 8.89209V12.6629C22.7257 17.0669 19.1428 20.6498 14.7388 20.6498H10.13C10.0258 20.6498 9.92591 20.6912 9.85218 20.7649L6.75192 23.8652V20.3447C6.75192 20.1886 6.65942 20.0472 6.51642 19.9848C3.60517 18.7127 1.7241 15.8387 1.7241 12.6629V8.89209C1.7241 4.48813 5.30697 0.905203 9.71099 0.905203H14.7388C16.3084 0.905203 17.8274 1.36014 19.1316 2.22062C19.3127 2.34016 19.5563 2.29014 19.6758 2.10911C19.7952 1.92799 19.7454 1.68441 19.5643 1.56492C18.1312 0.619437 16.4626 0.119629 14.7388 0.119629H9.71094C4.87384 0.119629 0.938477 4.05499 0.938477 8.89209V12.6629C0.938477 16.0645 2.90342 19.1509 5.9663 20.5976V24.8135C5.9663 25.1553 6.39424 25.3337 6.63689 25.0913L10.2927 21.4355H14.7388C19.5759 21.4355 23.5113 17.5001 23.5113 12.663V8.89214C23.5112 6.58186 22.6207 4.40107 21.0037 2.75158Z"
+                    fill="#ED1F24"
+                  />
+                  <path
+                    d="M18.5247 15.7149L18.148 13.6743C18.1188 13.5162 17.9963 13.3919 17.8387 13.3604L14.8761 12.7679C14.7473 12.7422 14.6142 12.7824 14.5213 12.8753L13.3049 14.0918C11.2547 13.1766 10.1217 12.0414 9.12378 9.90332L10.3365 8.69064C10.4293 8.5978 10.4696 8.46464 10.4439 8.33585L9.85145 5.37315C9.8199 5.21555 9.69561 5.09307 9.53756 5.06392L7.49698 4.68728C7.44456 4.67748 7.39067 4.6787 7.33869 4.69051C6.80468 4.81181 6.31742 5.08092 5.9296 5.46878C5.25823 6.14021 5.00176 7.12121 5.18812 8.30557C5.27297 8.84477 5.39908 9.40341 5.56295 9.96598C5.6237 10.1743 5.84206 10.2937 6.04997 10.2333C6.25828 10.1726 6.37792 9.95457 6.31727 9.74625C6.16265 9.21558 6.0439 8.68976 5.96424 8.18339C5.81648 7.24413 5.99172 6.51769 6.48521 6.0242C6.74981 5.75955 7.07771 5.57073 7.4375 5.47505L9.13338 5.78816L9.63251 8.28377L8.37559 9.54064C8.26051 9.65577 8.22832 9.82988 8.29465 9.97852C9.43727 12.5374 10.7777 13.8768 13.2403 14.9203C13.3878 14.9827 13.5582 14.9495 13.6713 14.8363L14.9282 13.5794L17.4238 14.0785L17.7369 15.7744C17.6412 16.1342 17.4524 16.4621 17.1878 16.7267C16.6942 17.2201 15.9676 17.3954 15.0284 17.2475C13.1508 16.9521 10.5462 16.0405 8.8677 14.3686L8.8435 14.3445C8.07135 13.5692 7.38307 12.5 6.85323 11.2522C6.76838 11.0525 6.53783 10.9595 6.33814 11.0442C6.13845 11.129 6.04532 11.3596 6.13012 11.5593C6.69886 12.8984 7.44471 14.0532 8.28843 14.9005L8.31273 14.9246C10.125 16.7298 12.907 17.709 14.9063 18.0236C15.1572 18.0631 15.3989 18.0827 15.6305 18.0827C16.4924 18.0827 17.2139 17.8112 17.7431 17.2821C18.131 16.8942 18.4001 16.407 18.5214 15.873C18.5333 15.8212 18.5344 15.7673 18.5247 15.7149Z"
+                    fill="#ED1F24"
+                  />
+                  <path
+                    d="M13.0628 7.24236C12.8458 7.24236 12.67 7.41819 12.67 7.63517C12.67 7.85216 12.8458 8.02799 13.0628 8.02799C14.0014 8.02799 14.7649 8.79151 14.7649 9.73009C14.7649 9.94413 14.9437 10.1229 15.1577 10.1229C15.3718 10.1229 15.5505 9.94413 15.5505 9.73009C15.5505 8.35838 14.4345 7.24236 13.0628 7.24236Z"
+                    fill="#ED1F24"
+                  />
+                  <path
+                    d="M13.0628 5.56642C12.9087 5.56642 12.7532 5.57495 12.6007 5.59175C12.3851 5.61556 12.2296 5.80966 12.2533 6.02527C12.2771 6.24084 12.4711 6.39579 12.6869 6.37262C12.811 6.3589 12.9374 6.35195 13.0627 6.35195C14.9254 6.35195 16.4408 7.86734 16.4408 9.72999C16.4408 9.85541 16.4338 9.98185 16.4201 10.1059C16.3964 10.3216 16.5519 10.5157 16.7675 10.5395C16.9803 10.5624 17.1775 10.4053 17.201 10.1921C17.2178 10.0396 17.2263 9.88402 17.2263 9.72999C17.2264 7.43421 15.3586 5.56642 13.0628 5.56642Z"
+                    fill="#ED1F24"
+                  />
+                  <path
+                    d="M13.0628 3.89048C12.9137 3.89048 12.7628 3.89621 12.6142 3.90743C12.3979 3.92385 12.2358 4.11246 12.2522 4.32881C12.2687 4.54515 12.4564 4.70687 12.6736 4.69075C12.8025 4.68096 12.9335 4.67606 13.0629 4.67606C15.8496 4.67606 18.1168 6.94327 18.1168 9.73004C18.1168 10.1244 18.0713 10.5168 17.9816 10.8967C17.933 11.1024 18.0618 11.3147 18.2663 11.3674C18.4764 11.4216 18.6963 11.2883 18.7461 11.0773C18.8498 10.6384 18.9024 10.1852 18.9024 9.73004C18.9024 6.51014 16.2828 3.89048 13.0628 3.89048Z"
+                    fill="#ED1F24"
+                  />
+                </svg>
+              </div>
+              <div class="info-topfooter__text">
+                <a href="tel:+88000000000">+8 (800) 000 00 00</a>
+              </div>
+            </div>
+            <div class="info-topfooter__item">
+              <div class="info-topfooter__icon">
+                <svg
+                  width="22"
+                  height="18"
+                  viewBox="0 0 22 18"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M21.4385 2.81934C21.4385 1.71934 20.5385 0.819336 19.4385 0.819336H3.43848C2.33848 0.819336 1.43848 1.71934 1.43848 2.81934M21.4385 2.81934V14.8193C21.4385 15.9193 20.5385 16.8193 19.4385 16.8193H3.43848C2.33848 16.8193 1.43848 15.9193 1.43848 14.8193V2.81934M21.4385 2.81934L11.4385 9.81934L1.43848 2.81934"
+                    stroke="#ED1F24"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <div class="info-topfooter__text">
+                <a href="mailto:sale@bigformat-reklama.ru"
+                  >sale@bigformat-reklama.ru</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="top-footer__action action-topfooter">
+            <div class="action-topfooter__application">
+              <div class="action-topfooter__title">
+                Приём заявок круглосуточно
+              </div>
+              <a href="#!" class="action-topfooter__btn _bordered-btn"
+                >Оставить заявку</a
+              >
+            </div>
+            <div
+              class="action-topfooter__socials"
+              data-da=".info-topfooter,1300,last"
+            >
+              <div class="action-topfooter__title">Присоединяйтесь к нам</div>
+              <div class="action-topfooter__links">
+                <a href="#!" class="action-topfooter__link">
+                  <img src="img/icons/instagram.svg" alt="alt" />
+                </a>
+                <a href="#!" class="action-topfooter__link">
+                  <img src="img/icons/vk.svg" alt="alt" />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom bottom-footer">
+    <div class="bottom-footer__container">
+      <div class="bottom-footer__body">
+        <div class="bottom-footer__copy">
+          Все права защищены bigformat-reklama.ru 2021 © ИНН 2464148755 ОГРН
+          246401001
+        </div>
+        <div class="bottom-footer__about">
+          <span>Создание сайта</span>
+          <img src="img/logo.png" alt="alt" />
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- /.footer -->
+
+    </div>
+
+    <!-- Swiper -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <!-- SCRIPTS -->
+    <script src="js/app.min.js"></script>
+  </body>
+</html>

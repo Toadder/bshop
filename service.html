@@ -705,21 +705,21 @@
                   ></label>
                 </div>
                 <div class="item-service__color _good__color">
-                  <input type="radio" name="productColors" id="scolor11" />
+                  <input type="radio" name="serviceColor" id="scolor11" />
                   <label
                     style="background-color: #a7a7a7"
                     for="scolor11"
                   ></label>
                 </div>
                 <div class="item-service__color _good__color">
-                  <input type="radio" name="productColors" id="scolor12" />
+                  <input type="radio" name="serviceColor" id="scolor12" />
                   <label
                     style="background-color: #ececec"
                     for="scolor12"
                   ></label>
                 </div>
                 <div class="item-service__color _good__color">
-                  <input type="radio" name="productColors" id="scolor13" />
+                  <input type="radio" name="serviceColor" id="scolor13" />
                   <label
                     style="background-color: #a28e51"
                     for="scolor13"
@@ -2419,15 +2419,20 @@
             уточнения деталей.
           </p>
           <form class="help__form _form form-help">
-            <div
-              class="form-help__item _form__item _form__item_name form-help__item_name"
-            >
-              <input class="_req" type="text" placeholder="Ваше имя" />
+            <div class="form-help__item _form__item">
+              <div class="_form__input _form__input_name">
+                <input type="text" class="_req" placeholder="Ваше имя" data-type="name" />
+              </div>
             </div>
-            <div
-              class="form-help__item _form__item _form__item_phone form-help__item_phone"
-            >
-              <input class="_req" type="tel" data-tel-input placeholder="+7(___)___-__-__" />
+            <div class="form-help__item _form__item">
+              <div class="_form__input _form__input_phone">
+                <input data-type="phone"
+                  type="tel"
+                  data-tel-input
+                  class="_req"
+                  placeholder="+7(___)___-__-__"
+                />
+              </div>
             </div>
             <button class="form-help__submit _btn" type="submit">
               Заказать
@@ -2441,7 +2446,12 @@
               Скачать прайс-лист
             </a>
             <div class="form-help__checkbox">
-              <input class="_req" id="formHelpCheckbox" type="checkbox" checked />
+              <input
+                class="_req"
+                id="formHelpCheckbox"
+                type="checkbox"
+                checked
+              />
               <label for="formHelpCheckbox">
                 <span
                   >Я соглашаюсь с условимя
