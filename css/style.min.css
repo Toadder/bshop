@@ -2089,7 +2089,6 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 23px;
   line-height: 1.0833333333;
   color: #ffffff;
-  margin-bottom: 10px;
 }
 
 .categories__link {
@@ -7309,7 +7308,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .categories__name {
     font-size: 20px;
-    margin-bottom: 7.5px;
   }
 
   .categories__link {
@@ -8910,7 +8908,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .categories__name {
     font-size: 12px;
-    margin-bottom: 4px;
   }
 
   .categories__link {
