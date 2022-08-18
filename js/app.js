@@ -1132,6 +1132,50 @@ function sliders() {
     });
   }
   // СЛАЙДЕР ТОВАР/УСЛУГА
+
+  if(document.querySelector('.right-form-nameplates__slider')) {
+    new Swiper('.right-form-nameplates__slider', {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 16,
+      speed: 800,
+      grid: {
+        fill: 'row',
+        rows: 3,
+      },
+      loop: false,
+      navigation: {
+        nextEl: '.right-form-nameplates__next',
+        prevEl: '.right-form-nameplates__prev',
+      },
+       pagination: {
+        el: `.right-form-nameplates__pagination`,
+        type: "bullets",
+        clickable: true,
+        renderBullet: function(index, className) {
+          return '<span class="' + className + '">' + (index + 1) + '</span>';
+        },
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          spaceBetween: 10,
+          grid: {
+            fill: 'row',
+            rows: 2,
+          },
+        },
+        // when window width is >= 480px
+        768: {
+          spaceBetween: 16,
+          grid: {
+            fill: 'row',
+            rows: 3,
+          },
+        },
+      }
+    });
+  }
 }
 
 // Анимация в блоке steps на главной странице
@@ -1300,6 +1344,26 @@ function preloader() {
   });
 }
 
+// Конструктор табличек
+function tableConstructor() {
+  const bg = document.querySelector('.left-form-nameplates__bg');
+  if(bg) {
+    document.addEventListener('click', (event) => {
+      const target = event.target;
+
+      if(target.classList.contains('left-form-nameplates__item')) {
+        const activeBg = document.querySelector('.left-form-nameplates__item_active');
+        const clickedBgUrl = target.style.backgroundImage;
+
+        activeBg.classList.remove('left-form-nameplates__item_active');
+        target.classList.add('left-form-nameplates__item_active');
+
+        bg.style.backgroundImage = clickedBgUrl;
+      }
+    });
+  }
+}
+
 // ---> Инициализация скриптов <--
 preloader();
 ymap();
@@ -1316,6 +1380,7 @@ tabs();
 amount();
 steps();
 order();
+tableConstructor();
 
 // ---> Динамический адаптив <---
 const dynamicAdapt = new DynamicAdapt("max");
