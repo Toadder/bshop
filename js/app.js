@@ -627,6 +627,7 @@ function popup() {
       popupLink.addEventListener("mouseover", () => {
         const popupName = popupLink.getAttribute("href").replace("#", "");
         const currentPopup = document.getElementById(popupName);
+        if (!currentPopup) return;
         const lazyImages = currentPopup.querySelectorAll(
           "img[data-src], source[data-srcset]"
         );
@@ -1523,31 +1524,75 @@ function anchorScroll() {
   }
 }
 
-// Item zoom (category.html)
-function itemZoom() {
-  const viewTriggers = document.querySelectorAll(".item-manufacture__view");
-  if (!viewTriggers.length) return;
+function categoriesMenu() {
+  const categoriesWrappers = document.querySelectorAll(".category__wrapper");
+  const headerMenu = document.querySelector(".mobile-header");
+  const headerBurger = document.querySelector(".bottom-header__burger");
+  if (!categoriesWrappers.length) return;
 
-  for (let i = 0; i < viewTriggers.length; i++) {
-    const trigger = viewTriggers[i];
-    const images = trigger.dataset.images.split(", ");
-    const imagesObj = images.map((imageUrl) => ({
-      src: imageUrl,
-      type: "image",
-    }));
+  document.addEventListener("click", (e) => {
+    if (window.innerWidth >= 768) return;
 
-    trigger.addEventListener("click", () => {
-      Fancybox.show(imagesObj);
-    });
+    e.preventDefault();
+    const target = e.target;
+
+    if (target.closest(".category__wrapper._opened")) {
+      ajaxLoading(target);
+    } else if (target.closest(".category__item")) {
+      const categoryWrapper = target.closest(".category__wrapper");
+
+      if (
+        categoryWrapper.querySelector(".category__list") &&
+        !categoryWrapper.classList.contains("_opened")
+      ) {
+        closeAllCategories();
+
+        categoryWrapper.classList.add("_opened");
+        $(".category__wrapper._opened .category__list").slideDown(400);
+      } else {
+        ajaxLoading(target);
+      }
+    }
+  });
+
+  function ajaxLoading(target) {
+    // ТЕКУЩАЯ ССЫЛКА
+    const item = target.closest(".category__item") || target.closest(".category__sublink");
+    if (!item) return;
+
+    // !AJAX-ПОДГРУЗКА КОНТЕНТА КАТЕГОРИИ!
+    const categoryWrapper = target.closest(".category__wrapper");
+    const activeCategory = document.querySelector(".category__wrapper._active");
+
+    // ОБНУЛЯЕМ СТИЛИ ВСЕХ РАЗВЁРНУТЫХ КАТЕГОРИЙ
+    closeAllCategories();
+    // У ПРЕДЫДУЩЕЙ АКТИВНОЙ ОБОЛОЧКИ УБИРАЕМ АКТИВНЫЙ КЛАСС
+    activeCategory.classList.remove("_active");
+    // К ТЕКУЩЕЙ ОБОЛОЧКЕ ДОБАВЛЯЕМ АКТИВНЫЙ КЛАСС
+    categoryWrapper.classList.add("_active");
+
+    // ПОСЛЕ ТОГО, КАК ИЗМЕНИЛОСЬ ОТОБРАЖЕНИЕ В МЕНЮ
+    setTimeout(() => {
+      // ЗАКРЫВАЕМ МЕНЮ
+      headerMenu.classList.remove("_active");
+      // МЕНЯЕМ ОТОБРАЖЕНИЕ БУРГЕРА
+      headerBurger.classList.remove("_active");
+    }, 400);
+
+  }
+
+  function closeAllCategories() {
+    $(".category__wrapper._opened .category__list").slideUp(400);
+    _removeClass(categoriesWrappers, "_opened");
   }
 }
 
 // ---> Инициализация скриптов <--
 preloader();
 platesInit();
+categoriesMenu();
 anchorScroll();
 ymap();
-itemZoom();
 phoneMask();
 formCheck();
 isWebp();

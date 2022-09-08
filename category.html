@@ -135,24 +135,19 @@
               <div class="bottom-header__burger">
                 <span></span>
               </div>
-              <div class="bottom-header__logo logo">
+              <a href="./index.html" class="bottom-header__logo logo">
                 <picture
                   ><source srcset="img/logo.webp" type="image/webp" />
                   <img src="img/logo.png" alt="alt"
                 /></picture>
-              </div>
+              </a>
               <nav
                 class="bottom-header__nav"
                 data-da=".header__mobile,767,first"
               >
                 <ul class="bottom-header__list">
-                  <li>
+                  <li class="bottom-header__categories-wrapper">
                     <a class="_active" href="./index.html">Наружная реклама</a>
-                    <ul class="bottom-header__sublist">
-                      <li><a href="#">Какая-то подкатегория</a></li>
-                      <li><a href="#">Какая-то подкатегория</a></li>
-                      <li><a href="#">Какая-то подкатегория</a></li>
-                    </ul>
                   </li>
                   <li><a href="./catalog.html">Товары</a></li>
                   <li><a href="./delivery.html">Доставка оплата</a></li>
@@ -352,7 +347,10 @@
         <section class="category">
           <div class="category__container">
             <div class="category__body">
-              <div class="category__categories">
+              <div
+                class="category__categories"
+                data-da=".bottom-header__categories-wrapper,767.98,last"
+              >
                 <div class="category__wrapper _active _has-menu">
                   <a href="#!" class="category__item">
                     <div class="category__icon">
@@ -388,12 +386,69 @@
                     <div class="category__text">Реклама на авто</div>
                   </a>
                   <ul class="category__list">
-                    <li><a href="">Какое-то название подкатегории</a></li>
-                    <li><a href="">Какое-то название подкатегории</a></li>
-                    <li><a href="">Какое-то название подкатегории</a></li>
+                    <li>
+                      <a class="category__sublink" href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-question-circle"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                          />
+                          <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+                          />
+                        </svg>
+                        <span>Какое-то название подкатегории</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="category__sublink" href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-question-circle"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                          />
+                          <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+                          />
+                        </svg>
+                        <span>Какое-то название подкатегории</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="category__sublink" href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-question-circle"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                          />
+                          <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+                          />
+                        </svg>
+                        <span>Какое-то название подкатегории</span>
+                      </a>
+                    </li>
                   </ul>
                 </div>
-                <div class="category__wrapper">
+                <div class="category__wrapper _has-menu">
                   <a href="#!" class="category__item">
                     <div class="category__icon">
                       <svg
@@ -439,6 +494,68 @@
                     </div>
                     <div class="category__text">Баннеры</div>
                   </a>
+                  <ul class="category__list">
+                    <li>
+                      <a class="category__sublink" href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-question-circle"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                          />
+                          <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+                          />
+                        </svg>
+                        <span>Какое-то название подкатегории</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="category__sublink" href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-question-circle"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                          />
+                          <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+                          />
+                        </svg>
+                        <span>Какое-то название подкатегории</span>
+                      </a>
+                    </li>
+                    <li>
+                      <a class="category__sublink" href="">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="16"
+                          height="16"
+                          fill="currentColor"
+                          class="bi bi-question-circle"
+                          viewBox="0 0 16 16"
+                        >
+                          <path
+                            d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"
+                          />
+                          <path
+                            d="M5.255 5.786a.237.237 0 0 0 .241.247h.825c.138 0 .248-.113.266-.25.09-.656.54-1.134 1.342-1.134.686 0 1.314.343 1.314 1.168 0 .635-.374.927-.965 1.371-.673.489-1.206 1.06-1.168 1.987l.003.217a.25.25 0 0 0 .25.246h.811a.25.25 0 0 0 .25-.25v-.105c0-.718.273-.927 1.01-1.486.609-.463 1.244-.977 1.244-2.056 0-1.511-1.276-2.241-2.673-2.241-1.267 0-2.655.59-2.75 2.286zm1.557 5.763c0 .533.425.927 1.01.927.609 0 1.028-.394 1.028-.927 0-.552-.42-.94-1.029-.94-.584 0-1.009.388-1.009.94z"
+                          />
+                        </svg>
+                        <span>Какое-то название подкатегории</span>
+                      </a>
+                    </li>
+                  </ul>
                 </div>
                 <div class="category__wrapper">
                   <a href="#!" class="category__item">
@@ -858,14 +975,12 @@
                       alt=""
                   /></picture>
                 </div>
-                <noindex>
-                  <h1 class="banner-category__title">
-                    <span
-                      >Рекламные <br />
-                      конструкции</span
-                    >
-                  </h1>
-                </noindex>
+                <p class="banner-category__title">
+                  <span
+                    >Рекламные <br />
+                    конструкции</span
+                  >
+                </p>
               </div>
             </div>
           </div>
@@ -885,12 +1000,92 @@
               </div>
               <div class="manufacture__grid">
                 <div class="manufacture__item item-manufacture">
-                  <div
-                    class="item-manufacture__view"
-                    data-images="img/category-page/manufacture/1.jpg, img/category-page/manufacture/1.jpg, img/category-page/manufacture/1.jpg"
-                  >
-                    Быстрый просмотр
+                  <div class="item-manufacture__top">
+                    <div class="item-manufacture__img">
+                      <div class="item-manufacture__view popup-link">
+                        <svg
+                          width="27"
+                          height="27"
+                          viewBox="0 0 501.984 501.984"
+                          style="enable-background: new 0 0 501.984 501.984"
+                          xml:space="preserve"
+                          fill="#8e4fd5"
+                        >
+                          <g>
+                            <g>
+                              <g>
+                                <path
+                                  d="M491.796,438.532L344.031,290.768c-12.194-12.195-15.791-30.451-9.163-46.511c9.052-21.934,13.449-45.194,13.069-69.134
+				c-0.732-46.107-19.126-89.197-51.792-121.332C263.483,21.662,220.097,3.967,173.979,3.967
+				c-45.889,0-89.187,17.709-121.919,49.864C19.372,85.944,0.895,128.836,0.032,174.605c-0.886,46.929,16.841,91.34,49.913,125.052
+				c33.054,33.692,77.085,52.255,123.983,52.269c0.017,0,0.034,0,0.052,0c26.246,0,51.474-5.702,74.983-16.949
+				c16.476-7.882,36.098-4.62,48.832,8.114l144.722,144.72c6.581,6.581,15.332,10.206,24.639,10.206
+				c9.306,0,18.057-3.625,24.64-10.207C505.381,474.224,505.381,452.118,491.796,438.532z M477.654,473.668
+				c-2.805,2.804-6.533,4.348-10.498,4.348c-3.965,0-7.693-1.544-10.497-4.348l-144.721-144.72
+				c-11.937-11.936-27.961-18.224-44.258-18.224c-9.261,0-18.611,2.032-27.348,6.211c-20.795,9.948-43.116,14.991-66.352,14.991
+				c-0.015,0-0.033,0-0.047,0c-41.486-0.012-80.449-16.446-109.712-46.275C34.94,255.803,19.244,216.5,20.027,174.982
+				C21.598,91.712,90.66,23.967,173.979,23.967c84.983,0,152.611,66.535,153.96,151.473c0.336,21.2-3.552,41.786-11.56,61.187
+				c-9.72,23.554-4.418,50.356,13.509,68.283l147.765,147.763C483.441,458.462,483.441,467.88,477.654,473.668z"
+                                />
+                                <path
+                                  d="M173.98,54.652c-67.985,0-123.295,55.31-123.295,123.295s55.31,123.295,123.295,123.295s123.295-55.31,123.295-123.295
+				S241.965,54.652,173.98,54.652z M173.98,281.242c-56.957,0-103.295-46.338-103.295-103.295
+				c0-56.957,46.338-103.295,103.295-103.295s103.295,46.338,103.295,103.295S230.937,281.242,173.98,281.242z"
+                                />
+                                <path
+                                  d="M207.418,91.691c-10.661-4.135-21.911-6.232-33.438-6.232c-50.998,0-92.487,41.489-92.487,92.487
+				c0,16.034,4.17,31.835,12.06,45.695c1.844,3.239,5.222,5.055,8.7,5.055c1.676,0,3.376-0.423,4.939-1.312
+				c4.799-2.732,6.475-8.838,3.743-13.638c-6.176-10.85-9.441-23.229-9.441-35.8c0-39.969,32.518-72.487,72.487-72.487
+				c9.043,0,17.859,1.642,26.204,4.879c5.15,1.996,10.942-0.559,12.94-5.707C215.122,99.482,212.567,93.689,207.418,91.691z"
+                                />
+                                <path
+                                  d="M237.497,110.721c-4.013-3.794-10.342-3.615-14.136,0.399c-3.793,4.013-3.615,10.343,0.399,14.136
+				c5.491,5.19,10.119,11.167,13.755,17.765c1.823,3.306,5.241,5.175,8.767,5.175c1.631,0,3.287-0.401,4.818-1.243
+				c4.836-2.666,6.597-8.748,3.931-13.585C250.395,124.955,244.496,117.335,237.497,110.721z"
+                                />
+                              </g>
+                            </g>
+                          </g>
+                        </svg>
+                      </div>
+                      <a href="#!">
+                        <picture
+                          ><source
+                            srcset="./img/dummies/category-page/394x307.gif"
+                            data-srcset="img/category-page/manufacture/1.webp"
+                            type="image/webp" />
+                          <img
+                            class="lazy"
+                            src="./img/dummies/category-page/394x307.gif"
+                            data-src="img/category-page/manufacture/1.jpg"
+                            alt=""
+                        /></picture>
+                      </a>
+                    </div>
+                    <div class="item-manufacture__price">Цена от 300 руб.</div>
+                    <a href="" class="item-manufacture__title">
+                      Плоские псевдообъёмные фигуры
+                    </a>
                   </div>
+                  <ul class="item-manufacture__list">
+                    <li>Плоские псевдообъемные буквы из ПВХ</li>
+                    <li>Прозрачные псевдообъемные буквы из оргстекла</li>
+                    <li>Плоские буквы из цветного акрила</li>
+                  </ul>
+                  <div class="item-manufacture__btns">
+                    <a
+                      href="#consultPopup"
+                      class="item-manufacture__btn _bordered-btn popup-link"
+                      >Заказать</a
+                    >
+                    <a
+                      href="./product.html"
+                      class="item-manufacture__btn _bordered-btn"
+                      >Подробнее</a
+                    >
+                  </div>
+                </div>
+                <div class="manufacture__item item-manufacture">
                   <div class="item-manufacture__top">
                     <a href="#" class="item-manufacture__img">
                       <picture
@@ -929,12 +1124,6 @@
                   </div>
                 </div>
                 <div class="manufacture__item item-manufacture">
-                  <div
-                    class="item-manufacture__view"
-                    data-images="img/category-page/manufacture/1.jpg"
-                  >
-                    Быстрый просмотр
-                  </div>
                   <div class="item-manufacture__top">
                     <a href="#" class="item-manufacture__img">
                       <picture
@@ -973,12 +1162,6 @@
                   </div>
                 </div>
                 <div class="manufacture__item item-manufacture">
-                  <div
-                    class="item-manufacture__view"
-                    data-images="img/category-page/manufacture/1.jpg"
-                  >
-                    Быстрый просмотр
-                  </div>
                   <div class="item-manufacture__top">
                     <a href="#" class="item-manufacture__img">
                       <picture
@@ -1017,12 +1200,6 @@
                   </div>
                 </div>
                 <div class="manufacture__item item-manufacture">
-                  <div
-                    class="item-manufacture__view"
-                    data-images="img/category-page/manufacture/1.jpg"
-                  >
-                    Быстрый просмотр
-                  </div>
                   <div class="item-manufacture__top">
                     <a href="#" class="item-manufacture__img">
                       <picture
@@ -1061,56 +1238,6 @@
                   </div>
                 </div>
                 <div class="manufacture__item item-manufacture">
-                  <div
-                    class="item-manufacture__view"
-                    data-images="img/category-page/manufacture/1.jpg"
-                  >
-                    Быстрый просмотр
-                  </div>
-                  <div class="item-manufacture__top">
-                    <a href="#" class="item-manufacture__img">
-                      <picture
-                        ><source
-                          srcset="./img/dummies/category-page/394x307.gif"
-                          data-srcset="img/category-page/manufacture/1.webp"
-                          type="image/webp" />
-                        <img
-                          class="lazy"
-                          src="./img/dummies/category-page/394x307.gif"
-                          data-src="img/category-page/manufacture/1.jpg"
-                          alt=""
-                      /></picture>
-                    </a>
-                    <div class="item-manufacture__price">Цена от 300 руб.</div>
-                    <a href="" class="item-manufacture__title">
-                      Плоские псевдообъёмные фигуры
-                    </a>
-                  </div>
-                  <ul class="item-manufacture__list">
-                    <li>Плоские псевдообъемные буквы из ПВХ</li>
-                    <li>Прозрачные псевдообъемные буквы из оргстекла</li>
-                    <li>Плоские буквы из цветного акрила</li>
-                  </ul>
-                  <div class="item-manufacture__btns">
-                    <a
-                      href="#consultPopup"
-                      class="item-manufacture__btn _bordered-btn popup-link"
-                      >Заказать</a
-                    >
-                    <a
-                      href="./product.html"
-                      class="item-manufacture__btn _bordered-btn"
-                      >Подробнее</a
-                    >
-                  </div>
-                </div>
-                <div class="manufacture__item item-manufacture">
-                  <div
-                    class="item-manufacture__view"
-                    data-images="img/category-page/manufacture/1.jpg"
-                  >
-                    Быстрый просмотр
-                  </div>
                   <div class="item-manufacture__top">
                     <a href="#" class="item-manufacture__img">
                       <picture
@@ -2928,6 +3055,8 @@
     </div>
     <!-- /.popup-layout -->
 
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <!-- Lazyload -->
     <script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.6.1/dist/lazyload.min.js"></script>
     <!-- Swiper -->
