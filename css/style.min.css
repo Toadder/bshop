@@ -3084,7 +3084,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .category__list a {
   color: black;
-  font-size: 13px;
+  font-size: 14px;
   line-height: 1.2;
   transition: opacity 0.4s ease 0s;
   display: flex;
@@ -3099,11 +3099,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .category__sublink span {
-  transition: color .4s ease 0s;
+  transition: color 0.4s ease 0s;
 }
 
 .category__sublink svg path {
-  transition: fill .4s ease 0s;
+  transition: fill 0.4s ease 0s;
 }
 
 .category__list li:not(:last-child) {
@@ -3131,10 +3131,6 @@ input[type="number"]::-webkit-inner-spin-button {
   display: none;
 }
 
-.category__wrapper._active .category__list {
-  display: block;
-}
-
 .category__wrapper._has-menu {
   padding-bottom: 12.5px;
   padding-top: 12.5px;
@@ -3142,7 +3138,6 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .category__wrapper._active .category__list a {
   color: white;
-  font-weight: 600;
 }
 
 .category__wrapper._has-menu .category__item {
@@ -3151,12 +3146,23 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .category__wrapper._active .category__text {
   color: white;
-  font-weight: 600;
 }
 
-.category__wrapper._active svg path,
-.category__wrapper._opened svg path {
+.category__wrapper._active svg path {
   fill: white;
+}
+
+.category__wrapper._opened svg path {
+  fill: black;
+}
+
+.category__wrapper._opened {
+  background-color: #ff8e25;
+}
+
+.category__wrapper._opened .category__list a,
+.category__wrapper._opened .category__text {
+  color: black;
 }
 
 .category__text {
@@ -10754,31 +10760,8 @@ input[type="number"]::-webkit-inner-spin-button {
     padding-left: 10px;
   }
 
-  .category__text {
-    text-align: center;
-    font-size: 14px;
-  }
-
-  .category__wrapper._active .category__list a,
-  .category__wrapper._active .category__text {
-    font-weight: 400;
-  }
-
-  .category__wrapper._opened {
-    background-color: #ff8e25;
-  }
-
-  .category__wrapper._opened .category__list a,
-  .category__wrapper._opened .category__text {
-    color: white;
-  }
-
-  .category__wrapper._active .category__list {
-    display: none;
-  }
-
   .category__list a {
-    font-size: 13.5px;
+    font-size: 15px;
   }
 
   .banner-category {
@@ -12250,11 +12233,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (any-hover: hover) {
-  .category__list a:hover,
-  .category__item:hover {
-    opacity: 0.65;
-  }
-
   .item-manufacture__view:hover {
     opacity: 0.6;
   }

@@ -1531,8 +1531,6 @@ function categoriesMenu() {
   if (!categoriesWrappers.length) return;
 
   document.addEventListener("click", (e) => {
-    if (window.innerWidth >= 768) return;
-
     e.preventDefault();
     const target = e.target;
 
@@ -1557,7 +1555,8 @@ function categoriesMenu() {
 
   function ajaxLoading(target) {
     // ТЕКУЩАЯ ССЫЛКА
-    const item = target.closest(".category__item") || target.closest(".category__sublink");
+    const item =
+      target.closest(".category__item") || target.closest(".category__sublink");
     if (!item) return;
 
     // !AJAX-ПОДГРУЗКА КОНТЕНТА КАТЕГОРИИ!
@@ -1568,17 +1567,16 @@ function categoriesMenu() {
     closeAllCategories();
     // У ПРЕДЫДУЩЕЙ АКТИВНОЙ ОБОЛОЧКИ УБИРАЕМ АКТИВНЫЙ КЛАСС
     activeCategory.classList.remove("_active");
-    // К ТЕКУЩЕЙ ОБОЛОЧКЕ ДОБАВЛЯЕМ АКТИВНЫЙ КЛАСС
-    categoryWrapper.classList.add("_active");
 
     // ПОСЛЕ ТОГО, КАК ИЗМЕНИЛОСЬ ОТОБРАЖЕНИЕ В МЕНЮ
     setTimeout(() => {
+      // К ТЕКУЩЕЙ ОБОЛОЧКЕ ДОБАВЛЯЕМ АКТИВНЫЙ КЛАСС
+      categoryWrapper.classList.add("_active");
       // ЗАКРЫВАЕМ МЕНЮ
       headerMenu.classList.remove("_active");
       // МЕНЯЕМ ОТОБРАЖЕНИЕ БУРГЕРА
       headerBurger.classList.remove("_active");
     }, 400);
-
   }
 
   function closeAllCategories() {
