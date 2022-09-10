@@ -1231,10 +1231,13 @@ function sliders() {
         type: "bullets",
         clickable: true,
       },
+      preloadImages: false,
+      lazy: {
+        loadPrevNext: true,
+      },
     });
   }
   // СЛАЙДЕР ТОВАР/УСЛУГА
-
   if (document.querySelector(".right-form-nameplates__slider")) {
     new Swiper(".right-form-nameplates__slider", {
       slidesPerView: 3,
@@ -1276,6 +1279,39 @@ function sliders() {
           },
         },
       },
+    });
+  }
+
+  // СЛАЙДЕРЫ В ПОПАПЕ CATEGORY.HTML
+  const popupSliders = document.querySelectorAll(".popup-item__slider");
+  if(popupSliders.length) {
+    popupSliders.forEach((popup, index) => {
+      const outer = popup.parentElement;
+      const outerModificator = `popup-item__outer_${index}`;
+      const sliderModificator = `popup-item__slider_${index}`;
+      
+      outer.classList.add(outerModificator);
+      popup.classList.add(sliderModificator);
+
+      new Swiper(`.${sliderModificator}`, {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+        speed: 650,
+        navigation: {
+          nextEl: `.${outerModificator} .product__next`,
+          prevEl: `.${outerModificator} .product__prev`,
+        },
+        loop: false,
+        pagination: {
+          el: `.${outerModificator} .product__pagination`,
+          type: "bullets",
+          clickable: true,
+        },
+        preloadImages: false,
+        lazy: {
+          loadPrevNext: true,
+        },
+      });
     });
   }
 }
@@ -1535,7 +1571,7 @@ function categoriesMenu() {
     const target = e.target;
 
     if (target.closest(".category__wrapper._opened")) {
-      ajaxLoading(target);
+      changeMenuCategory(target);
     } else if (target.closest(".category__item")) {
       const categoryWrapper = target.closest(".category__wrapper");
 
@@ -1548,18 +1584,17 @@ function categoriesMenu() {
         categoryWrapper.classList.add("_opened");
         $(".category__wrapper._opened .category__list").slideDown(400);
       } else {
-        ajaxLoading(target);
+        changeMenuCategory(target);
       }
     }
   });
 
-  function ajaxLoading(target) {
+  function changeMenuCategory(target) {
     // ТЕКУЩАЯ ССЫЛКА
     const item =
       target.closest(".category__item") || target.closest(".category__sublink");
     if (!item) return;
 
-    // !AJAX-ПОДГРУЗКА КОНТЕНТА КАТЕГОРИИ!
     const categoryWrapper = target.closest(".category__wrapper");
     const activeCategory = document.querySelector(".category__wrapper._active");
 
@@ -1577,6 +1612,10 @@ function categoriesMenu() {
       // МЕНЯЕМ ОТОБРАЖЕНИЕ БУРГЕРА
       headerBurger.classList.remove("_active");
     }, 400);
+
+    setTimeout(() => {
+      window.location.href = item.href;
+    }, 800);
   }
 
   function closeAllCategories() {
