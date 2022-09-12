@@ -1284,12 +1284,12 @@ function sliders() {
 
   // СЛАЙДЕРЫ В ПОПАПЕ CATEGORY.HTML
   const popupSliders = document.querySelectorAll(".popup-item__slider");
-  if(popupSliders.length) {
+  if (popupSliders.length) {
     popupSliders.forEach((popup, index) => {
       const outer = popup.parentElement;
       const outerModificator = `popup-item__outer_${index}`;
       const sliderModificator = `popup-item__slider_${index}`;
-      
+
       outer.classList.add(outerModificator);
       popup.classList.add(sliderModificator);
 
@@ -1311,6 +1311,45 @@ function sliders() {
         lazy: {
           loadPrevNext: true,
         },
+      });
+    });
+  }
+
+  // СЛАЙДЕРЫ В КАРТОЧКАХ (CATEGORY.HTML)
+  const manufactureSliders = document.querySelectorAll(
+    ".item-manufacture__slider"
+  );
+  if (manufactureSliders.length) {
+    manufactureSliders.forEach((slider, index) => {
+      const outer = slider.closest(".item-manufacture__outer");
+      const outerModificator = `item-manufacture__outer_${index}`;
+      const sliderModificator = `item-manufacture__slider_${index}`;
+
+      outer.classList.add(outerModificator);
+      slider.classList.add(sliderModificator);
+
+      const manufactureSwiper = new Swiper(`.${sliderModificator}`, {
+        loop: true,
+        preloadImages: false,
+        lazy: {
+          loadPrevNext: true,
+        },
+        slidesPerView: 1,
+        speed: 650,
+        effect: "fade",
+        fadeEffect: {
+          crossFade: true,
+        },
+        navigation: {
+          nextEl: `.${outerModificator} .item-manufacture__next`,
+          prevEl: `.${outerModificator} .item-manufacture__prev`,
+        },
+        allowTouchMove: false,
+      });
+      manufactureSwiper.el.addEventListener("mouseout", () => {
+        if (manufactureSwiper.realIndex != 0) {
+          manufactureSwiper.slideTo(1, 650);
+        }
       });
     });
   }
@@ -1561,14 +1600,31 @@ function anchorScroll() {
 }
 
 function categoriesMenu() {
-  const categoriesWrappers = document.querySelectorAll(".category__wrapper");
-  const headerMenu = document.querySelector(".mobile-header");
-  const headerBurger = document.querySelector(".bottom-header__burger");
+  const categoriesWrappers = Array.from(
+    document.querySelectorAll(".category__wrapper")
+  );
+  const header = document.querySelector(".header");
+  const headerCategories = header.querySelector(".bottom-header__categories");
+  const headerCategoriesHeight = headerCategories.clientHeight;
+  const headerMenu = header.querySelector(".mobile-header");
+  const headerBurger = header.querySelector(".bottom-header__burger");
   if (!categoriesWrappers.length) return;
 
+  // ОТОБРАЖЕНИЕ МЕНЮ С КАТЕГОРИЯМИ
+  scrollMenu();
+  window.addEventListener("resize", scrollMenu);
+
   document.addEventListener("click", (e) => {
-    e.preventDefault();
     const target = e.target;
+
+    if (
+      (target.closest(".bottom-header__categories") &&
+        window.innerWidth > 767.98) ||
+      !target.closest(".category__wrapper")
+    )
+      return;
+
+    e.preventDefault();
 
     if (target.closest(".category__wrapper._opened")) {
       changeMenuCategory(target);
@@ -1595,18 +1651,32 @@ function categoriesMenu() {
       target.closest(".category__item") || target.closest(".category__sublink");
     if (!item) return;
 
-    const categoryWrapper = target.closest(".category__wrapper");
-    const activeCategory = document.querySelector(".category__wrapper._active");
+    const currentCategoryWrapper = target.closest(".category__wrapper");
+    const currentCategoryWrapperText = currentCategoryWrapper
+      .querySelector(".category__text")
+      .textContent.trim();
+    const activeCategories = document.querySelectorAll(
+      ".category__wrapper._active"
+    );
+
+    const chosenCategories = categoriesWrappers.filter((wrapper) => {
+      const text = wrapper.querySelector(".category__text").textContent.trim();
+      if (text == currentCategoryWrapperText) {
+        return wrapper;
+      }
+    });
 
     // ОБНУЛЯЕМ СТИЛИ ВСЕХ РАЗВЁРНУТЫХ КАТЕГОРИЙ
     closeAllCategories();
     // У ПРЕДЫДУЩЕЙ АКТИВНОЙ ОБОЛОЧКИ УБИРАЕМ АКТИВНЫЙ КЛАСС
-    activeCategory.classList.remove("_active");
+    activeCategories.forEach((category) =>
+      category.classList.remove("_active")
+    );
 
     // ПОСЛЕ ТОГО, КАК ИЗМЕНИЛОСЬ ОТОБРАЖЕНИЕ В МЕНЮ
     setTimeout(() => {
       // К ТЕКУЩЕЙ ОБОЛОЧКЕ ДОБАВЛЯЕМ АКТИВНЫЙ КЛАСС
-      categoryWrapper.classList.add("_active");
+      chosenCategories.forEach((category) => category.classList.add("_active"));
       // ЗАКРЫВАЕМ МЕНЮ
       headerMenu.classList.remove("_active");
       // МЕНЯЕМ ОТОБРАЖЕНИЕ БУРГЕРА
@@ -1621,6 +1691,15 @@ function categoriesMenu() {
   function closeAllCategories() {
     $(".category__wrapper._opened .category__list").slideUp(400);
     _removeClass(categoriesWrappers, "_opened");
+  }
+
+  function scrollMenu() {
+    if (window.innerWidth <= 767.98) return;
+    if (header.offsetHeight + headerCategoriesHeight >= window.innerHeight) {
+      headerCategories.style.display = "none";
+    } else {
+      headerCategories.style.display = "block";
+    }
   }
 }
 

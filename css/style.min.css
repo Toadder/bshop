@@ -2967,14 +2967,21 @@ input[type="number"]::-webkit-inner-spin-button {
 .manufacture__grid {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr) [3];
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(3, calc(33.33% - 25px));
   gap: 100px 38px;
 }
 
 .item-manufacture {
   display: flex;
   flex-direction: column;
+}
+
+.item-manufacture__next {
+  right: 10px;
+}
+
+.item-manufacture__prev {
+  left: 10px;
 }
 
 .item-manufacture__view {
@@ -2990,6 +2997,7 @@ input[type="number"]::-webkit-inner-spin-button {
   position: absolute;
   right: 12.5px;
   top: 12.5px;
+  z-index: 4;
 }
 
 .item-manufacture__img {
@@ -3108,6 +3116,10 @@ input[type="number"]::-webkit-inner-spin-button {
   max-width: 100%;
 }
 
+.category__sublink {
+  text-align: left;
+}
+
 .category__sublink span {
   transition: color 0.4s ease 0s;
 }
@@ -3180,6 +3192,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 1.25;
   color: black;
   transition: color 0.3s ease 0s;
+  text-align: left;
 }
 
 .banner-category {
@@ -4084,6 +4097,55 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: center;
   -moz-column-gap: 23px;
   column-gap: 23px;
+}
+
+.bottom-header__categories-wrapper {
+}
+
+.bottom-header__categories {
+  position: absolute;
+  z-index: 10;
+  padding: 15px 0 0;
+  flex: 0 0 auto;
+}
+
+.bottom-header__categories .category__categories {
+  border-radius: 10px;
+}
+
+.bottom-header__categories .category__wrapper {
+  border-radius: 0px;
+  position: relative;
+}
+
+.bottom-header__categories .category__wrapper:not(:last-child) {
+  margin-bottom: 0px;
+}
+
+.bottom-header__categories {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+}
+
+.bottom-header__categories .category__list {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: inherit;
+  padding: 0;
+  width: 100%;
+  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  display: block;
+  padding: 12px 0;
+}
+
+.bottom-header__categories .category__sublink {
+  padding: 5px 15px;
 }
 
 .cart {
@@ -6512,7 +6574,11 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .popup .close-popup {
   cursor: pointer;
-  transition: all 0.3s ease 0s;
+}
+
+.popup .close-popup svg path {
+  stroke: #8e4fd5;
+  transition: stroke 0.4s ease 0s;
 }
 
 .popup-item__content {
@@ -9038,8 +9104,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .manufacture__grid {
-    -ms-grid-columns: (1fr) [2];
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, calc(50% - 21px));
     gap: 40px;
   }
 
@@ -10252,7 +10317,7 @@ input[type="number"]::-webkit-inner-spin-button {
     width: 30px;
     height: 30px;
     top: 7.5px;
-    right: 7.5px;
+    right: 37.5px;
   }
 
   .item-manufacture__view svg {
@@ -10437,7 +10502,6 @@ input[type="number"]::-webkit-inner-spin-button {
   ._card-product__categories {
     left: -10px;
   }
-
 
   ._card-product__category {
     min-height: 16px;
@@ -10732,22 +10796,23 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .manufacture__grid {
-    -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
-    gap: 27px;
+    display: block;
+  }
+
+  .item-manufacture:not(:last-child) {
+    margin-bottom: 27px;
   }
 
   .item-manufacture__top {
     display: flex;
     align-items: center;
-    -moz-column-gap: 22px;
-    column-gap: 22px;
     margin-bottom: 17px;
   }
 
   .item-manufacture__img {
     margin-bottom: 0;
-    flex: 0 1 55%;
+    width: 55%;
+    padding-right: 25px;
   }
 
   .item-manufacture__list {
@@ -10765,16 +10830,16 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: 600;
   }
 
+  .item-manufacture__prev, .item-manufacture__next {
+    display: none;
+  }
+
   .item-manufacture__btn {
     margin-top: 22px;
   }
 
   .category {
     margin-bottom: 0px;
-  }
-
-  .category__categories {
-    gap: 3px 6px;
   }
 
   .category__wrapper._has-menu .category__item {
@@ -10797,7 +10862,13 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .category__categories {
+    gap: 3px 6px;
     padding-top: 16px;
+    display: none;
+  }
+
+  .bottom-header__categories {
+    display: block;
   }
 
   .category__item {
@@ -12285,6 +12356,38 @@ input[type="number"]::-webkit-inner-spin-button {
   .service-page .info-service__content {
     font-size: 14px;
   }
+
+  .bottom-header__categories {
+    position: static;
+    top: auto;
+    left: auto;
+    z-index: auto;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    padding-top: 0;
+    display: block !important;
+  }
+
+  .bottom-header__categories .category__categories {
+    display: block;
+  }
+
+  .bottom-header__categories .category__list {
+    position: static;
+    top: auto;
+    left: auto;
+    z-index: auto;
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    display: none;
+    padding: 7.5px 0 0 10px;
+  }
+
+  .bottom-header__categories .category__sublink {
+    padding: 0;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -12459,7 +12562,7 @@ input[type="number"]::-webkit-inner-spin-button {
     color: #ed1f24;
   }
 
-  .bottom-header__list a:hover {
+  .bottom-header__list > li > a:hover {
     color: #ff8e25;
   }
 
@@ -12541,8 +12644,8 @@ input[type="number"]::-webkit-inner-spin-button {
     opacity: 0.7;
   }
 
-  .popup .close-popup:hover {
-    opacity: 0.7;
+  .popup .close-popup:hover svg path {
+    stroke: rgb(255, 142, 37);
   }
 
   .popup-enter__forgotten:hover {
@@ -12567,6 +12670,17 @@ input[type="number"]::-webkit-inner-spin-button {
 
   .service-page .card-item-service__link:hover {
     background-color: #8e4fd5;
+  }
+
+  .bottom-header__categories .category__wrapper:hover .category__list,
+  .bottom-header__categories-wrapper:hover .bottom-header__categories {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+
+  .bottom-header__categories .category__wrapper:not(._active):hover {
+    background-color: #ff8e25;
   }
 }
 
