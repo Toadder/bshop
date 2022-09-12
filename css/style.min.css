@@ -12388,6 +12388,10 @@ input[type="number"]::-webkit-inner-spin-button {
   .bottom-header__categories .category__sublink {
     padding: 0;
   }
+
+  .item-manufacture__img picture:nth-child(2) {
+    display: none;
+  }
 }
 
 @media (max-width: 479.98px) {
