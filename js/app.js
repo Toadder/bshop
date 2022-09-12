@@ -1296,6 +1296,7 @@ function sliders() {
       new Swiper(`.${sliderModificator}`, {
         slidesPerView: 1,
         slidesPerGroup: 1,
+        spaceBetween: 15,
         speed: 650,
         navigation: {
           nextEl: `.${outerModificator} .product__next`,
