@@ -1346,11 +1346,13 @@ function sliders() {
         },
         allowTouchMove: false,
       });
-      manufactureSwiper.el.addEventListener("mouseout", () => {
-        if (manufactureSwiper.realIndex != 0) {
-          manufactureSwiper.slideTo(1, 650);
-        }
-      });
+      manufactureSwiper.el
+        .closest(".item-manufacture__img")
+        .addEventListener("mouseleave", () => {
+          if (manufactureSwiper.realIndex != 0) {
+            manufactureSwiper.slideTo(1, 650);
+          }
+        });
     });
   }
 }
