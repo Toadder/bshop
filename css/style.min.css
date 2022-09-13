@@ -3426,7 +3426,7 @@ input[type="number"]::-webkit-inner-spin-button {
   text-align: center;
   margin-bottom: auto;
   margin-top: -36px;
-  transition: opacity .4s ease 0s;
+  transition: opacity 0.4s ease 0s;
 }
 
 .categories__img img {
@@ -3486,7 +3486,7 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 23px;
   line-height: 1.0833333333;
   color: #ffffff;
-  transition: opacity .4s ease 0s;
+  transition: opacity 0.4s ease 0s;
 }
 
 .categories__link {
@@ -7622,6 +7622,12 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 60px;
 }
 
+.service-page .info-service__text {
+  font-size: 18px;
+  line-height: 1.3333;
+  margin-bottom: 30px;
+}
+
 .service-page .info-service__tabs {
   margin-bottom: 55px;
 }
@@ -10208,7 +10214,8 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 0;
   }
 
-  .service-page .info-service__tabs {
+  .service-page .info-service__tabs,
+  .service-page .info-service__text {
     margin-bottom: 20px;
   }
 
@@ -10835,7 +10842,8 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 0;
   }
 
-  .item-manufacture__list li, .item-manufacture__properties li {
+  .item-manufacture__list li,
+  .item-manufacture__properties li {
     font-size: 14px;
   }
 
@@ -10846,7 +10854,8 @@ input[type="number"]::-webkit-inner-spin-button {
     font-weight: 600;
   }
 
-  .item-manufacture__prev, .item-manufacture__next {
+  .item-manufacture__prev,
+  .item-manufacture__next {
     display: none;
   }
 
@@ -12365,11 +12374,13 @@ input[type="number"]::-webkit-inner-spin-button {
     font-size: 14px;
   }
 
-  .service-page .info-service__tabs {
+  .service-page .info-service__tabs,
+  .service-page .info-service__text {
     margin-bottom: 25px;
   }
 
-  .service-page .info-service__content {
+  .service-page .info-service__content,
+  .service-page .info-service__text {
     font-size: 14px;
   }
 
@@ -12703,7 +12714,8 @@ input[type="number"]::-webkit-inner-spin-button {
     background-color: #ff8e25;
   }
 
-  .categories__img:hover, .categories__name:hover {
+  .categories__img:hover,
+  .categories__name:hover {
     opacity: 0.8;
   }
 }
