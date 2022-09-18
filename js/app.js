@@ -1029,10 +1029,14 @@ function sliders() {
       preventClicks: true,
       slidesPerGroup: 2,
       preloadImages: false,
+      loop: false,
       // Enable lazy loading
       lazy: {
         loadPrevNext: true,
       },
+      observeParents: true,
+      observeSlideChildren: true,
+      observer: true,
 
       spaceBetween: 27,
       speed: 600,
@@ -1354,6 +1358,54 @@ function sliders() {
             manufactureSwiper.slideTo(1, 650);
           }
         });
+    });
+  }
+
+  if (document.querySelector(".info-service__slider")) {
+    new Swiper(
+      ".info-service__slider",
+      generateProductSliderConfig("info-service")
+    );
+  }
+
+  if (document.querySelector(".info-service__video-slider")) {
+    new Swiper(".info-service__video-slider", {
+      slidesPerView: 2,
+      preventClicks: true,
+      slidesPerGroup: 1,
+      preloadImages: false,
+      loop: false,
+      // Enable lazy loading
+      lazy: {
+        loadPrevNext: true,
+      },
+      observeParents: true,
+      observeSlideChildren: true,
+      observer: true,
+      autoHeight: true,
+      spaceBetween: 30,
+      speed: 600,
+      navigation: {
+        nextEl: `.info-service__video-next`,
+        prevEl: `.info-service__video-prev`,
+      },
+      pagination: {
+        el: `.info-service__video-pagination`,
+        type: "bullets",
+        clickable: true,
+      },
+      breakpoints: {
+        // when window width is >= 320px
+        320: {
+          spaceBetween: 10,
+          slidesPerView: 1,
+        },
+        // when window width is >= 640px
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+      },
     });
   }
 }
