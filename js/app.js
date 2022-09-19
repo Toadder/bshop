@@ -1,9 +1,6 @@
-// CONSTRUCTOR
-
-// CONSTRUCTOR
-
 const isMobile = window.matchMedia("(max-width: 991.98px)");
 
+// ТАБЛИЧКИ
 const plates = [
   {
     id: 0,
@@ -34,23 +31,23 @@ function platesInit() {
   const colorInputs = document.querySelectorAll(".js-plate-color");
 
   // Смена табличек
-  for (let i = 0; i < items.length; i++) {
-    const item = items[i];
+  // for (let i = 0; i < items.length; i++) {
+  //   const item = items[i];
 
-    item.addEventListener("click", () => {
-      const itemId = +item.dataset.id;
-      const activeItemId = +activeItem.dataset.id;
-      const direction = itemId > activeItemId ? "next" : "prev";
+  //   item.addEventListener("click", () => {
+  //     const itemId = +item.dataset.id;
+  //     const activeItemId = +activeItem.dataset.id;
+  //     const direction = itemId > activeItemId ? "next" : "prev";
 
-      resetInputs([...bgInputs, ...colorInputs]);
-      activeItemIcon = changeIcon(activeItemIcon, itemId, direction);
+  //     resetInputs([...bgInputs, ...colorInputs]);
+  //     activeItemIcon = changeIcon(activeItemIcon, itemId, direction);
 
-      activeItem.classList.remove("right-form-nameplates__slide_active");
-      item.classList.add("right-form-nameplates__slide_active");
+  //     activeItem.classList.remove("right-form-nameplates__slide_active");
+  //     item.classList.add("right-form-nameplates__slide_active");
 
-      activeItem = item;
-    });
-  }
+  //     activeItem = item;
+  //   });
+  // }
 
   // Смена заднего фона таблички
   changeColor(bgInputs, "ct_el_color_1");
@@ -100,6 +97,7 @@ function platesInit() {
     array.forEach((item) => (item.checked = false));
   }
 }
+// ТАБЛИЧКИ
 
 // Удаление класса из коллекции
 function _removeClass(array, removedClass) {
