@@ -19,26 +19,7 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: "Qanelas";
-  font-display: swap;
-  src: url("../fonts/Qanelas-Regular.woff2") format("woff2"),
-    url("../fonts/Qanelas-Regular.woff") format("woff");
-  font-weight: 400;
-  font-style: normal;
-}
-
 /* ====== ШРИФТЫ ====== */
-
-@font-face {
-  font-family: "icons";
-  font-display: swap;
-  src: url("../fonts/icons.woff") format("woff"),
-    url("../fonts/icons.woff2#icons") format("woff2");
-  font-weight: normal;
-  font-style: normal;
-  font-display: block;
-}
 
 .service-page .item-service__radio label::after,
 .service-page .item-service__select ._select__title::before,
@@ -5253,6 +5234,10 @@ input[type="number"]::-webkit-inner-spin-button {
   max-width: 100%;
 }
 
+._card-product__star picture {
+  max-height: 100%;
+}
+
 .order-page .deleted-book__item ._card-product__reviews {
   font-size: 10px;
 }
@@ -6400,8 +6385,81 @@ input[type="number"]::-webkit-inner-spin-button {
   margin-bottom: 60px;
 }
 
+.service-page .reviews-info-service__outer {
+  margin-bottom: 25px;
+}
+
+.service-page .reviews-info-service__slide {
+  border:  2.5px solid #8e4fd5;
+  border-radius:  30px;
+  padding: 30px 40px;
+}
+
+.service-page .reviews-info-service__main {
+  display: flex;
+  align-items:  flex-start;
+  justify-content: space-between;
+  gap:  40px;
+  margin-bottom: 25px;
+}
+
+.service-page .reviews-info-service__img {
+  flex: 0 0 215px;
+  height: 215px;
+  border-radius:  50%;
+}
+
+.service-page .reviews-info-service__img img {
+  max-width:  100%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  border:  2.5px solid #8e4fd5;
+}
+
+.service-page .reviews-info-service__text {
+  font-size: 21px;
+  line-height: 1.33;
+}
+
+.service-page .reviews-info-service__details {
+  display: flex;
+  align-items: center;
+  gap:  20px;
+}
+
+.service-page .reviews-info-service__name {
+  margin-right: auto;
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 500;
+}
+
+.service-page .reviews-info-service__btn {
+  background-color: transparent;
+  font-size: 18px;
+  color:  #ff8e25;
+  transition: opacity .4s ease 0s;
+}
+
+.service-page .reviews-info-service__write-wrapper {
+  display: flex;
+  justify-content:  flex-end;
+}
+
+.service-page .reviews-info-service__write {
+  font-size: 18px;
+  color: #8e4fd5;
+  font-weight: 500;
+  transition: opacity .4s ease 0s;
+  position: relative;
+  right: 0;
+}
+
 .service-page .info-service__outer,
-.service-page .info-service__video-outer {
+.service-page .info-service__video-outer,
+.service-page .reviews-info-service__outer {
   position: relative;
 }
 
@@ -6441,6 +6499,9 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .service-page .info-service__tab {
   flex: 0 1 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .service-page .info-service__content {
@@ -7052,7 +7113,7 @@ input[type="number"]::-webkit-inner-spin-button {
     justify-content: center;
     -moz-column-gap: 36px;
     column-gap: 36px;
-    margin-top: 52px;
+    margin-top: 40px;
   }
 
   .popular__pagination,
@@ -9042,6 +9103,40 @@ input[type="number"]::-webkit-inner-spin-button {
     column-gap: 10px;
   }
 
+  .service-page .reviews-info-service__main {
+    gap: 20px;
+  }
+
+  .service-page .reviews-info-service__write-wrapper {
+    justify-content: center;
+  }
+
+  .service-page .reviews-info-service__write {
+    font-size: 26px;
+    font-weight: 600;
+  }
+
+  .service-page .reviews-info-service__slide {
+    padding: 20px;
+  }
+
+  .service-page .reviews-info-service__img {
+    height: 175px;
+    flex: 0 0 175px;
+  }
+
+  .service-page .reviews-info-service__text {
+    font-size: 18px
+  }
+
+  .service-page .reviews-info-service__name {
+    font-size: 18px
+  }
+
+  .service-page .reviews-info-service__btn {
+    font-size: 16px
+  }
+
   .service-page .help {
     margin-top: 83px;
   }
@@ -9549,6 +9644,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
   ._card-product__star {
     flex: 0 0 11px;
+    height: 11px
   }
 
   ._card-product__reviews {
@@ -11248,6 +11344,54 @@ input[type="number"]::-webkit-inner-spin-button {
     margin-bottom: 14px;
   }
 
+  .service-page .reviews-info-service__outer {
+    margin-bottom: 20px
+  }
+
+  .service-page .reviews-info-service__write {
+    font-size: 21px;
+  }
+
+  .service-page .reviews-info-service__main {
+    display: block
+  }
+
+  .service-page .reviews-info-service__img {
+    width: 110px;
+    height: 110px;
+    margin: 0 auto 10px auto;
+  }
+
+  .service-page .reviews-info-service__slide {
+    padding: 12.5px 15px
+  }
+
+  .service-page .reviews-info-service__main {
+    margin-bottom: 10px
+  }
+
+  .service-page .reviews-info-service__details {
+    display: block
+  }
+
+  .service-page .reviews-info-service__text {
+    font-size: 14.5px;
+    text-align: justify;
+  }
+
+  .service-page .reviews-info-service__name,
+  .service-page .reviews-info-service__btn {
+    font-size: 15px
+  }
+
+  .service-page .reviews-info-service__name {
+    margin-bottom: 7.5px
+  }
+
+  .service-page .reviews-info-service__btn {
+    margin-top: 7.5px
+  }
+
   .service-page .help {
     margin-top: 68px;
   }
@@ -11424,7 +11568,9 @@ input[type="number"]::-webkit-inner-spin-button {
   a.benfit-item-works:hover .benfit-item-works__text {
     color: #8e4fd5;
   }
-  .item-manufacture__view:hover {
+  .item-manufacture__view:hover,
+  .reviews-info-service__btn:hover,
+  .reviews-info-service__write:hover {
     opacity: 0.6;
   }
 

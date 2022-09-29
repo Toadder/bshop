@@ -1,104 +1,5 @@
 const isMobile = window.matchMedia("(max-width: 991.98px)");
 
-// ТАБЛИЧКИ
-const plates = [
-  {
-    id: 0,
-    icon: `<div class="ct_el_color_1 ct_el d1261" id="cont_tab_b" style=" z-index: 101; top: 6px; left: 23.3px; width: 393.3px; height: 295px; line-height: 295px; font-family: dztab-74; font-size: 295px; color: rgb(7, 96, 196); filter: drop-shadow( rgba(0, 0, 0, 0.25) -3px 3px 3px ); "></div> <div class="ct_el_color_2 ct_el d1262" id="cont_tab_s" style=" z-index: 102; top: 6px; left: 22.7px; width: 394.7px; height: 296px; line-height: 296px; font-family: dztab-74; font-size: 296px; color: rgb(255, 255, 255); "></div> <div class="ct_text ct_el_color_2 ct_el" id="t2_ct_text" data-radius="87" data-orient="5" data-ws="5" data-valign="text-top" data-angle="270" data-elips="10" data-font_style="normal" data-font_num="" data-font_size="39px" data-str_case="uplow" data-if_low_fs="0" data-if_up_fs="-11" data-if_up_top="3" data-if_low_top="0" data-justify="center" data-align="center" data-font_padding="0" data-font_scale="100" style=" z-index: 104; left: 112px; top: 108px; width: 216px; height: 39px; font-size: 39px; font-weight: 600; font-family: GeorgiaProdz; visibility: visible; color: rgb(255, 255, 255); "> <div class="ct_str"> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(212.36px, 24.44px) rotateZ(1.99rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">я</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(199.58px, 47.78px) rotateZ(2.23rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">а</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(181.86px, 66.29px) rotateZ(2.44rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">в</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(160.48px, 81.05px) rotateZ(2.64rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">о</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(133.09px, 92.06px) rotateZ(2.85rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">н</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(102.81px, 97.51px) rotateZ(3.07rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">и</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(78.28px, 96.66px) rotateZ(3.26rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">б</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(52.44px, 90.73px) rotateZ(3.45rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">я</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(25.7px, 78.88px) rotateZ(3.67rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">Р</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; min-width: 5px; transform: translate(22.84px, 69.03px) rotateZ(3.8rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top"> </i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(10.96px, 61.98px) rotateZ(3.89rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">.</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(-9.28px, 46.09px) rotateZ(4.06rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">л</i> </div> <div class="ct_ch" style=" font-size: 39px; height: 39px; line-height: 39px; transform: translate(-20.59px, 22.54px) rotateZ(4.3rad) scaleX(-0.73) scaleY(-1); "> <i style="vertical-align: text-top">у</i> </div> </div> <b class="ct_path" style=" top: -97.8px; left: -18px; width: 252px; height: 234.6px; border-radius: 126px/117.3px; "></b> </div> <div class="ct_text ct_el_color_1 ct_el" id="t3_ct_text" data-radius="100000" data-ws="5" data-valign="text-bottom" data-font_style="normal" data-font_num="" data-font_size="90px" data-str_case="up" data-if_low_fs="0" data-if_up_fs="0" data-if_up_top="0" data-if_low_top="0" data-justify="center" data-align="center" data-font_padding="" data-font_scale="100" style=" z-index: 105; left: 177px; top: 62px; width: 86px; height: 90px; font-size: 90px; font-weight: 500; font-family: News706dz; line-height: 90px; text-align: center; font-style: normal; visibility: visible; color: rgb(7, 96, 196); "> <ul class="full-width" style="transform: scaleX(0.905)"> <li style=" font-size: 81px; transform: scaleX(1) scaleY(0.97536); "></li> <li style="transform: scaleX(1) scaleY(0.97536)"> 1 </li> <li style="transform: scaleX(1) scaleY(0.97536)"> 6 </li> <li style=" font-size: 81px; transform: scaleX(1) scaleY(0.97536); "></li> </ul> </div>`,
-    img: `img/nameplates-page/00.png`,
-  },
-  {
-    id: 1,
-    icon: `<div class="ct_el_color_2 ct_el d1181" id="cont_tab_b" style="z-index: 101; top: 65px; left: 113.9px; width: 212.2px; height: 200px; line-height: 200px; font-family: dztab-74; font-size: 200px; color: rgb(255, 255, 255); filter: drop-shadow(rgba(0, 0, 0, 0.25) -3px 3px 3px);"></div><div class="ct_el_color_1 ct_el d1182" id="cont_tab_s" style="z-index: 102; top: 65px; left: 113.9px; width: 212.2px; height: 200px; line-height: 200px; font-family: dztab-74; font-size: 200px; color: rgb(7, 96, 196);"></div><div class="ct_text ct_el_color_2 ct_el" id="t3_ct_text" data-radius="100000" data-ws="5" data-valign="text-bottom" data-font_txt="Schoolbookdz" data-font_txt_size="105" data-font_txt_weight="600" data-font_style="normal" data-font_num="" data-font_size="133px" data-str_case="up" data-if_low_fs="0" data-if_up_fs="0" data-if_up_top="0" data-if_low_top="0" data-justify="center" data-align="center" data-font_padding="" data-font_scale="100" style="z-index: 105; left: 150px; top: 93px; width: 140px; height: 133px; font-size: 133px; font-weight: 600; font-family: Schoolbookdz; line-height: 133px; text-align: center; font-style: normal; visibility: visible; color: rgb(255, 255, 255);"><ul class="full-width" style="transform: scaleX(0.917);"><li style="font-family: Schoolbookdz; font-size: 105px; transform: scaleX(1) scaleY(0.978446);"></li><li style="transform: scaleX(1) scaleY(0.978446);">9</li><li style="transform: scaleX(1) scaleY(0.978446);">8</li><li style="font-family: Schoolbookdz; font-size: 105px; transform: scaleX(1) scaleY(0.978446);"></li></ul></div>`,
-    img: `img/nameplates-page/01.png`,
-  },
-  {
-    id: 2,
-    icon: `<div class="ct_text ct_el_color_2 ct_el" id="t2_ct_text" data-radius="100000" data-ws="5" data-valign="text-bottom" data-font_style="normal" data-font_num="" data-font_size="43px" data-str_case="uplow" data-if_low_fs="0" data-if_up_fs="0" data-if_up_top="0" data-if_low_top="0" data-justify="center" data-align="center" data-font_padding="15" data-font_scale="95" style="z-index: 103; left: 63px; top: 152px; width: 314px; height: 43px; font-size: 43px; font-weight: 600; font-family: GeorgiaConddz; line-height: 43px; text-align: center; font-style: normal; visibility: visible; color: rgb(255, 255, 255);"><ul class="full-width" style="transform: scaleX(1);"><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);"></li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">у</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">л</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">.</li><li style="min-width: 8.6px; padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);"></li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">В</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">о</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">с</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">т</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">о</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">ч</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">н</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">а</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);">я</li><li style="padding-left: 0.8px; padding-right: 0.8px; transform: scaleX(0.95) scaleY(1);"></li></ul></div><div class="ct_el_color_1 ct_el d521" id="cont_tab_b" style="z-index: 101; top: 90px; left: 43px; width: 354px; height: 118px; line-height: 118px; font-family: dztab-74; font-size: 118px; color: rgb(7, 96, 196); filter: drop-shadow(rgba(0, 0, 0, 0.25) -3px 3px 3px);"></div><div class="ct_el_color_2 ct_el d522" id="cont_tab_s" style="z-index: 102; top: 90px; left: 43px; width: 354px; height: 118px; line-height: 118px; font-family: dztab-74; font-size: 118px; color: rgb(255, 255, 255);"></div><div class="ct_text ct_el_color_1 ct_el" id="t3_ct_text" data-radius="100000" data-ws="5" data-valign="text-bottom" data-font_txt="GeorgiaConddz" data-font_txt_size="46" data-font_txt_weight="500" data-font_style="normal" data-font_num="" data-font_size="50px" data-str_case="up" data-if_low_fs="0" data-if_up_fs="0" data-if_up_top="0" data-if_low_top="0" data-justify="center" data-align="center" data-font_padding="4" data-font_scale="100" style="z-index: 105; left: 180px; top: 101px; width: 80px; height: 50px; font-size: 50px; font-weight: 500; font-family: News706dz; line-height: 50px; text-align: center; font-style: normal; visibility: visible; color: rgb(7, 96, 196);"><ul class="full-width" style="transform: scaleX(1);"><li style="padding-left: 0.9px; padding-right: 0.9px; font-family: GeorgiaConddz; font-size: 46px; transform: scaleX(1) scaleY(1);"></li><li style="padding-left: 0.9px; padding-right: 0.9px; transform: scaleX(1) scaleY(1);">6</li><li style="padding-left: 0.9px; padding-right: 0.9px; transform: scaleX(1) scaleY(1);">2</li><li style="padding-left: 0.9px; padding-right: 0.9px; font-family: GeorgiaConddz; font-size: 46px; transform: scaleX(1) scaleY(1);"></li></ul></div>`,
-    img: `img/nameplates-page/02.png`,
-  },
-];
-
-function platesInit() {
-  if (!document.querySelector(".form-nameplates")) return;
-
-  const iconBg = document.querySelector(".left-form-nameplates__bg");
-  const items = document.querySelectorAll(".right-form-nameplates__slide");
-  let activeItem = items[0];
-  let activeItemIcon = document.querySelector(".left-form-nameplates__plate");
-
-  const bgInputs = document.querySelectorAll(".js-plate-bg");
-  const colorInputs = document.querySelectorAll(".js-plate-color");
-
-  // Смена табличек
-  // for (let i = 0; i < items.length; i++) {
-  //   const item = items[i];
-
-  //   item.addEventListener("click", () => {
-  //     const itemId = +item.dataset.id;
-  //     const activeItemId = +activeItem.dataset.id;
-  //     const direction = itemId > activeItemId ? "next" : "prev";
-
-  //     resetInputs([...bgInputs, ...colorInputs]);
-  //     activeItemIcon = changeIcon(activeItemIcon, itemId, direction);
-
-  //     activeItem.classList.remove("right-form-nameplates__slide_active");
-  //     item.classList.add("right-form-nameplates__slide_active");
-
-  //     activeItem = item;
-  //   });
-  // }
-
-  // Смена заднего фона таблички
-  changeColor(bgInputs, "ct_el_color_1");
-  // Cмена цвета текста таблички
-  changeColor(colorInputs, "ct_el_color_2");
-
-  function changeColor(array, className) {
-    for (let i = 0; i < array.length; i++) {
-      const input = array[i];
-
-      input.addEventListener("change", (e) => {
-        e.stopPropagation();
-        const color = input.nextElementSibling.style.backgroundColor;
-        activeItemIcon
-          .querySelectorAll(`.${className}`)
-          .forEach((el) => (el.style.color = color));
-      });
-    }
-  }
-
-  // Смена таблички
-  function changeIcon(activeItemIcon, itemId, direction) {
-    activeItemIcon.style.left = direction === "next" ? "-100%" : "100%";
-    const newIcon = getNewIcon(itemId, direction);
-    iconBg.appendChild(newIcon);
-
-    setTimeout(() => {
-      activeItemIcon.remove();
-      newIcon.style.left = "0";
-    }, 600);
-
-    return newIcon;
-  }
-
-  // Создание новой таблички
-  function getNewIcon(itemId, direction) {
-    const newIcon = document.createElement("div");
-    const [newIconObJ] = plates.filter((obj) => obj.id === itemId);
-    newIcon.classList.add("left-form-nameplates__plate");
-    newIcon.style.left = direction === "next" ? "100%" : "-100%";
-    newIcon.innerHTML = newIconObJ.icon;
-    return newIcon;
-  }
-
-  // Обнуление цветов при смене таблички
-  function resetInputs(array) {
-    array.forEach((item) => (item.checked = false));
-  }
-}
-// ТАБЛИЧКИ
-
 // Удаление класса из коллекции
 function _removeClass(array, removedClass) {
   for (let el of array) {
@@ -1406,6 +1307,31 @@ function sliders() {
       },
     });
   }
+
+  if(document.querySelector(".reviews-info-service__slider")) {
+    new Swiper(".reviews-info-service__slider", {
+      slidesPerView: 1, 
+      spaceBetween: 20,
+      preloadImages: false,
+      loop: false,
+      lazy: {
+        loadPrevNext: true,
+      },
+      observeParents: true,
+      observeSlideChildren: true,
+      observer: true,
+      speed: 850,
+      navigation: {
+        nextEl: `.reviews-info-service__next`,
+        prevEl: `.reviews-info-service__prev`,
+      },
+      pagination: {
+        el: `.reviews-info-service__pagination`,
+        type: "bullets",
+        clickable: true,
+      },
+    });
+  }
 }
 
 // Анимация в блоке steps на главной странице
@@ -1756,9 +1682,55 @@ function categoriesMenu() {
   }
 }
 
+function showContent() {
+  const reviewSlides = Array.from(document.querySelectorAll(".reviews-info-service__slide"));
+  const contentArr = [];
+  const MAX_CONTENT_LENGTH = 484;
+
+  if(!reviewSlides.length) return;
+
+  reviewSlides.forEach(slide => {
+    const btn = slide.querySelector(".reviews-info-service__btn");
+    const contentNode = slide.querySelector(".reviews-info-service__text");
+    const content = contentNode.textContent.trim();
+
+    contentArr.push({text: content, isSliced: content.length > MAX_CONTENT_LENGTH});
+
+    if(content.length > MAX_CONTENT_LENGTH) sliceContent(contentNode, content);
+
+    if(btn) {
+      btn.addEventListener("click", () => {
+        const slideIndex = reviewSlides.indexOf(slide);
+        const { isSliced } = contentArr[slideIndex];
+
+        isSliced ? contentNode.textContent = contentArr[slideIndex].text : sliceContent(contentNode, content);
+        contentArr[slideIndex].isSliced = !isSliced;
+
+        btn.textContent = isSliced ? "Скрыть" : "Читать полностью";
+      });
+    }
+  });
+
+  function sliceContent(contentNode, content) {
+    const contentWords = content.replace(/\r?\n/g, "").split(" ");
+    let charCount = 0;
+
+    for(let index = 0; index < contentWords.length; index++) {
+      const word = contentWords[index];
+      charCount += word.length + 1;
+
+      if(charCount > MAX_CONTENT_LENGTH) {
+
+        contentNode.textContent = contentWords.slice(0, index + 1).join(" ") + "...";
+        break;
+      }
+    }
+  }
+}
+
 // ---> Инициализация скриптов <--
 preloader();
-platesInit();
+showContent();
 categoriesMenu();
 anchorScroll();
 ymap();
