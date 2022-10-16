@@ -1186,7 +1186,7 @@ function sliders() {
   }
 
   // СЛАЙДЕРЫ В ПОПАПЕ CATEGORY.HTML
-  const popupSliders = document.querySelectorAll(".popup-item__slider");
+  const popupSliders = document.querySelectorAll(".popup-item__slider.swiper");
   if (popupSliders.length) {
     popupSliders.forEach((popup, index) => {
       const outer = popup.parentElement;

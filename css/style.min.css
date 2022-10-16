@@ -1770,7 +1770,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .item-manufacture__list {
-  margin-bottom: auto;
   padding-left: 20px;
 }
 
@@ -1808,6 +1807,7 @@ input[type="number"]::-webkit-inner-spin-button {
   align-items: stretch;
   justify-content: space-between;
   gap: 10px;
+  margin-top: auto;
 }
 
 .item-manufacture__btn {
@@ -4525,9 +4525,6 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .order-page .book-order {
-  padding-bottom: 56px;
-  margin-bottom: 50px;
-  border-bottom: 1px dashed rgba(136, 141, 167, 0.7);
 }
 
 .order-page .book-order__top {
@@ -7016,6 +7013,10 @@ input[type="number"]::-webkit-inner-spin-button {
   font-size: 16px;
 }
 
+.fast-order__bottom {
+  margin-bottom: 38px;
+}
+
 @media (min-width: 767.98px) {
   ._good__tabs::before {
     content: "";
@@ -8743,11 +8744,6 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .order-page .book-order {
-    padding-bottom: 50px;
-  }
-
-  .order-page .book-order {
-    padding-bottom: 48px;
     margin-bottom: 45px;
   }
 
@@ -8848,10 +8844,6 @@ input[type="number"]::-webkit-inner-spin-button {
   .order-page .total-order__link {
     width: 332px;
     margin: 0 auto 40px auto;
-  }
-
-  .order-page .fast-order__bottom {
-    margin-bottom: 51px;
   }
 
   .order-page .fast-order__items {
@@ -11024,7 +11016,7 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .order-page .fast-order__bottom {
-    margin-bottom: 45px;
+    margin-bottom: 30px;
   }
 
   .order-page .fast-order__items {
