@@ -1589,10 +1589,6 @@ function categoriesMenu() {
   const headerBurger = header.querySelector(".bottom-header__burger");
   if (!categoriesWrappers.length) return;
 
-  // ОТОБРАЖЕНИЕ МЕНЮ С КАТЕГОРИЯМИ
-  scrollMenu();
-  window.addEventListener("resize", scrollMenu);
-
   document.addEventListener("click", (e) => {
     const target = e.target;
 
@@ -1670,15 +1666,6 @@ function categoriesMenu() {
   function closeAllCategories() {
     $(".category__wrapper._opened .category__list").slideUp(400);
     _removeClass(categoriesWrappers, "_opened");
-  }
-
-  function scrollMenu() {
-    if (window.innerWidth <= 767.98) return;
-    if (header.offsetHeight + headerCategoriesHeight >= window.innerHeight) {
-      headerCategories.style.display = "none";
-    } else {
-      headerCategories.style.display = "block";
-    }
   }
 }
 

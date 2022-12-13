@@ -1846,7 +1846,7 @@ input[type="number"]::-webkit-inner-spin-button {
 .category__wrapper {
   background: #f7f7f7;
   border-radius: 5px;
-  padding: 5px 20px;
+  padding: 8px 12px;
   transition: background-color 0.4s ease 0s;
 }
 
@@ -1863,6 +1863,7 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
   align-items: center;
   column-gap: 7.5px;
+  padding-left: 55px;
 }
 
 .category__list a svg {
@@ -1890,8 +1891,8 @@ input[type="number"]::-webkit-inner-spin-button {
 .category__item {
   display: flex;
   align-items: center;
-  -moz-column-gap: 17px;
-  column-gap: 17px;
+  -moz-column-gap: 11px;
+  column-gap: 11px;
   min-height: 48px;
   transition: opacity 0.4s ease 0s;
 }
@@ -1905,12 +1906,11 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .category__wrapper .category__list {
-  display: none;
 }
 
 .category__wrapper._has-menu {
-  padding-bottom: 12.5px;
-  padding-top: 12.5px;
+  padding-bottom: 15.5px;
+  padding-top: 15.5px;
 }
 
 .category__wrapper._active .category__list a {
@@ -1948,6 +1948,7 @@ input[type="number"]::-webkit-inner-spin-button {
   color: black;
   transition: color 0.3s ease 0s;
   text-align: left;
+  font-weight: 500;
 }
 
 .banner-category {
@@ -2857,22 +2858,37 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .bottom-header__categories-wrapper {
+  overflow-y: auto;
 }
 
 .bottom-header__categories {
   position: absolute;
   z-index: 10;
-  padding: 15px 0 0;
   flex: 0 0 auto;
+  width: 100%;
+}
+
+.bottom-header__categories .bottom-header__container {
+  padding-top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
 }
 
 .bottom-header__categories .category__categories {
   border-radius: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  background-color: #f7f7f7;
+  -webkit-box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 5px 10px 4px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
 }
 
 .bottom-header__categories .category__wrapper {
   border-radius: 0px;
-  position: relative;
 }
 
 .bottom-header__categories .category__wrapper:not(:last-child) {
@@ -2880,29 +2896,20 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .bottom-header__categories {
-  opacity: 0;
-  visibility: hidden;
+  left: -50%;
+  transform: translateX(50%);
   pointer-events: none;
-  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
 }
 
 .bottom-header__categories .category__list {
-  position: absolute;
-  top: 0;
-  left: 100%;
   background-color: inherit;
   padding: 0;
   width: 100%;
-  transition: opacity 0.3s ease 0s, visibility 0.3s ease 0s;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  display: block;
   padding: 12px 0;
 }
 
-.bottom-header__categories .category__sublink {
-  padding: 5px 15px;
+.bottom-header__categories .category__sublink svg {
+  display: none;
 }
 
 .cart {
@@ -7206,6 +7213,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (max-width: 1300px) {
+  .category__list a {
+    padding-left: 0
+  }
+
   .bottom-footer__copy span {
     display: block;
   }
@@ -7817,6 +7828,10 @@ input[type="number"]::-webkit-inner-spin-button {
 @media (max-width: 991.98px) {
   .main {
     margin-top: 123px;
+  }
+
+  .bottom-header__categories {
+    display: none;
   }
 
   .works {
@@ -9957,10 +9972,6 @@ input[type="number"]::-webkit-inner-spin-button {
     display: none;
   }
 
-  .bottom-header__categories {
-    display: block;
-  }
-
   .category__item {
     row-gap: 4px;
     min-height: auto;
@@ -11508,14 +11519,25 @@ input[type="number"]::-webkit-inner-spin-button {
     top: auto;
     left: auto;
     z-index: auto;
+    width: auto;
+    display: block !important;
+    transform: translateX(0);
+  }
+
+  .bottom-header__categories .bottom-header__container {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
-    padding-top: 0;
-    display: block !important;
+    padding: 0;
   }
 
   .bottom-header__categories .category__categories {
+    display: block;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .bottom-header__categories .category__sublink svg {
     display: block;
   }
 
@@ -11556,6 +11578,10 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 @media (any-hover: hover) {
+  .category__item:hover .category__text,
+  .category__sublink:hover span {
+    text-decoration: underline;
+  }
   a.benfit-item-works:hover .benfit-item-works__title,
   a.benfit-item-works:hover .benfit-item-works__text {
     color: #8e4fd5;
@@ -11829,15 +11855,15 @@ input[type="number"]::-webkit-inner-spin-button {
   }
 
   .bottom-header__categories .category__wrapper:hover .category__list,
-  .bottom-header__categories-wrapper:hover .bottom-header__categories {
+  .bottom-header__categories-wrapper:hover .bottom-header__container {
     opacity: 1;
     visibility: visible;
     pointer-events: auto;
   }
 
-  .bottom-header__categories .category__wrapper:not(._active):hover {
+  /*.bottom-header__categories .category__wrapper:not(._active):hover {
     background-color: #ff8e25;
-  }
+  }*/
 
   .categories__img:hover,
   .categories__name:hover {
